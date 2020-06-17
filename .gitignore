@@ -1,0 +1,5 @@
+node_modules/
+docs/.vuepress/public
+package-lock.json
+public/
+.idea/
