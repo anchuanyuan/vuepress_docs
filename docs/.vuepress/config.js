@@ -1,7 +1,7 @@
 module.exports = {
     title: 'yuan',
     description: 'yuan',
-    dest: 'public',
+    base:'anchuanyuan/anchuanyuan.github.io',
     head: [
         [
             'link',
