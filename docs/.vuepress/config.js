@@ -1,7 +1,7 @@
 module.exports = {
     title: 'yuan',
     description: 'yuan',
-    base:'anchuanyuan/anchuanyuan.github.io',
+    base: '/vuepress_blog/',
     head: [
         [
             'link',
@@ -43,7 +43,7 @@ module.exports = {
                 items: [
                     {
                         text: 'GitHub',
-                        // link: 'https://github.com/recoluan',
+                        link: '',
                         icon: 'reco-github'
                     }
                 ]
