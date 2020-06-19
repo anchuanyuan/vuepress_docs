@@ -1,6 +1,6 @@
 ---
 title: CSS01 基础选择器&字体属性&文本属性
-date: 2019-11-05
+date: 2019-11-04
 tags:
     - CSS基础
 categories:
@@ -296,7 +296,8 @@ div {
 
 ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/231438-134031.png)
 
-###修饰文本：
+### 修饰文本：
+
 语法：
 
 ```css

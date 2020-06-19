@@ -1,8 +1,8 @@
 module.exports = {
     title: 'yuan',
     description: 'yuan',
-    // base: '/vuepress_blog/', // for Gitee
-    base: '/', // for GitHub
+    base: '/vuepress_blog/', // for Gitee
+    // base: '/', // for GitHub
     head: [
         [
             'link',
@@ -80,7 +80,7 @@ module.exports = {
         search: true,
         searchMaxSuggestions: 10,
         sidebar: 'auto',
-        sidebarDepth: 5,
+        sidebarDepth: 4,
         lastUpdated: 'Last Updated',
         author: 'yuan',
         authorAvatar: '/avatar.png',

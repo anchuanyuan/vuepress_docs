@@ -1,6 +1,6 @@
 ---
 title: HTML简介第二部分
-date: 2019-11-03
+date: 2019-11-02
 tags:
     - HTML基础
 categories:
@@ -325,8 +325,9 @@ type 属性的属性值及其描述如下：
 
 ### 查阅文档：
 
-    经常查阅文档是一个非常好的学习习惯。
-    推荐的网址：
-    百度:  http://www.baidu.com
-    W3C :  http://www.w3school.com.cn/
-    MDN: https://developer.mozilla.org/zh-CN/
+经常查阅文档是一个非常好的学习习惯。
+推荐的网址：
+
+-   百度: http://www.baidu.com
+-   W3C : http://www.w3school.com.cn/
+-   MDN: https://developer.mozilla.org/zh-CN/

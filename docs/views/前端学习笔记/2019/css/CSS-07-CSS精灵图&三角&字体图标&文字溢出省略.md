@@ -1,8 +1,8 @@
 ---
 title: CSS07-CSS精灵图&三角&字体图标&文字溢出省略
-date: 2019-11-07
+date: 2019-11-10
 tags:
-    - css基础
+    - CSS基础
 categories:
     - 前端学习笔记
 ---

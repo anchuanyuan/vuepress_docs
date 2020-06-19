@@ -1,8 +1,8 @@
 ---
 title: CSS06-CSS定位&网页布局简单案例
-date: 2019-11-07
+date: 2019-11-09
 tags:
-    - css基础
+    - CSS基础
 categories:
     - 前端学习笔记
 ---
