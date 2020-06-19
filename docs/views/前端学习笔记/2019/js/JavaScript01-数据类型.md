@@ -1,6 +1,6 @@
 ---
 title: JavaScript基础01-基本数据类型
-date: 2019-11-14
+date: 2019-11-18
 sidebarDepth: 4
 tags:
     - JS基础

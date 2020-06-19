@@ -1,6 +1,6 @@
 ---
 title: JavaScript基础05-作用域链&对象
-date: 2019-11-18
+date: 2019-11-22
 sidebarDepth: 4
 tags:
     - JS基础
