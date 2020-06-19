@@ -1,5 +1,5 @@
 ---
-title: 网页布局03-rem布局&less介绍(css预处理器)
+title: 网页布局03-rem布局&less介绍(css预处理器之一)
 date: 2019-11-01
 sidebarDepth: 3
 tags:
@@ -61,7 +61,7 @@ rem的优势：父元素文字大小可能不一致， 但是整个页面只有�
 
 ​       将不同的终端设备划分成不同的类型，称为媒体类型
 
-![1592552848846](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/19/154729-528846.png)
+[1592586987915](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/011630-645339.png)
 
 2. 关键字
 
@@ -315,7 +315,7 @@ VSCode  px 转换rem 插件 cssrem
 
 因为cssrem中css自动转化为rem是参照默认插件的16转换的所以需要自己配置
 
-![1592553015896](C:\Users\AN\AppData\Roaming\Typora\typora-user-images\1592553015896.png)
+![1592553015896](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/011138-689374.png)
 
 ![1592552985012](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/19/154946-180402.png)>
 
