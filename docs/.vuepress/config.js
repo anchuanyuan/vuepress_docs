@@ -1,7 +1,8 @@
 module.exports = {
     title: 'yuan',
     description: 'yuan',
-    base: '/vuepress_blog/',
+    // base: '/vuepress_blog/', // for Gitee
+    base: '/', // for GitHub
     head: [
         [
             'link',
