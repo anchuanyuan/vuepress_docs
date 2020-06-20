@@ -1,14 +1,15 @@
 ---
 home: true
-# heroImage: /hero.png
-# heroImageStyle: {
-#   maxWidth: '600px',
-#   width: '100%',
-#   display: block,
-#   margin: '9rem auto 2rem',
-#   background: '#fff',
-#   borderRadius: '1rem',
-# }
+heroImage: /home-bg1.jpg
+heroImageStyle: {
+        # maxWidth: '600px',
+        width: '100%',
+        display: block,
+        margin: '0 auto ',
+        background: '#fff',
+        backgroundSize: '100%',
+        borderRadius: '1rem',
+    }
 bgImageStyle: { height: '450px' }
 isShowTitleInHome: false
 actionText: Guide

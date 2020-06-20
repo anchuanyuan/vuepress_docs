@@ -43,9 +43,9 @@ module.exports = {
                 icon: 'reco-message',
                 items: [
                     {
-                        text: 'GitHub',
-                        link: '',
-                        icon: 'reco-github'
+                        text: 'qq',
+                        link: '1162734640',
+                        icon: 'reco-qq'
                     }
                 ]
             }
@@ -83,9 +83,7 @@ module.exports = {
         sidebarDepth: 4,
         lastUpdated: 'Last Updated',
         author: 'yuan',
-        authorAvatar: '/avatar.png',
-        record: 'xxxx',
-        startYear: '2017'
+        authorAvatar: '/avatar.png'
     },
     markdown: {
         lineNumbers: true
@@ -102,6 +100,29 @@ module.exports = {
                     theme: '好吧，希望你能喜欢我的其他小伙伴。',
                     close: '再见哦'
                 }
+            }
+        ],
+        [
+            '@vuepress-reco/vuepress-plugin-bgm-player',
+            {
+                audios: [
+                    {
+                        name: '赤伶',
+                        artist: ' 收听列表',
+                        url:
+                            'http://m801.music.126.net/20200620135230/d49d550a2e238432c1d3b3ce499674d9/jdymusic/obj/w5zDlMODwrDDiGjCn8Ky/2268544725/db7c/8d76/3fd6/6de452e75dc69c7491211961a7c2f199.mp3',
+                        cover:
+                            'http://p1.music.126.net/HBzkUXwTlbUsH6OJvdWCVg==/109951164927567872.jpg?param=300x300'
+                    },
+                    {
+                        name: '功成名就',
+                        artist: '收听列表',
+                        url:
+                            'http://m10.music.126.net/20200620133228/e140454895460bc4bb85897b5736acaa/ymusic/510f/075a/5558/fe269c3ac00008bd4514b26e07270367.mp3',
+                        cover:
+                            'http://p1.music.126.net/oDiEku7wY0a3BWRXFA7Gqg==/109951164530191765.jpg?param=300x300'
+                    }
+                ]
             }
         ]
     ]
