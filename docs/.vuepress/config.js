@@ -107,20 +107,29 @@ module.exports = {
             {
                 audios: [
                     {
-                        name: '赤伶',
-                        artist: ' 收听列表',
-                        url:
-                            'http://m801.music.126.net/20200620135230/d49d550a2e238432c1d3b3ce499674d9/jdymusic/obj/w5zDlMODwrDDiGjCn8Ky/2268544725/db7c/8d76/3fd6/6de452e75dc69c7491211961a7c2f199.mp3',
-                        cover:
-                            'http://p1.music.126.net/HBzkUXwTlbUsH6OJvdWCVg==/109951164927567872.jpg?param=300x300'
-                    },
-                    {
                         name: '功成名就',
                         artist: '收听列表',
                         url:
-                            'http://m10.music.126.net/20200620133228/e140454895460bc4bb85897b5736acaa/ymusic/510f/075a/5558/fe269c3ac00008bd4514b26e07270367.mp3',
+                            'http://yuan.utools.club/F%3A/music/%E5%8A%9F%E6%88%90%E5%90%8D%E5%B0%B1-%E5%BE%A1%E9%B9%BF%E7%A5%9E%E8%B0%B7%2C%E6%BC%86%E6%9F%9A.mp3',
                         cover:
                             'http://p1.music.126.net/oDiEku7wY0a3BWRXFA7Gqg==/109951164530191765.jpg?param=300x300'
+                    },
+                    ,
+                    {
+                        name: 'lemon',
+                        artist: '收听列表',
+                        url:
+                            'https://sharefs.yun.kugou.com/202006202219/d826daa894f8df2c3a8216e4c4c50425/G128/M09/10/05/IIcBAFqAzN-AIIU2AD5mqrBi2UA864.mp3',
+                        cover:
+                            'https://y.gtimg.cn/music/photo_new/T002R300x300M000002OR8wD3Lo3E5_1.jpg?max_age=2592000?param=300x300'
+                    },
+                    {
+                        name: '赤伶',
+                        artist: ' 收听列表',
+                        url:
+                            'http://m10.music.126.net/20200621000024/b11d34c59085ecf3051442f0ec696c15/ymusic/510b/5659/5253/fa20f19cd2a3a06597c6e9cfba8527a4.mp3',
+                        cover:
+                            'http://p1.music.126.net/HBzkUXwTlbUsH6OJvdWCVg==/109951164927567872.jpg?param=300x300'
                     }
                 ]
             }

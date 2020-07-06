@@ -1,12 +1,13 @@
 ---
 title: 网页布局03-rem布局&less介绍(css预处理器之一)
 date: 2019-11-16
-sidebarDepth: 3
+sidebarDepth: 4
 tags:
     - CSS基础
 categories:
     - 前端学习笔记
 ---
+
 
 # 网页布局03-rem布局&less介绍(css预处理器)
 
@@ -20,7 +21,7 @@ rem (root em)是一个相对单位，类似于em，em是父元素字体大小。
 
 比如，根元素（html）设置font-size=12px; 非根元素设置width:2rem; 则换成px表示就是24px。
 
-```
+```css
 /* 根html 为 12px */
 html {
    font-size: 12px;
@@ -51,7 +52,7 @@ rem的优势：父元素文字大小可能不一致， 但是整个页面只有�
 + 关键字 and  not  only
 + media feature 媒体特性必须有小括号包含
 
-```
+```css
 @media mediatype and|not|only (media feature) {
     CSS-Code;
 }
@@ -59,13 +60,12 @@ rem的优势：父元素文字大小可能不一致， 但是整个页面只有�
 
 1. mediatype 查询类型
 
-​       将不同的终端设备划分成不同的类型，称为媒体类型
+将不同的终端设备划分成不同的类型，称为媒体类型
 
 [1592586987915](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/011630-645339.png)
 
 2. 关键字
-
-​       关键字将媒体类型或多个媒体特性连接到一起做为媒体查询的条件。
+关键字将媒体类型或多个媒体特性连接到一起做为媒体查询的条件。
 
 + and：可以将多个媒体特性连接到一起，相当于“且”的意思。
 + not：排除某个媒体类型，相当于“非”的意思，可以省略。
@@ -73,9 +73,9 @@ rem的优势：父元素文字大小可能不一致， 但是整个页面只有�
 
 3. 媒体特性
 
-   每种媒体类型都具体各自不同的特性，根据不同媒体类型的媒体特性设置不同的展示风格。我们暂且了解三个。
+每种媒体类型都具体各自不同的特性，根据不同媒体类型的媒体特性设置不同的展示风格。我们暂且了解三个。
 
-   注意他们要加小括号包含
+注意他们要加小括号包含
 
    ![1592552876170](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/19/154757-611589.png)
 
@@ -83,7 +83,7 @@ rem的优势：父元素文字大小可能不一致， 但是整个页面只有�
 
 4. 媒体查询书写规则
 
-   注意： 为了防止混乱，媒体查询我们要按照从小到大或者从大到小的顺序来写,但是我们最喜欢的还是从小到大来写，这样代码更简洁
+注意： 为了防止混乱，媒体查询我们要按照从小到大或者从大到小的顺序来写,但是我们最喜欢的还是从小到大来写，这样代码更简洁
 
    ![1592552903962](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/19/154825-924335.png)
 
@@ -130,7 +130,7 @@ Less 使用之变量
 
 变量是指没有固定的值，可以改变的。因为我们CSS中的一些颜色和数值等经常使用。
 
-```
+```css
 @变量名:值;
 ```
 
@@ -139,7 +139,7 @@ Less 使用之变量
 + 不能以数字开头
 + 大小写敏感
 
-```
+```css
 @color: pink;
 ```
 
@@ -155,7 +155,7 @@ Easy LESS 插件用来把less文件编译为css文件
 
 Less 嵌套
 
-```
+```css
 // 将css改为less
 #header .logo {
   width: 300px;
@@ -167,7 +167,7 @@ Less 嵌套
     }
 }
 
-```
+```css
 
 如果遇见 （交集|伪类|伪元素选择器） ，利用&进行连接
 
@@ -186,7 +186,7 @@ Less 运算
 
 任何数字、颜色或者变量都可以参与运算。就是Less提供了加（+）、减（-）、乘（*）、除（/）算术运算。
 
-```
+```css
 /*Less 里面写*/
 @witdh: 10px + 5;
 div {
@@ -270,8 +270,8 @@ width: (@width + 5) * 2;
 
 3、设置视口标签以及引入初始化样式
 
-```
-<meta name="viewport" content="width=device-width, user-scalable=no,         initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+```html
+<meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
 <link rel="stylesheet" href="css/normalize.css">
 ```

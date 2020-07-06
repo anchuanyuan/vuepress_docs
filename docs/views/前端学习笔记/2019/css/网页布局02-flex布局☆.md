@@ -98,7 +98,7 @@ item），简称"项目"。
 
 ### 3.7 flex-flow 属性是 flex-direction 和 flex-wrap 属性的复合属性
 
-```
+```css
 flex-flow:row wrap;
 ```
 
@@ -112,7 +112,7 @@ flex-flow:row wrap;
 
 flex 属性定义子项目分配剩余空间，用flex来表示占多少份数。
 
-```
+```css
 .item {
     flex: <number>; /* 默认值 0 */
 }
@@ -125,7 +125,7 @@ align-self 属性允许单个项目有与其他项目不一样的对齐方式，
 
 默认值为 auto，表示继承父元素的 align-items 属性，如果没有父元素，则等同于 stretch。
 
-````
+````css
 span:nth-child(2) {
       /* 设置自己在侧轴上的排列方式 */
       align-self: flex-end;
@@ -139,7 +139,7 @@ span:nth-child(2) {
 
 注意：和 z-index 不一样。
 
-```
+```css
 .item {
     order: <number>;
 }
@@ -161,7 +161,7 @@ span:nth-child(2) {
 
 3.设置视口标签以及引入初始化样式
 
-```
+```html
 <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
 <link rel="stylesheet" href="css/normalize.css">

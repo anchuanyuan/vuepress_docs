@@ -252,18 +252,7 @@ Vscode 快速格式化代码: `shift+alt+f`
 **常见的行内元素：**
 
 ```html
-<a
-    >、<strong
-        >、<b
-            >、<em
-                >、<i
-                    >、<del
-                        >、<s
-                            >、<ins
-                                >、<u
-                                    >、<span
-                                    ></span></u></ins></s></del></i></em></b></strong
-></a>
+<a>、<strong>、<b>、<em>、<i>、<del>、<s>、<ins>、<u>、<span></span>
 ```
 
 ​ `<span>` 标签是最典型的行内元素。有的地方也将行内元素称为内联元素。

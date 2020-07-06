@@ -315,7 +315,7 @@ Cutterman是一款运行在photoshop中的插件，能够自动将你需要的�
 
 结构图如下：
 
- <img src="images/6.png" />
+ ![1591778800668](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/164643-534406.png)
 
 - 1号盒子 是  228 * 300 的盒子 右浮动  **注意 浮动的元素 不会有外边距塌陷的问题**
 - 1号盒子内 分为 上下 两个 子盒子
