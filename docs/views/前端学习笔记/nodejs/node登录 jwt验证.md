@@ -1,4 +1,3 @@
-
 ---
 title: NodeJs(Express)的用户注册、登录和授权(jwt)
 date: 2020-07-05
@@ -9,52 +8,46 @@ categories:
     - NodeJs
 ---
 
-
-
-2020年7月5日22:32:46
+2020 年 7 月 5 日 22:32:46
 
 [toc]
 
-
 # NodeJs(Express)的用户注册、登录和授权
 
-来自 ==  B站全栈之巅
+来自 == B 站全栈之巅
 
-## 1.创建http服务器
+## 1.创建 http 服务器
 
 ```js
 const express = require('express')
-const {User} =  require('./model')
+const { User } = require('./model')
 
 const app = express()
 
 // 要想获得 json内容 必须要可以对json内容进行处理
 app.use(express.json())
 
-app.get('/api/users', async(req, res) => {
+app.get('/api/users', async (req, res) => {
     const users = await User.find()
     res.send(users)
 })
 
-app.post('/api/register',async (req,res)=>{
+app.post('/api/register', async (req, res) => {
     // console.log(req.body);
-    
-  const user = await  User.create({
-        username:req.body.username,
-        password:req.body.password
+
+    const user = await User.create({
+        username: req.body.username,
+        password: req.body.password
     })
-     res.send(user)
+    res.send(user)
 })
 
 app.listen('5000', () => {
     console.log(`http://localhost:5000`)
 })
-
 ```
 
-
-
-### Tip 关于http-client的使用(查看文末的补充)
+### Tip 关于 http-client 的使用(查看文末的补充)
 
 ![1593960842054](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/000640-545598.png)
 
@@ -87,12 +80,9 @@ const UserSchema = new mongooes.Schema({
 const User = mongooes.model('User', UserSchema)
 
 module.exports = { User }
-
 ```
 
-
-
-## 3.获取json 请求体的中间件
+## 3.获取 json 请求体的中间件
 
 ```js
 // 要想获得 json内容 必须要可以对json内容进行处理
@@ -114,7 +104,7 @@ const UserSchema = new mongooes.Schema({
 //  useCreateIndex: true
 ```
 
-## 5.使用bcrypt密码进行散列存储
+## 5.使用 bcrypt 密码进行散列存储
 
 ```js
  password: {
@@ -153,9 +143,9 @@ app.post('/api/login', async (req, res) => {
 })
 ```
 
-## 7.生成token(jsonwebtoken)
+## 7.生成 token(jsonwebtoken)
 
-### 登录的时候签发token
+### 登录的时候签发 token
 
 ```js
 app.post('/api/login', async (req, res) => {
@@ -179,18 +169,21 @@ app.post('/api/login', async (req, res) => {
         })
     }
     // 设置token
-    const token = require('jsonwebtoken').sign({
-        id:String(user._id) 
-    },'jwer')
+    const token = require('jsonwebtoken').sign(
+        {
+            id: String(user._id)
+        },
+        'jwer'
+    )
     res.send({ user, token })
 })
 ```
 
-### tip注意事项
+### tip 注意事项
 
-签发的时候有两个参数,**第二个是属于秘钥**,应该是全局一致的存在某个不能被提交的配置文件中文件(如环境配置文件.envconfig之类的),第一个参数可用作签发加密的认证,之所以用用户的id是因为用户id肯定是唯一值,这也是最简单的方式来告诉服务端token对应的用户(后台可以用这个id可以找到该用户)
+签发的时候有两个参数,**第二个是属于秘钥**,应该是全局一致的存在某个不能被提交的配置文件中文件(如环境配置文件.envconfig 之类的),第一个参数可用作签发加密的认证,之所以用用户的 id 是因为用户 id 肯定是唯一值,这也是最简单的方式来告诉服务端 token 对应的用户(后台可以用这个 id 可以找到该用户)
 
-## 8.token验证
+## 8.token 验证
 
 ```js
 app.get('/api/userInfo', async (req, res) => {
@@ -207,20 +200,20 @@ app.listen('5000', () => {
 })
 ```
 
-## 9.token验证的提取,使用express中间件实现
+## 9.token 验证的提取,使用 express 中间件实现
 
-上面验证token的代码不可能,在每一个接口里面写一遍
+上面验证 token 的代码不可能,在每一个接口里面写一遍
 
 所以需要提取出来,这里利用中间件提取出来
 
-**注意事项**:如何传递自定的数据user? 把定义的数据赋到req上,在下一个next里获取就行了
+**注意事项**:如何传递自定的数据 user? 把定义的数据赋到 req 上,在下一个 next 里获取就行了
 
 ```js
 // 定义中间件
-const auth = async (req, res,next)=>{
+const auth = async (req, res, next) => {
     const raw = String(req.headers.authorization)
-    .split(' ')
-    .pop() // 确保是个字符串
+        .split(' ')
+        .pop() // 确保是个字符串
     const { id } = jwt.verify(raw, SCERT)
     req.user = await User.findById(id)
     next()
@@ -229,11 +222,11 @@ const auth = async (req, res,next)=>{
 
 想要完整实现肯定是 要,加入错误处理的
 
-## 补充: 
+## 补充:
 
 ### 关于 vscode httpclient 插件测试用例的代码
 
-**文件名**: test.http 
+**文件名**: test.http
 
 ```bash
 # 定义请求根路由
@@ -287,12 +280,12 @@ mongooes
 const UserSchema = new mongooes.Schema({
     username: {
         type: String,
-        unique:true
+        unique: true
     },
     password: {
         type: String,
-        set(val){
-            return require('bcrypt').hashSync(val,8)
+        set(val) {
+            return require('bcrypt').hashSync(val, 8)
         }
     }
 })
@@ -300,10 +293,8 @@ const UserSchema = new mongooes.Schema({
 const User = mongooes.model('User', UserSchema)
 
 module.exports = { User }
-
 ```
 
-文章结束, 感谢B站 up主 **全站之巅 **的技术视频讲解,附上链接
+文章结束, 感谢 B 站 up 主 **全站之巅 **的技术视频讲解,附上链接
 
-[1小时搞定NodeJs(Express)的用户注册、登录和授权](https://www.bilibili.com/video/BV1Nb411j7AC/)
-
+[1 小时搞定 NodeJs(Express)的用户注册、登录和授权](https://www.bilibili.com/video/BV1Nb411j7AC/)
