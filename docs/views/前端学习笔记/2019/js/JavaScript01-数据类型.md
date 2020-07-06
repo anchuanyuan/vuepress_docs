@@ -31,10 +31,8 @@ categories:
 
 ### 1.3 编程语言
 
-```html
 编程语言：
 	可以通过类似于人类语言的“语言”来控制计算机，让计算机为我们做事情，这样的语言就叫做编程语言（Programming Language）。编程语言是用来控制计算机的一系列指令，它有固定的格式和词汇（不同编程语言的格式和词汇不一样），必须遵守。如今通用的编程语言有两种形式：汇编语言和高级语言。
-```
 
 | 语言类型     |                             说明                             |
 | ------------ | :----------------------------------------------------------: |
@@ -133,11 +131,11 @@ categories:
 
 **浏览器分成两部分：渲染引擎和 JS 引擎**
 
-![](images\JS基础第一天01.png)
+![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/173410-803196.png)
 
 
 
-		浏览器本身并不会执行JS代码，而是通过内置 JavaScript 引擎(解释器) 来执行 JS 代码 。JS 引擎执行代码时逐行解释每一句源码（转换为机器语言），然后由计算机去执行，所以 JavaScript 语言归为脚本语言，会逐行解释执行。
+浏览器本身并不会执行JS代码，而是通过内置 JavaScript 引擎(解释器) 来执行 JS 代码 。JS 引擎执行代码时逐行解释每一句源码（转换为机器语言），然后由计算机去执行，所以 JavaScript 语言归为脚本语言，会逐行解释执行。
 
 ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/012521-328609.png)
 
@@ -167,7 +165,7 @@ categories:
 
 ### 3.6 JS 初体验
 
-	JS 有3种书写位置，分别为行内、内嵌和外部。
+JS 有3种书写位置，分别为行内、内嵌和外部。
 
 1.  行内式
 
@@ -206,12 +204,12 @@ categories:
 
 ### 4.1  单行注释
 
-	为了提高代码的可读性，JS与CSS一样，也提供了注释功能。
-	JS中的注释主要有两种，分别是 单行注释 和 多行注释。
+为了提高代码的可读性，JS与CSS一样，也提供了注释功能。
+JS中的注释主要有两种，分别是 单行注释 和 多行注释。
 
 单行注释的注释方式如下：
 
-```html
+```js
 // 我是一行文字，不想被 JS引擎 执行，所以 注释起来	
 ```
 
@@ -221,14 +219,14 @@ categories:
 
 多行注释的注释方式如下：
 
-```html
+```js
 /*
   获取用户年龄和姓名
   并通过提示框显示出来
 */
 ```
 
-```
+```js
 /* */  用来注释多行文字（ 默认快捷键  alt +  shift  + a ） 
 ```
 
@@ -358,13 +356,13 @@ var age  = 18;  // 声明变量同时赋值为 18
   ​		在代码运行时，变量的数据类型是由 JS引擎 根据 = 右边变量值的数据类型来判断 的，运行完毕之后， 变量就确定了数据类型。JavaScript 拥有动态类型，同时也意味着相同的变量可用作不同的类型：
 	
   ```js
-var x = 6;           // x 为数字
+  var x = 6;           // x 为数字
   var x = "Bill";      // x 为字符串    
   ```
   
 - 数据类型的分类
 
-  	JS 把数据类型分为两类：
+JS 把数据类型分为两类：
 
   - 简单数据类型 （Number,String,Boolean,Undefined,Null）
 
@@ -389,7 +387,7 @@ JavaScript 中的简单数据类型及其说明如下：
 
 1. 数字型进制
 
-     最常见的进制有二进制、八进制、十进制、十六进制。
+最常见的进制有二进制、八进制、十进制、十六进制。
 
      ```js
        // 1.八进制数字序列范围：0~7
@@ -400,11 +398,11 @@ JavaScript 中的简单数据类型及其说明如下：
       var num = 0xA;   
      ```
 
-     现阶段我们只需要记住，在JS中八进制前面加0，十六进制前面加 0x  
+现阶段我们只需要记住，在JS中八进制前面加0，十六进制前面加 0x  
 
 2. 数字型范围
 
-     JavaScript中数值的最大和最小值
+JavaScript中数值的最大和最小值
 
      - 最大值：Number.MAX_VALUE，这个值为： 1.7976931348623157e+308
      
@@ -419,7 +417,7 @@ JavaScript 中的简单数据类型及其说明如下：
   
 4. isNaN
   
-     用来判断一个变量是否为非数字的类型，返回 true 或者 false
+用来判断一个变量是否为非数字的类型，返回 true 或者 false
 
    ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/012921-297680.png)
 
@@ -433,7 +431,7 @@ JavaScript 中的简单数据类型及其说明如下：
 
 - 字符串型 String
 
-  ​		字符串型可以是引号中的任意文本，其语法为 双引号 "" 和 单引号''
+​		字符串型可以是引号中的任意文本，其语法为 双引号 "" 和 单引号''
 
   ```js
   var strMsg = "我爱北京天安门~";  // 使用双引号表示字符串
@@ -446,7 +444,7 @@ JavaScript 中的简单数据类型及其说明如下：
 
 1. 字符串引号嵌套
 
-     ​		JS 可以用单引号嵌套双引号 ，或者用双引号嵌套单引号 (外双内单，外单内双)
+​		JS 可以用单引号嵌套双引号 ，或者用双引号嵌套单引号 (外双内单，外单内双)
 
      ```js
      var strMsg = '我是"高帅富"程序猿';   // 可以用''包含""
@@ -457,9 +455,9 @@ JavaScript 中的简单数据类型及其说明如下：
 
 2. 字符串转义符
 
-     ​		类似HTML里面的特殊字符，字符串中也有特殊字符，我们称之为转义符。
+​		类似HTML里面的特殊字符，字符串中也有特殊字符，我们称之为转义符。
 
-     ​		转义符都是 \ 开头的，常用的转义符及其说明如下：
+​		转义符都是 \ 开头的，常用的转义符及其说明如下：
 
      | 转义符 | 解释说明                          |
      | ------ | --------------------------------- |
@@ -614,7 +612,7 @@ JavaScript 中的简单数据类型及其说明如下：
 
 ### 9.1 概述
 
-	计算机不能直接理解任何除机器语言以外的语言，所以必须要把程序员所写的程序语言翻译成机器语言才能执行程序。程序语言翻译成机器语言的工具，被称为翻译器。
+计算机不能直接理解任何除机器语言以外的语言，所以必须要把程序员所写的程序语言翻译成机器语言才能执行程序。程序语言翻译成机器语言的工具，被称为翻译器。
 
 ![](images\JS基础第一天23.png)
 
@@ -626,11 +624,11 @@ JavaScript 中的简单数据类型及其说明如下：
 
 ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/012903-829483.png)
 
-	类似于请客吃饭：
+类似于请客吃饭：
 	
-		编译语言：首先把所有菜做好，才能上桌吃饭
+- 编译语言：首先把所有菜做好，才能上桌吃饭
 	
-		解释语言：好比吃火锅，边吃边涮，同时进行
+- 解释语言：好比吃火锅，边吃边涮，同时进行
 
 ## 10 - 关键字和保留字
 
@@ -642,14 +640,14 @@ JavaScript 中的简单数据类型及其说明如下：
 
 ### 10.2 关键字
 
-	关键字：是指 JS本身已经使用了的字，不能再用它们充当变量名、方法名。
+关键字：是指 JS本身已经使用了的字，不能再用它们充当变量名、方法名。
 	
-	包括：break、case、catch、continue、default、delete、do、else、finally、for、function、if、in、instanceof、new、return、switch、this、throw、try、typeof、var、void、while、with 等。
+包括：break、case、catch、continue、default、delete、do、else、finally、for、function、if、in、instanceof、new、return、switch、this、throw、try、typeof、var、void、while、with 等。
 
 ### 10.3 保留字
 
-	保留字：实际上就是预留的“关键字”，意思是现在虽然还不是关键字，但是未来可能会成为关键字，同样不能使用它们当变量名或方法名。
+保留字：实际上就是预留的“关键字”，意思是现在虽然还不是关键字，但是未来可能会成为关键字，同样不能使用它们当变量名或方法名。
 	
-	包括：boolean、byte、char、class、const、debugger、double、enum、export、extends、fimal、float、goto、implements、import、int、interface、long、mative、package、private、protected、public、short、static、super、synchronized、throws、transient、volatile 等。
-	
-	注意：如果将保留字用作变量名或函数名，那么除非将来的浏览器实现了该保留字，否则很可能收不到任何错误消息。当浏览器将其实现后，该单词将被看做关键字，如此将出现关键字错误。
+包括：boolean、byte、char、class、const、debugger、double、enum、export、extends、fimal、float、goto、implements、import、int、interface、long、mative、package、private、protected、public、short、static、super、synchronized、throws、transient、volatile 等。
+
+注意：如果将保留字用作变量名或函数名，那么除非将来的浏览器实现了该保留字，否则很可能收不到任何错误消息。当浏览器将其实现后，该单词将被看做关键字，如此将出现关键字错误。

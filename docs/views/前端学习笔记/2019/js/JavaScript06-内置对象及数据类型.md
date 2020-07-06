@@ -182,7 +182,7 @@ function getRandom(min, max) {
 
 -   数组中还有其他操作方法，同学们可以在课下自行查阅学习
 
-        	![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/021727-258224.png)
+![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/021727-258224.png)
 
 ### 1.6 字符串对象
 
