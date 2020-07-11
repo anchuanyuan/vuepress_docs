@@ -110,7 +110,7 @@ module.exports = {
                         name: '功成名就',
                         artist: '收听列表',
                         url:
-                            'http://yuan.utools.club/F%3A/music/%E5%8A%9F%E6%88%90%E5%90%8D%E5%B0%B1-%E5%BE%A1%E9%B9%BF%E7%A5%9E%E8%B0%B7%2C%E6%BC%86%E6%9F%9A.mp3',
+                            'http://qcw9ugqli.bkt.clouddn.com/%E5%8A%9F%E6%88%90%E5%90%8D%E5%B0%B1-%E5%BE%A1%E9%B9%BF%E7%A5%9E%E8%B0%B7%2C%E6%BC%86%E6%9F%9A.mp3',
                         cover:
                             'http://p1.music.126.net/oDiEku7wY0a3BWRXFA7Gqg==/109951164530191765.jpg?param=300x300'
                     },

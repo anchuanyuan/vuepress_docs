@@ -1,6 +1,6 @@
 ---
-title:WebAPIs03-节点操作-事件执行机制
-date: 2019-11-15
+title: WebAPIs03-节点操作-事件执行机制
+date: 2019-11-26
 sidebarDepth: 4
 tags:
     - WebAPIs
@@ -10,9 +10,9 @@ categories:
 
 # WebAPIs03-节点操作-事件执行机制
 
- 学习目标：
+学习目标：
 
-1.  能够使用removeChild()方法删除节点
+1.  能够使用 removeChild()方法删除节点
 
 2.  能够完成动态生成表格案例
 
@@ -30,14 +30,13 @@ categories:
 
 9.  能够完成跟随鼠标的天使案例
 
-
 ## 1.1. 节点操作
 
 ### 1.1.1 删除节点
 
 ![webAPI第3天1551163384254](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185337-932703.png)
 
-node.removeChild() 方法从 node节点中删除一个子节点，返回删除的节点。
+node.removeChild() 方法从 node 节点中删除一个子节点，返回删除的节点。
 
 ```js
     <button>删除</button>
@@ -62,8 +61,6 @@ node.removeChild() 方法从 node节点中删除一个子节点，返回删除�
         }
     </script>
 ```
-
-
 
 ### 1.1.2 案例：删除留言
 
@@ -161,37 +158,35 @@ node.removeChild() 方法从 node节点中删除一个子节点，返回删除�
         // 2. 往tbody 里面创建行： 有几个人（通过数组的长度）我们就创建几行
         var tbody = document.querySelector('tbody');
 		// 遍历数组
-        for (var i = 0; i < datas.length; i++) { 
+        for (var i = 0; i < datas.length; i++) {
             // 1. 创建 tr行
             var tr = document.createElement('tr');
             tbody.appendChild(tr);
-            // 2. 行里面创建单元格td 单元格的数量取决于每个对象里面的属性个数  
+            // 2. 行里面创建单元格td 单元格的数量取决于每个对象里面的属性个数
             // 使用for in遍历学生对象
-            for (var k in datas[i]) { 
-                // 创建单元格 
+            for (var k in datas[i]) {
+                // 创建单元格
                 var td = document.createElement('td');
-                // 把对象里面的属性值 datas[i][k] 给 td  
+                // 把对象里面的属性值 datas[i][k] 给 td
                 td.innerHTML = datas[i][k];
                 tr.appendChild(td);
             }
-            // 3. 创建有删除2个字的单元格 
+            // 3. 创建有删除2个字的单元格
             var td = document.createElement('td');
             td.innerHTML = '<a href="javascript:;"删除 </a>';
             tr.appendChild(td);
 
         }
-        // 4. 删除操作 开始 
+        // 4. 删除操作 开始
         var as = document.querySelectorAll('a');
         for (var i = 0; i < as.length; i++) {
             as[i].onclick = function() {
-                // 点击a 删除 当前a 所在的行(链接的爸爸的爸爸)  node.removeChild(child)  
+                // 点击a 删除 当前a 所在的行(链接的爸爸的爸爸)  node.removeChild(child)
                 tbody.removeChild(this.parentNode.parentNode)
             }
         }
     </script>
 ```
-
-
 
 ### 1.1.5 创建元素的三种方式
 
@@ -199,7 +194,7 @@ node.removeChild() 方法从 node节点中删除一个子节点，返回删除�
 
 ```js
     <script>
-        // 三种创建元素方式区别 
+        // 三种创建元素方式区别
         // 1. document.write() 创建元素  如果页面文档流加载完毕，再调用这句话会导致页面重绘
          var btn = document.querySelector('button');
          btn.onclick = function() {
@@ -225,11 +220,9 @@ node.removeChild() 方法从 node节点中删除一个子节点，返回删除�
     </script>
 ```
 
+### 1.1.6 innerTHML 和 createElement 效率对比
 
-
-### 1.1.6 innerTHML和createElement效率对比
-
-**innerHTML字符串拼接方式（效率低）**
+**innerHTML 字符串拼接方式（效率低）**
 
 ```js
 <script>
@@ -246,7 +239,7 @@ node.removeChild() 方法从 node节点中删除一个子节点，返回删除�
 </script>
 ```
 
-**createElement方式（效率一般）**
+**createElement 方式（效率一般）**
 
 ```js
 <script>
@@ -267,7 +260,7 @@ node.removeChild() 方法从 node节点中删除一个子节点，返回删除�
 </script>
 ```
 
-**innerHTML数组方式（效率高）**
+**innerHTML 数组方式（效率高）**
 
 ```js
 <script>
@@ -285,23 +278,20 @@ node.removeChild() 方法从 node节点中删除一个子节点，返回删除�
 </script>
 ```
 
-
-
-## 1.2. DOM的核心总结
+## 1.2. DOM 的核心总结
 
 ![webAPI第3天1551164669434](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185601-501408.png)
 
 ![webAPI第3天1551164715018](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185357-243181.png)
 
-
-
-关于dom操作，我们主要针对于元素的操作。主要有创建、增、删、改、查、属性操作、事件操作。
+关于 dom 操作，我们主要针对于元素的操作。主要有创建、增、删、改、查、属性操作、事件操作。
 
 ### 1.2.1. 创建
 
 ![webAPI第3天1551164797164](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185612-729246.png)
 
 ### 1.2.2. 增加
+
 ![webAPI第3天1551164829832](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185613-842520.png)
 
 ### 1.2.3. 删
@@ -322,17 +312,15 @@ node.removeChild() 方法从 node节点中删除一个子节点，返回删除�
 
 ### 1.2.7. 事件操作（重点）
 
-
-
 ## 1.3. 事件高级
 
-### 1.3.1. 注册事件（2种方式）
+### 1.3.1. 注册事件（2 种方式）
 
 ![webAPI第3天1551165252019](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185401-367190.png)
 
 ### 1.3.2 事件监听
 
-#### addEventListener()事件监听（IE9以后支持）
+#### addEventListener()事件监听（IE9 以后支持）
 
 ![webAPI第3天1551165364122](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185404-969281.png)
 
@@ -340,11 +328,11 @@ eventTarget.addEventListener()方法将指定的监听器注册到 eventTarget�
 
 ![webAPI第3天1551165604792](images/webAPI第3天1551165604792.png)
 
-#### attacheEvent()事件监听（IE678支持）
+#### attacheEvent()事件监听（IE678 支持）
 
 ![webAPI第3天1551165781836](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185403-209672.png)
 
-​	eventTarget.attachEvent()方法将指定的监听器注册到 eventTarget（目标对象） 上，当该对象触发指定的事件时，指定的回调函数就会被执行。
+​ eventTarget.attachEvent()方法将指定的监听器注册到 eventTarget（目标对象） 上，当该对象触发指定的事件时，指定的回调函数就会被执行。
 
 ![webAPI第3天1551165843912](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185406-6406.png)
 
@@ -361,7 +349,7 @@ eventTarget.addEventListener()方法将指定的监听器注册到 eventTarget�
     btns[0].onclick = function() {
             alert('hao a u');
         }
-   // 2. 事件侦听注册事件 addEventListener 
+   // 2. 事件侦听注册事件 addEventListener
    // (1) 里面的事件类型是字符串 必定加引号 而且不带on
    // (2) 同一个元素 同一个事件可以添加多个侦听器（事件处理程序）
     btns[1].addEventListener('click', function() {
@@ -376,6 +364,7 @@ eventTarget.addEventListener()方法将指定的监听器注册到 eventTarget�
     })
 </script>
 ```
+
 #### 事件监听兼容性解决方案
 
 封装一个函数，函数中判断浏览器的类型：
@@ -417,45 +406,43 @@ eventTarget.addEventListener()方法将指定的监听器注册到 eventTarget�
 
 ![webAPI第3天1551166332453](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185409-231882.png)
 
-### 1.3.4. DOM事件流
+### 1.3.4. DOM 事件流
 
- ```
- html中的标签都是相互嵌套的，我们可以将元素想象成一个盒子装一个盒子，document是最外面的大盒子。
- 当你单击一个div时，同时你也单击了div的父元素，甚至整个页面。
- 
- 那么是先执行父元素的单击事件，还是先执行div的单击事件 ？？？
- ```
+```
+html中的标签都是相互嵌套的，我们可以将元素想象成一个盒子装一个盒子，document是最外面的大盒子。
+当你单击一个div时，同时你也单击了div的父元素，甚至整个页面。
+
+那么是先执行父元素的单击事件，还是先执行div的单击事件 ？？？
+```
 
 ![webAPI第3天1551166423144](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190023-342404.png)
 
- 比如：我们给页面中的一个div注册了单击事件，当你单击了div时，也就单击了body，单击了html，单击了document。
+比如：我们给页面中的一个 div 注册了单击事件，当你单击了 div 时，也就单击了 body，单击了 html，单击了 document。
 
 ![webAPI第3天1551166555833](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185410-506445.png)
 
 ![webAPI第3天155116658webAPI第3天1552](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185952-302083.png)
 
- ```
- 当时的2大浏览器霸主谁也不服谁！
- IE 提出从目标元素开始，然后一层一层向外接收事件并响应，也就是冒泡型事件流。
- Netscape（网景公司）提出从最外层开始，然后一层一层向内接收事件并响应，也就是捕获型事件流。
- 
- 江湖纷争，武林盟主也脑壳疼！！！
- 
- 最终，w3c 采用折中的方式，平息了战火，制定了统一的标准 —--— 先捕获再冒泡。
- 现代浏览器都遵循了此标准，所以当事件发生时，会经历3个阶段。
- ```
+```
+当时的2大浏览器霸主谁也不服谁！
+IE 提出从目标元素开始，然后一层一层向外接收事件并响应，也就是冒泡型事件流。
+Netscape（网景公司）提出从最外层开始，然后一层一层向内接收事件并响应，也就是捕获型事件流。
 
-DOM 事件流会经历3个阶段： 
+江湖纷争，武林盟主也脑壳疼！！！
+
+最终，w3c 采用折中的方式，平息了战火，制定了统一的标准 —--— 先捕获再冒泡。
+现代浏览器都遵循了此标准，所以当事件发生时，会经历3个阶段。
+```
+
+DOM 事件流会经历 3 个阶段：
 
 1. 捕获阶段
 
 2. 当前目标阶段
 
-3. 冒泡阶段 
+3. 冒泡阶段
 
-
-
-​	我们向水里面扔一块石头，首先它会有一个下降的过程，这个过程就可以理解为从最顶层向事件发生的最具体元素（目标点）的捕获过程；之后会产生泡泡，会在最低点（ 最具体元素）之后漂浮到水面上，这个过程相当于事件冒泡。 
+​ 我们向水里面扔一块石头，首先它会有一个下降的过程，这个过程就可以理解为从最顶层向事件发生的最具体元素（目标点）的捕获过程；之后会产生泡泡，会在最低点（ 最具体元素）之后漂浮到水面上，这个过程相当于事件冒泡。
 
 ![webAPI第3天1551169007768](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185413-369113.png)
 
@@ -469,7 +456,7 @@ DOM 事件流会经历3个阶段：
     </div>
     <script>
         // onclick 和 attachEvent（ie） 在冒泡阶段触发
-        // 冒泡阶段 如果addEventListener 第三个参数是 false 或者 省略 
+        // 冒泡阶段 如果addEventListener 第三个参数是 false 或者 省略
         // son - father ->body - html - document
         var son = document.querySelector('.son');
 		// 给son注册单击事件
@@ -520,7 +507,7 @@ DOM 事件流会经历3个阶段：
 
 事件发生后，跟事件相关的一系列信息数据的集合都放到这个对象里面，这个对象就是事件对象。
 
-比如：  
+比如：
 
 1. 谁绑定了这个事件。
 
@@ -532,7 +519,7 @@ DOM 事件流会经历3个阶段：
 
 事件触发发生时就会产生事件对象，并且系统会以实参的形式传给事件处理函数。
 
-所以，在事件处理函数中声明1个形参用来接收事件对象。
+所以，在事件处理函数中声明 1 个形参用来接收事件对象。
 
 ![webAPI第3天1551169537789](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185419-872957.png)
 
@@ -569,16 +556,16 @@ DOM 事件流会经历3个阶段：
 
 #### e.target 和 this 的区别
 
--  this 是事件绑定的元素（绑定这个事件处理函数的元素） 。
+-   this 是事件绑定的元素（绑定这个事件处理函数的元素） 。
 
--  e.target 是事件触发的元素。
+-   e.target 是事件触发的元素。
 
- ```
- 常情况下terget 和 this是一致的，
- 但有一种情况不同，那就是在事件冒泡时（父子元素有相同事件，单击子元素，父元素的事件处理函数也会被触发执行），
- 	这时候this指向的是父元素，因为它是绑定事件的元素对象，
- 	而target指向的是子元素，因为他是触发事件的那个具体元素对象。
- ```
+```
+常情况下terget 和 this是一致的，
+但有一种情况不同，那就是在事件冒泡时（父子元素有相同事件，单击子元素，父元素的事件处理函数也会被触发执行），
+	这时候this指向的是父元素，因为它是绑定事件的元素对象，
+	而target指向的是子元素，因为他是触发事件的那个具体元素对象。
+```
 
 ```js
     <div>123</div>
@@ -593,7 +580,7 @@ DOM 事件流会经历3个阶段：
     </script>
 ```
 
-事件冒泡下的e.target和this
+事件冒泡下的 e.target 和 this
 
 ```js
     <ul>
@@ -604,7 +591,7 @@ DOM 事件流会经历3个阶段：
     <script>
         var ul = document.querySelector('ul');
         ul.addEventListener('click', function(e) {
-              // 我们给ul 绑定了事件  那么this 就指向ul  
+              // 我们给ul 绑定了事件  那么this 就指向ul
               console.log(this); // ul
 
               // e.target 触发了事件的对象 我们点击的是li e.target 指向的就是li
@@ -615,12 +602,12 @@ DOM 事件流会经历3个阶段：
 
 ### 1.3.6 阻止默认行为
 
- html中一些标签有默认行为，例如a标签被单击后，默认会进行页面跳转。
+html 中一些标签有默认行为，例如 a 标签被单击后，默认会进行页面跳转。
 
 ```js
     <a href="http://www.baidu.com"百度</a>
     <script>
-        // 2. 阻止默认行为 让链接不跳转 
+        // 2. 阻止默认行为 让链接不跳转
         var a = document.querySelector('a');
         a.addEventListener('click', function(e) {
              e.preventDefault(); //  dom 标准写法
@@ -684,27 +671,25 @@ DOM 事件流会经历3个阶段：
 
 事件委托也称为事件代理，在 jQuery 里面称为事件委派。
 
- 说白了就是，不给子元素注册事件，给父元素注册事件，把处理代码在父元素的事件中执行。
-
-
+说白了就是，不给子元素注册事件，给父元素注册事件，把处理代码在父元素的事件中执行。
 
 **生活中的代理：**
 
 ![webAPI第3天1551172082624](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185430-862373.png)
 
-**js事件中的代理：**
+**js 事件中的代理：**
 
 ![webAPI第3天1551172159273](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185430-959129.png)
 
 #### 事件委托的原理
 
-​	给父元素注册事件，利用事件冒泡，当子元素的事件触发，会冒泡到父元素，然后去控制相应的子元素。
+​ 给父元素注册事件，利用事件冒泡，当子元素的事件触发，会冒泡到父元素，然后去控制相应的子元素。
 
 #### 事件委托的作用
 
-- 我们只操作了一次 DOM ，提高了程序的性能。
+-   我们只操作了一次 DOM ，提高了程序的性能。
 
-- 动态新创建的子元素，也拥有事件。
+-   动态新创建的子元素，也拥有事件。
 
 ```js
     <ul>
@@ -788,7 +773,7 @@ DOM 事件流会经历3个阶段：
         var pic = document.querySelector('img');
         document.addEventListener('mousemove', function(e) {
         	// 1. mousemove只要我们鼠标移动1px 就会触发这个事件
-        	// 2.核心原理： 每次鼠标移动，我们都会获得最新的鼠标坐标， 
+        	// 2.核心原理： 每次鼠标移动，我们都会获得最新的鼠标坐标，
             // 把这个x和y坐标做为图片的top和left 值就可以移动图片
         	var x = e.pageX;
         	var y = e.pageY;
@@ -799,4 +784,3 @@ DOM 事件流会经历3个阶段：
     	});
     </script>
 ```
-
