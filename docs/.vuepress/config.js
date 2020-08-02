@@ -80,7 +80,7 @@ module.exports = {
         search: true,
         searchMaxSuggestions: 10,
         sidebar: 'auto',
-        sidebarDepth: 4,
+        // sidebarDepth: 4,
         lastUpdated: 'Last Updated',
         author: 'yuan',
         authorAvatar: '/avatar.png'
