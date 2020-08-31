@@ -13,7 +13,7 @@ categories:
 
 #### Node是什么
 
-![](media/node01-node.png)
+![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202008/31/205308-875674.png)
 
 **Node** **是一个**基于Chrome V8引擎的**JavaScript代码运行环境**。
 
@@ -33,7 +33,6 @@ JavaScript代码运行在Node 中，Node.js是语言，Node是运行环境。
 
 #### Node.js运行环境下载
 
-![](media/node01-download1.png)
 
 LTS = long term support 长期支持版 稳定版
 
@@ -51,13 +50,13 @@ windows系统用户在Node官网下载后缀为.msi的文件到本地，双击�
 
   - 输入 msiexec /package node安装包位置
 
-    ![](media/node01-2503.jpg)
+  ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202008/31/205323-979670.jpeg)
 
 检测Node运行环境是否安装：打开命令行工具，输入node -v 如果出现Node环境版本号则说明安装成功。
 
 - 若出现如下错误
 
-  ![](media/node01-node报错.png)
+  ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202008/31/205412-640445.png)
 
   - 将node.exe所在文件夹配置到PATH系统环境变量中
 
@@ -67,9 +66,9 @@ windows系统用户在Node官网下载后缀为.msi的文件到本地，双击�
 
 - 可以在任何盘符下面输入你想要输入的命令，而不需要将盘符切换到命令的所在位置。
 
-  ![](media/node01-环境变量.png)
+![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202008/31/205505-890900.png)
 
-  ![](./media/node01-path2.png)
+ ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202008/31/205517-596738.png)
 
 ### Node.js快速入门
 
@@ -79,7 +78,7 @@ windows系统用户在Node官网下载后缀为.msi的文件到本地，双击�
 
 - Node.js是由ECMAScript及Node 环境提供的一些附加API组成的，包括文件、网络、路径等等一些更加强大的 API。
 
-  ![](media/node01-组成.png)
+ ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202008/31/205528-431000.png)
 
 #### Node.js基础语法
 
@@ -130,17 +129,17 @@ console.log(global.message); // undefined
 
   - 模块化开发需要依赖第三方库文件，具有代表性有require.js和sea.js。
 
-    ![](./media/node01-jsmd.png)
+    ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202008/31/205545-947384.png)
 
 - 生活中的模块化
 
-  ![](./media/node01-md0.png)
+  ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202008/31/205602-321238.png)
 
 - 软件中的模块化
 
   一个功能就是一个模块，多个模块可以组成完整应用，抽离一个模块不会影响其他功能的运行。
 
-  ![](./media/node01-md1.png)
+ ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202008/31/205615-595822.png)
 
 - Node.js中模块化开发规范
 
@@ -148,7 +147,7 @@ console.log(global.message); // undefined
 
   模块内部可以使用exports对象进行成员导出，使用require方法导入其他模块
 
-  ![](./media/node01-md2.png)
+![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202008/31/205629-658754.png)
 
 - 模块成员导出
 
@@ -189,8 +188,7 @@ console.log(global.message); // undefined
   ```
 
 - 模块导出两种方式的联系与区别
-
-  ![](./media/node01-md3.png)
+![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202008/31/205708-859267.png)
 
   ```js
   exports.version = version;
@@ -212,7 +210,7 @@ console.log(global.message); // undefined
 
 ​	f：file 文件 ，s：system 系统，文件操作系统
 
-​	![](./media/node01-fs.png)
+![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202008/31/205724-169671.png)
 
 - fs.readFile() 读文件
 
@@ -288,7 +286,7 @@ console.log(global.message); // undefined
 
 - npmjs.com：第三方模块的存储和分发仓库
 
-![](./media/node01-npm.png)
+![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202008/31/205741-836920.png)
 
 - npm (node package manager) ： node的第三方模块管理工具
 

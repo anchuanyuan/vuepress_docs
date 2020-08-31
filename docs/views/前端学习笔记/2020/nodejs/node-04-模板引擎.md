@@ -8,15 +8,15 @@ categories:
     - NodeJs
 ---
 
-### 模板引擎
+## 模板引擎
 
 > 模板引擎是第三方模块。
 >
 > 让开发者以更加友好的方式拼接字符串，使项目代码更加清晰、更加易于维护。
 
-![](./media/day04-1.png)
+![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202008/31/214103-783944.png)
 
-#### art-template
+### art-template
 
 高性能 JavaScript 模板引擎，使用`npm install art-template`命令下载。
 
@@ -25,7 +25,7 @@ categories:
 3. 告诉模板引擎要拼接的数据和模板在哪 const html =template(‘模板路径’, 数据);
 4. 使用模板语法告诉模板引擎，模板与数据应该如何进行拼接 
 
-#### art-template代码示例
+### art-template代码示例
 
 ```js
  // 导入模板引擎模块
@@ -52,7 +52,7 @@ categories:
 
 
 
-#### 模板语法
+### 模板语法
 
 - art-template同时支持两种模板语法：标准语法和原始语法。
 - 标准语法可以让模板更容易读写，原始语法具有强大的逻辑处理能力
@@ -63,7 +63,7 @@ categories:
 
 
 
-##### 输出
+#### 输出
 
 将某项数据输出在模板中，标准语法和原始语法如下：
 
@@ -85,7 +85,7 @@ categories:
 
 
 
-##### 原文输出
+#### 原文输出
 
 如果数据中携带HTML标签，默认模板引擎不会解析标签，会将其转义后输出。
 
@@ -143,17 +143,17 @@ categories:
 
 ```
 
-##### 模板继承
+#### 模板继承
 
 使用模板继承可以将网站HTML骨架抽离到单独的文件中，其他页面模板可以继承骨架文件。
 
 
 
-![](./media/day04-2.png)
+![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202008/31/214121-988106.png)
 
 
 
-![](./media/day04-3.png)
+![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202008/31/214123-264869.png)
 
 
 
@@ -180,7 +180,7 @@ categories:
 
 ```
 
-##### 模板配置
+#### 模板配置
 
 1. 向模板中导入变量 template.defaults.imports.变量名 = 变量值;
 2. 设置模板根目录 template.defaults.root = 模板目录
@@ -194,7 +194,7 @@ categories:
 
 
 
-![](./media/day04-4.png)
+![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202008/31/214125-265992.png)
 
 1. 建立项目文件夹并生成项目描述文件
 

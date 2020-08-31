@@ -7,15 +7,15 @@ tags:
 categories:
     - NodeJs
 ---
-### 数据库
+## 数据库
 
-#### 为什么要使用数据库
+### 为什么要使用数据库
 
 - 动态网站中的数据都是存储在数据库中的
 - 数据库可以用来持久存储客户端通过表单收集的用户信息
 - 数据库软件本身可以对数据进行高效的管理
 
-#### 什么是数据库
+### 什么是数据库
 
 数据库即存储数据的仓库，可以将数据进行有序的分门别类的存储。它是独立于语言之外的软件，可以通过API去操作它。
 
@@ -23,23 +23,23 @@ categories:
 
 ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202008/31/203414-189790.png)
 
-#### MongoDB数据库安装
+### MongoDB数据库安装
 
 Node.js通常使用MongoDB作为其数据库，具有高性能，易使用，存储数据方便等特点，完全使用JavaScript语法即可操作。
 
 下载地址：https://www.mongodb.com/download-center/community
 
-#### MongoDB可视化软件
+### MongoDB可视化软件
 
 MongoDB可视化操作软件，使用图形界面操作数据库的一种方式。[下载](https://www.mongodb.com/download-center#compass)
 
 ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202008/31/203416-529517.png)
 
-#### Mongoose第三方包
+### Mongoose第三方包
 
 使用Node.js操作MongoDB数据库需要依赖Node.js第三方包mongoose，使用`npm install mongoose`命令下载
 
-#### MongoDB概念
+### MongoDB概念
 
 | 术语         | 概念   | 解释                             |
 | ---------- | ---- | ------------------------------ |
@@ -48,17 +48,17 @@ MongoDB可视化操作软件，使用图形界面操作数据库的一种方式�
 | document   | 文档   | 一条具体的数据，可以理解为JavaScript中的对象    |
 | field      | 字段   | 文档中的属性名称，可以理解为JavaScript中的对象属性 |
 
-#### 数据库操作
+### 数据库操作
 
-##### 开启mongoDB服务
+#### 开启mongoDB服务
 
 在命令行工具中运行`net start mongodb`即可开启MongoDB服务。
 
-##### 创建数据库
+#### 创建数据库
 
 在MongoDB中不需要显式创建数据库，如果正在使用的数据库不存在，MongoDB会自动创建。
 
-##### 数据库连接
+#### 数据库连接
 
 ```javascript
 // 引用mongoose包
@@ -69,7 +69,7 @@ mongoose.connect('mongodb://localhost/playground')
 	.catch(err => console.log('数据库连接失败', err));
 ```
 
-##### 创建集合
+#### 创建集合
 
 创建集合实际上就是对集合设定规则。
 
@@ -86,7 +86,7 @@ const courseSchema = new mongoose.Schema({
 const Course = mongoose.model('Course', courseSchema);
 ```
 
-##### 创建文档
+#### 创建文档
 
 创建文档实际上就是向集合中插入具体的数据。
 
@@ -120,7 +120,7 @@ Course.create({name: 'JavaScript基础', author: '黑马讲师', isPublish: true
 
 
 
-##### 查询文档
+#### 查询文档
 
 ```javascript
 Course.find({
@@ -133,7 +133,7 @@ Course.find({
 .exec((err, data) => {})
 ```
 
-##### 删除文档
+#### 删除文档
 
 ```javascript
  // 删除单个
@@ -150,7 +150,7 @@ User.deleteMany({}).then(result => console.log(result))
 Course.findByIdAndRemove(id, err => {});
 ```
 
-##### 更新文档
+#### 更新文档
 
 ```javascript
 // 更新单个
@@ -174,7 +174,7 @@ Course.findByIdAndUpdate(id, {
 }, err => {})
 ```
 
-##### 多集合联合查询（集合关联）
+#### 多集合联合查询（集合关联）
 
 通常不同集合的数据之间是有关系的，例如文章信息和用户信息存储在不同集合中，但文章是某个用户发表的，要查询文章的所有信息包括发表用户，就需要用到集合关联。 
 
@@ -195,7 +195,7 @@ Post.find()
 
 ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202008/31/203511-706887.png)
 
-##### Mongoose验证
+#### Mongoose验证
 
 在创建集合规则时，可以设置当前字段的验证规则，验证失败就则输入插入失败。
 
@@ -211,7 +211,7 @@ Post.find()
 - validate: 自定义验证器
   - default: 默认值	
 
-##### 在catch中获取错误信息
+#### 在catch中获取错误信息
 
 ```javascript
 Post.create({title:'aa', age: 60, category: 'java', author: 'bd'})
@@ -229,7 +229,7 @@ Post.create({title:'aa', age: 60, category: 'java', author: 'bd'})
 
 
 
-##### 用户列表案例
+#### 用户列表案例
 
 1. 搭建网站服务器，实现客户端与服务器端的通信
 2. 连接数据库，创建用户集合，向集合中插入文档
