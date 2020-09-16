@@ -1,3 +1,13 @@
+---
+title: day02-FormdData及模板引擎-art-template
+date: 2020-07-07
+sidebarDepth: 4
+tags:
+    - ajax
+categories:
+    - 前端学习笔记
+---
+
 ## 模板引擎
 
 #### 模板引擎概述

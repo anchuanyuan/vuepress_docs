@@ -1,3 +1,13 @@
+---
+title: day03-JSONP-解决同源限制
+date: 2020-07-08
+sidebarDepth: 4
+tags:
+    - ajax
+categories:
+    - 前端学习笔记
+---
+
 ## 同源政策
 
 #### Ajax请求限制

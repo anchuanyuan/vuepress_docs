@@ -99,7 +99,8 @@ h5
         }
     }
     let btn = document.getElementById('getWether')
-    btn.onclick = jsonp({
+    btn.onclick = function(){
+        jsonp({
         url: 'https://wis.qq.com/weather/common',
         data: {
             source: 'pc',
@@ -111,6 +112,7 @@ h5
             console.log(data);
         }
     })
+    }
     function jsonp(options) {
         // 动态创建 script 标签
         var script = document.createElement('script')
