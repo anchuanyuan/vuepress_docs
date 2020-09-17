@@ -1,3 +1,13 @@
+---
+title: Promise&接口请求调用的几种方式
+date: 2020-07-14
+sidebarDepth: 4
+tags:
+    - JS基础
+categories:
+    - 前端学习笔记
+---
+
 ### 接口调用方式
 
 - 原生ajax

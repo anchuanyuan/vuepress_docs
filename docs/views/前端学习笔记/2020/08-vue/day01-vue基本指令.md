@@ -15,7 +15,6 @@ categories:
 
 ### 使用Vue将helloworld  渲染到页面上 
 
-<img  src="./images/day01-1.png"  >
 
 ###  指令
 
