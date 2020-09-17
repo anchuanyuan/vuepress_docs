@@ -1,5 +1,5 @@
 ---
-title: day04-jQuery中的Ajax
+title: AJAX-04-jQuery中的Ajax
 date: 2020-07-09
 sidebarDepth: 4
 tags:
@@ -9,9 +9,9 @@ categories:
 ---
 ## Jquery 中的Ajax
 
-#### $.ajax()
+### $.ajax()
 
-	##### 方法的概述：
+#### 方法的概述：
 
 - ​	作用1: 发送Ajax请求。
 
@@ -30,7 +30,7 @@ categories:
 
   ```
 
-  - 作用2: 发送jsonp请求。
+- 作用2: 发送jsonp请求。
 
   ```js
   $.ajax({
@@ -46,9 +46,7 @@ categories:
 
   ```
 
-  
-
-##### serialize方法
+#### serialize方法
 
 作用：将表单中的数据自动拼接成字符串类型的参数
 
@@ -58,7 +56,7 @@ var params = $('#form').serialize();
 
 ```
 
-####  $.get
+###  $.get
 
 作用: 用于发送get请求
 
@@ -66,7 +64,7 @@ var params = $('#form').serialize();
 $.get('http://www.example.com', {name: 'zhangsan', age: 30}, function (response) {}) 
 ```
 
-#### $.post
+### $.post
 
 作用: 用于发送post请求
 
@@ -76,9 +74,9 @@ $.post('http://www.example.com', {name: 'lisi', age: 22}, function (response) {}
 
 
 
-#### Todo案例
+### Todo案例
 
- ##### 为todo数据库添加账号
+ #### 为todo数据库添加账号
 
 1. 使用mongo命令进入mongodb数据库
 2. 使用use admin命令进入到admin数据中
@@ -87,7 +85,7 @@ $.post('http://www.example.com', {name: 'lisi', age: 22}, function (response) {}
 5. 使用db.createUser({user: ‘itcast’, pwd: ‘itcast’, roles: [‘readWrite’]})创建todo数据库账号
 6. 使用exit命令退出mongodo数据库
 
-##### 展示任务列表
+#### 展示任务列表
 
 1. 准备一个放置任务列表的数组
 
@@ -119,7 +117,7 @@ $.post('http://www.example.com', {name: 'lisi', age: 22}, function (response) {}
 
    
 
-##### 添加任务
+#### 添加任务
 
 1. 为文本框绑定键盘抬起事件，在事件处理函数中判断当前用户敲击的是否是回车键
 
@@ -166,7 +164,7 @@ $.post('http://www.example.com', {name: 'lisi', age: 22}, function (response) {}
 
    
 
-##### 删除任务
+#### 删除任务
 
 1. 为删除按钮添加点击事件
 
@@ -207,7 +205,7 @@ $.post('http://www.example.com', {name: 'lisi', age: 22}, function (response) {}
 
    
 
-##### 更改任务状态
+#### 更改任务状态
 
 1. 为任务复选框添加onchange事件
 
@@ -245,7 +243,7 @@ $.post('http://www.example.com', {name: 'lisi', age: 22}, function (response) {}
    			});
    ```
 
-##### 修改任务名称
+#### 修改任务名称
 
 1. 为任务名称外层的label标签添加双击事件，同时为当前任务外层的li标签添加editing类名，开启编辑状态
 
@@ -290,20 +288,20 @@ $.post('http://www.example.com', {name: 'lisi', age: 22}, function (response) {}
    			});
    ```
 
-##### 计算未完成的任务数量
+#### 计算未完成的任务数量
 
 1. 准备一个用于存储未完成任务数量的变量
 2. 将未完成任务从任务数组中过滤出来
 3. 将过滤结果数组的长度赋值给任务数量变量
 4. 将结果更新到页面中
 
-##### 显示未完成任务
+#### 显示未完成任务
 
 1. 为active按钮添加点击事件
 2. 从任务列表数组中将未完成任务过滤出来
 3. 使用模板引擎将过滤结果显示在页面中
 
-##### 清除已完成任务
+#### 清除已完成任务
 
 1. 为clear completed按钮添加点击事件
 2. 向服务器端发送请求将数据库中的已完成任务删除掉
@@ -312,7 +310,7 @@ $.post('http://www.example.com', {name: 'lisi', age: 22}, function (response) {}
 
 
 
-#### 全局事件
+### 全局事件
 
 只要页面中有Ajax请求被发送，对应的全局事件就会被触发
 
@@ -323,7 +321,7 @@ $.post('http://www.example.com', {name: 'lisi', age: 22}, function (response) {}
 
 
 
-#### nprogress 进度条插件
+## nprogress 进度条插件
 
 ```html
 <link rel='stylesheet' href='nprogress.css'/>
@@ -350,7 +348,7 @@ RESTful API 概述
 
 ## XML基础
 
-##### XML是什么？
+### XML是什么？
 
 XML 的全称是 extensible markup language，代表可扩展标记语言，它的作用是传输和存储数据。
 
@@ -368,6 +366,6 @@ XML 的全称是 extensible markup language，代表可扩展标记语言，它�
 
 ```
 
-##### XML DOM
+### XML DOM
 
 XML DOM 即 XML 文档对象模型，是 w3c 组织定义的一套操作 XML 文档对象的API。浏览器会将 XML 文档解析成文档对象模型。

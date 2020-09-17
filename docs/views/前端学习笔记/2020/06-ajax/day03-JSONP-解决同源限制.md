@@ -1,5 +1,5 @@
 ---
-title: day03-JSONP-解决同源限制
+title: AJAX-03-JSONP-解决同源限制
 date: 2020-07-08
 sidebarDepth: 4
 tags:
@@ -10,13 +10,13 @@ categories:
 
 ## 同源政策
 
-#### Ajax请求限制
+### Ajax请求限制
 
 Ajax 只能向自己的服务器发送请求。
 
 比如现在有一个A网站、有一个B网站，A网站中的 HTML 文件只能向A网站服务器中发送 Ajax 请求，B网站中的 HTML 文件只能向 B 网站中发送 Ajax 请求，但是 A 网站是不能向 B 网站发送 Ajax请求的，同理，B 网站也不能向 A 网站发送 Ajax请求。
 
-#### 什么是同源
+### 什么是同源
 
 如果两个页面拥有相同的协议、域名和端口，那么这两个页面就属于同一个源，其中只要有一个不相同，就是不同源。
 
@@ -32,14 +32,14 @@ http://www.example.com:81/dir/other.html：不同源（端口不同）
 
 https://www.example.com/dir/page.html：不同源（协议不同）
 
-#### 同源政策的目的
+### 同源政策的目的
 
 同源政策是为了保证用户信息的安全，防止恶意的网站窃取数据。最初的同源政策是指
 A 网站在客户端设置的 Cookie，B网站是不能访问的。
 
 随着互联网的发展，同源政策也越来越严格，在不同源的情况下，其中有一项规定就是无法向非同源地址发送Ajax 请求，如果请求，浏览器就会报错。
 
-#### 使用 JSONP 解决同源限制问题
+## 使用 JSONP 解决同源限制问题
 
 jsonp 是 json with padding 的缩写，它不属于 Ajax 请求，但它可以模拟 Ajax 请求。
 
@@ -69,7 +69,7 @@ jsonp 是 json with padding 的缩写，它不属于 Ajax 请求，但它可以�
    function fn (data) { console.log(data); }
    ```
 
-#### JSONP 代码优化
+### JSONP 代码优化
 
 1. 客户端需要将函数名称传递到服务器端。
 
@@ -128,9 +128,9 @@ jsonp 是 json with padding 的缩写，它不属于 Ajax 请求，但它可以�
 
    ```
 
-#### 获取腾讯天气信息案例
+### 获取腾讯天气信息案例
 
-##### 腾讯天气接口
+#### 腾讯天气接口
 
 url：https://wis.qq.com/weather/common
 
@@ -194,7 +194,7 @@ url：https://wis.qq.com/weather/common
 
 
 
-#### CORS 跨域资源共享
+### CORS 跨域资源共享
 
 CORS：全称为 Cross-origin-resource sharing，即跨域资源共享，它允许浏览器向跨域服务器发送 Ajax 请求，克服了 Ajax 只能同源使用的限制。
 

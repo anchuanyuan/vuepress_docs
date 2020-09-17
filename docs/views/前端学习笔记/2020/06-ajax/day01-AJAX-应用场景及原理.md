@@ -1,5 +1,5 @@
 ---
-title: day01-AJAX-应用场景及原理
+title: AJAX-01-应用场景及原理
 date: 2020-07-06
 sidebarDepth: 4
 tags:
@@ -9,13 +9,13 @@ categories:
 ---
 ## Ajax 基础
 
-####  传统网站中存在的问题
+###  传统网站中存在的问题
 
 - 网速慢的情况下，页面加载时间长，用户只能等待
 - 表单提交后，如果一项内容不合格，需要重新填写所有表单内容
 - 页面跳转，重新加载页面，造成资源浪费，增加用户等待时间
 
-#### Ajax 概述
+### Ajax 概述
 
 ​	Ajax：标准读音 [ˈeɪˌdʒæks] ，中文音译：阿贾克斯
 
@@ -34,7 +34,7 @@ categories:
 
 ​	Ajax技术需要运行在网站环境中才能生效，当前课程会使用Node创建的服务器作为网站服务器。
 
-## Ajax 运行原理及实现
+### Ajax 运行原理及实现
 
 #### Ajax 运行原理
 
@@ -207,7 +207,7 @@ xhr.readyState // 获取Ajax 状态码
 xhr.open('get', 'http://www.example.com?t=' + Math.random());
 ```
 
-##  Ajax 异步编程
+###  Ajax 异步编程
 
 #### 同步异步概述
 
@@ -235,7 +235,7 @@ xhr.open('get', 'http://www.example.com?t=' + Math.random());
 
 ```
 
-## Ajax 封装
+### Ajax 封装
 
 #### 问题
 

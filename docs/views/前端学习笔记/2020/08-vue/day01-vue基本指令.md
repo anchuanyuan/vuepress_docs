@@ -8,15 +8,15 @@ categories:
     - 前端学习笔记
 ---
 
-### Vue 是什么？
+# Vue 是什么？
 
 - **Vue (读音 /vjuː/，类似于 **view**) 是一套用于构建用户界面的渐进式框架**
 - vue 的核心库只关注视图层，不仅易于上手，还便于与第三方库或既有项目整合
 
-### 使用Vue将helloworld  渲染到页面上 
+## 使用Vue将helloworld  渲染到页面上 
 
 
-###  指令
+##  指令
 
 - 本质就是自定义属性
 - Vue中指定都是以 v- 开头 
@@ -160,12 +160,12 @@ categories:
 
 
 
-### 双向数据绑定
+## 双向数据绑定
 
 - 当数据发生变化的时候，视图也就发生变化
 - 当视图发生变化的时候，数据也会跟着同步变化
 
-#### v-model
+### v-model
 
 - **v-model**是一个指令，限制在 `<input>、<select>、<textarea>、components`中使用
 
@@ -179,7 +179,7 @@ categories:
   </div>
 ```
 
-### mvvm
+## mvvm
 
 - MVC 是后端的分层开发概念； MVVM是前端视图层的概念，主要关注于 视图层分离，也就是说：MVVM把前端的视图层，分为了 三部分 Model, View , VM ViewModel
 - m   model  
@@ -233,7 +233,7 @@ categories:
     </script>
 ```
 
-###  事件修饰符
+##  事件修饰符
 
 - 在事件处理程序中调用 `event.preventDefault()` 或 `event.stopPropagation()` 是非常常见的需求。
 - Vue 不推荐我们操作DOM    为了解决这个问题，Vue.js 为 `v-on` 提供了**事件修饰符**
@@ -256,7 +256,7 @@ categories:
 使用修饰符时，顺序很重要；相应的代码会以同样的顺序产生。因此，用 v-on:click.prevent.self 会阻止所有的点击，而 v-on:click.self.prevent 只会阻止对元素自身的点击。
 ```
 
-### 按键修饰符
+## 按键修饰符
 
 - 在做项目中有时会用到键盘事件，在监听键盘事件时，我们经常需要检查详细的按键。Vue 允许为 `v-on` 在监听键盘事件时添加按键修饰符
 
@@ -293,7 +293,7 @@ categories:
 </script>
 ```
 
-### 自定义按键修饰符别名
+## 自定义按键修饰符别名
 
 - 在Vue中可以通过`config.keyCodes`自定义按键修饰符别名
 
@@ -318,7 +318,7 @@ categories:
 </script>
 ```
 
-### v-bind
+## v-bind
 
 - v-bind 指令被用来响应地更新 HTML 属性
 - v-bind:href    可以缩写为    :href;
@@ -331,7 +331,7 @@ categories:
 <img :src="imageSrc">
 ```
 
-#### 绑定对象
+### 绑定对象
 
 - 我们可以给v-bind:class 一个对象，以动态地切换class。
 - 注意：v-bind:class指令可以与普通的class特性共存
@@ -385,7 +385,7 @@ var vm= new Vue({
 </style>
 ```
 
-####  绑定class
+###  绑定class
 
 ```html
 2、  v-bind 中支持绑定一个数组    数组中classA和 classB 对应为data中的数据
@@ -421,12 +421,12 @@ var vm= new Vue({
 </style>
 ```
 
-#### 绑定对象和绑定数组 的区别
+### 绑定对象和绑定数组 的区别
 
 - 绑定对象的时候 对象的属性 即要渲染的类名 对象的属性值对应的是 data 中的数据 
 - 绑定数组的时候数组里面存的是data 中的数据 
 
-#### 绑定style
+### 绑定style
 
 ```html
  <div v-bind:style="styleObject">绑定样式对象</div>'
@@ -460,9 +460,9 @@ var vm= new Vue({
 </script>
 ```
 
-### 分支结构
+## 分支结构
 
-#### v-if 使用场景
+### v-if 使用场景
 
 - 1- 多个元素 通过条件判断展示或者隐藏某个元素。或者多个元素
 - 2- 进行两个视图之间的切换
@@ -511,16 +511,16 @@ var vm= new Vue({
 </script>
 ```
 
-#### v-show 和 v-if的区别
+### v-show 和 v-if的区别
 
 - v-show本质就是标签display设置为none，控制隐藏
   - v-show只编译一次，后面其实就是控制css，而v-if不停的销毁和创建，故v-show性能更好一点。
 - v-if是动态的向DOM树内添加或者删除DOM元素
   - v-if切换有一个局部编译/卸载的过程，切换过程中合适地销毁和重建内部的事件监听和子组件
 
-### 循环结构
+## 循环结构
 
-#### v-for
+### v-for
 
 - 用于循环的数组里面的值可以是对象，也可以是普通元素  
 
@@ -590,9 +590,9 @@ var vm= new Vue({
 
 
 
-### 案例选项卡
+## 案例选项卡
 
-#### 1、 HTML 结构
+### 1、 HTML 结构
 
 ```html
 `
@@ -615,7 +615,7 @@ var vm= new Vue({
 `
 ```
 
-#### 2、 提供的数据
+### 2、 提供的数据
 
 ```js
          list: [{
@@ -635,7 +635,7 @@ var vm= new Vue({
 
 
 
-#### 3、 把数据渲染到页面
+### 3、 把数据渲染到页面
 
 - 把tab栏 中的数替换到页面上
 
@@ -687,7 +687,7 @@ var vm= new Vue({
 
   
 
-#### 4、 给每一个tab栏添加事件,并让选中的高亮
+### 4、 给每一个tab栏添加事件,并让选中的高亮
 
 - 4.1 、让默认的第一项tab栏高亮
 

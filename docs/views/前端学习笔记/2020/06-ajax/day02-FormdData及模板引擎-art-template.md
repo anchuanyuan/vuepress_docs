@@ -1,5 +1,5 @@
 ---
-title: day02-FormdData及模板引擎-art-template
+title: AJAX-02-FormdData及模板引擎-art-template
 date: 2020-07-07
 sidebarDepth: 4
 tags:
@@ -10,7 +10,7 @@ categories:
 
 ## 模板引擎
 
-#### 模板引擎概述
+### 模板引擎概述
 
 作用：使用模板引擎提供的模板语法，可以将数据和 HTML 拼接起来。
 
@@ -55,7 +55,7 @@ https://aui.github.io/art-template/zh-cn/index.html
 
   ​
 
-## 案例
+### 案例
 
 #### 验证邮箱地址唯一性
 
@@ -341,12 +341,12 @@ https://aui.github.io/art-template/zh-cn/index.html
 
 ## FormData
 
-#### FormData 对象的作用
+### FormData 对象的作用
 
 1. 模拟HTML表单，相当于将HTML表单映射成表单对象，自动将表单对象中的数据拼接成请求参数的格式。
 2. 异步上传二进制文件
 
-#### FormData 对象的使用
+### FormData 对象的使用
 
 准备 HTML 表单
 
@@ -371,7 +371,7 @@ var formData = new FormData(form);
 xhr.send(formData);
 ```
 
-##### 注意
+### 注意
 
 1. **Formdata 对象不能用于 get 请求，因为对象需要被传递到 send 方法中，而 get 请求方式的请求参数只能放在请求地址的后面。**
 
@@ -390,7 +390,7 @@ xhr.send(formData);
 
    ​
 
-#### FormData 对象的实例方法
+### FormData 对象的实例方法
 
 1. 获取表单对象中属性的值
 
@@ -418,7 +418,7 @@ xhr.send(formData);
 
    **注意：set 方法与 append 方法的区别是，在属性名已存在的情况下，set 会覆盖已有键名的值，append会保留两个值。**
 
-#### FormData 二进制文件上传
+### FormData 二进制文件上传
 
 ```html
 <input type="file" id="file"/>
@@ -438,7 +438,7 @@ xhr.send(formData);
  }
 ```
 
-#### FormData 文件上传进度展示
+### FormData 文件上传进度展示
 
 ```javascript
  // 当用户选择文件的时候
@@ -452,7 +452,7 @@ xhr.send(formData);
  }
 ```
 
-#### FormData 文件上传图片即时预览
+### FormData 文件上传图片即时预览
 
 在我们将图片上传到服务器端以后，服务器端通常都会将图片地址做为响应数据传递到客户端，客户端可以从响应数据中获取图片地址，然后将图片再显示在页面中。
 
