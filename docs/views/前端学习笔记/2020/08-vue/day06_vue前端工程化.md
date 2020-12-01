@@ -1,4 +1,12 @@
-
+---
+title: day06-vue组件开发
+date: 2020-07-20
+sidebarDepth: 4
+tags:
+    - Vue
+categories:
+    - 前端学习笔记
+---
 # 内容简介
 1.模块化的相关规范 
 2.webpack简介
