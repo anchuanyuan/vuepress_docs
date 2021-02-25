@@ -276,13 +276,16 @@ export default new Vuex.Store({
 ```
 
 然后打开 Addition.vue 中，添加插值表达式使用 getters
-
+```
 <h3>{{$store.getters.showNum}}</h3>
+```
 或者也可以在Addition.vue中，导入mapGetters，并将之映射为计算属性
+```
 import { mapGetters } from 'vuex'
 computed:{
   ...mapGetters(['showNum'])
 }
+```
 
 # 5.vuex 案例
 ## A.初始化案例
