@@ -11,6 +11,8 @@ cd docs/.vuepress/dist
 
 # deploy to github
 git config --global init.defaultBranch master
+git config --global user.email "1162734640@qq.com"
+git config --global user.name "An"
 git init
 git add .
 git commit -m 'deploy'
