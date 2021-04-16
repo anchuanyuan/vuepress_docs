@@ -10,14 +10,12 @@ npm run build
 cd docs/.vuepress/dist
 
 # deploy to github
-
+git config --global init.defaultBranch master
 git init
 git add .
 git commit -m 'deploy'
 git remote add origin https://chuanyuan_an:acy123456@gitee.com/chuanyuan_an/vuepress_blog.git
 git push origin main -f
-
-#git push -f git@gitee.com:claa/vuepress-theme-vdoing.git master:gh-pages
 
 
 cd - # 退回开始所在目录
