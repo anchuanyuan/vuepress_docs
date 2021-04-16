@@ -1,11 +1,11 @@
 ---
-title:10分钟上手docker
+title: 10分钟上手docker
 date: 2021.04.17
 sidebarDepth: 4
 tags:
-- dokcer
-  categories:
-- 运维相关
+  - dokcer
+categories:
+  - 运维相关
 ---
 
 ## docker 简单了解及使用
