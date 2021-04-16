@@ -14,8 +14,8 @@ cd docs/.vuepress/dist
 git init
 git add .
 git commit -m 'deploy'
-git remote add origin https://[chuanyuan_an]:[acy123456]@gitee.com/chuanyuan_an/vuepress_blog.git
-git push -u origin main -f
+git remote add origin https://chuanyuan_an:acy123456@gitee.com/chuanyuan_an/vuepress_blog.git
+git push origin main -f
 
 #git push -f git@gitee.com:claa/vuepress-theme-vdoing.git master:gh-pages
 
