@@ -5,7 +5,7 @@
     "scripts": {
         "dev": "vuepress dev docs",
         "build": "vuepress build docs",
-        "deploy": "bash deploy.sh"
+        "deploy": "bash bash.sh"
     },
     "devDependencies": {
         "prettier": "^2.2.1",
