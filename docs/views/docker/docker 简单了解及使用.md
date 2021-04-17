@@ -8,11 +8,12 @@ categories:
   - 运维相关
 ---
 
+
 ## docker 简单了解及使用
 
 基本内容
 
-![image-20210415001518190](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/images/202104/15/001519-39793.png)
+![1618627238188](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202104/17/104039-279438.png)
 
 ### 下载镜像
 
@@ -36,7 +37,7 @@ docker run -d -p 90:80 nginx
 
 运行后的结果
 
-![image-20210414222225633](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/images/202104/14/225917-735386.png)
+![1618627255805](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202104/17/104056-27352.png)
 
 ### 查看正在运行的容器
 
@@ -53,7 +54,7 @@ docker exec -it <容器Id(前几位即可,只要能区分就行)> bash
 
 ```
 
-![image-20210414222409454](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/images/202104/14/225927-670128.png)
+![1618627267612](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202104/17/104108-122009.png)
 
 
 
@@ -75,7 +76,7 @@ docker commit <容器id> <提交的名称>
 
 示例: 新建Dockerfile 文件 热熔如下
 
-![image-20210414232439744](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/images/202104/14/232440-233377.png)
+![1618627283770](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202104/17/104124-973152.png)
 
 基础构建镜像是nginx  然后复制当前文件到指定的目录下面
 
@@ -88,7 +89,7 @@ docker build -t <指定的镜像名称> .
 
 运行这个镜像 
 
-![image-20210414234545449](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/images/202104/14/234546-859244.png)
+![1618627293101](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202104/17/104133-991970.png)
 
 ### 删除docker 镜像
 
@@ -117,4 +118,3 @@ docker load < xxx.tar(要导入的镜像文件)
 --name 指定容器运行时的名字
 -v 映射路径
 ```
-
