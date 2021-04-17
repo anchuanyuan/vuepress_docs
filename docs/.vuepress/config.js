@@ -110,24 +110,24 @@ module.exports = {
                         name: '功成名就',
                         artist: '收听列表',
                         url:
-                            'http://qcw9ugqli.bkt.clouddn.com/%E5%8A%9F%E6%88%90%E5%90%8D%E5%B0%B1-%E5%BE%A1%E9%B9%BF%E7%A5%9E%E8%B0%B7%2C%E6%BC%86%E6%9F%9A.mp3',
+                        'http://qrp1y47uy.hn-bkt.clouddn.com/%E5%BE%A1%E9%B9%BF%E7%A5%9E%E8%B0%B7%E3%80%81%E6%BC%86%E6%9F%9A%20-%20%E5%8A%9F%E6%88%90%E5%90%8D%E5%B0%B1.mp3',
                         cover:
                             'http://p1.music.126.net/oDiEku7wY0a3BWRXFA7Gqg==/109951164530191765.jpg?param=300x300'
                     },
                     ,
                     {
-                        name: 'lemon',
+                        name: '大城小爱',
                         artist: '收听列表',
                         url:
-                            'https://sharefs.yun.kugou.com/202006202219/d826daa894f8df2c3a8216e4c4c50425/G128/M09/10/05/IIcBAFqAzN-AIIU2AD5mqrBi2UA864.mp3',
+                            'http://qrp1y47uy.hn-bkt.clouddn.com/%E6%9D%8E%E8%8D%A3%E6%B5%A9%20-%20%E5%A4%A7%E5%9F%8E%E5%B0%8F%E7%88%B1%20%28Live%29.lrc',
                         cover:
                             'https://y.gtimg.cn/music/photo_new/T002R300x300M000002OR8wD3Lo3E5_1.jpg?max_age=2592000?param=300x300'
                     },
                     {
-                        name: '赤伶',
+                        name: '交换余生',
                         artist: ' 收听列表',
                         url:
-                            'http://m10.music.126.net/20200621000024/b11d34c59085ecf3051442f0ec696c15/ymusic/510b/5659/5253/fa20f19cd2a3a06597c6e9cfba8527a4.mp3',
+                            'http://qrp1y47uy.hn-bkt.clouddn.com/%E6%9E%97%E4%BF%8A%E6%9D%B0%20-%20%E4%BA%A4%E6%8D%A2%E4%BD%99%E7%94%9F.mp3',
                         cover:
                             'http://p1.music.126.net/HBzkUXwTlbUsH6OJvdWCVg==/109951164927567872.jpg?param=300x300'
                     }
