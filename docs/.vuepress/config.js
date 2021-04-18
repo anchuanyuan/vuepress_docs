@@ -110,7 +110,7 @@ module.exports = {
                         name: '功成名就',
                         artist: '收听列表',
                         url:
-                        'https://yuantest.cn1.utools.club/御鹿神谷、漆柚 - 功成名就.mp3',
+                        'https://gitee.com/chuanyuan_an/tuchuang/raw/master/music/御鹿神谷、漆柚 - 功成名就.mp3',
                         cover:
                             'http://p1.music.126.net/oDiEku7wY0a3BWRXFA7Gqg==/109951164530191765.jpg?param=300x300'
                     },
@@ -119,7 +119,7 @@ module.exports = {
                         name: '大城小爱',
                         artist: '收听列表',
                         url:
-                            'https://yuantest.cn1.utools.club/李荣浩 - 大城小爱 (Live).mp3',
+                            'https://gitee.com/chuanyuan_an/tuchuang/raw/master/music/李荣浩 - 大城小爱 (Live).mp3',
                         cover:
                             'https://y.gtimg.cn/music/photo_new/T002R300x300M000002OR8wD3Lo3E5_1.jpg?max_age=2592000?param=300x300'
                     },
@@ -127,7 +127,7 @@ module.exports = {
                         name: '交换余生',
                         artist: ' 收听列表',
                         url:
-                            'https://yuantest.cn1.utools.club/林俊杰 - 交换余生.mp3',
+                            'https://gitee.com/chuanyuan_an/tuchuang/raw/master/music/林俊杰 - 交换余生.mp3',
                         cover:
                             'http://p1.music.126.net/HBzkUXwTlbUsH6OJvdWCVg==/109951164927567872.jpg?param=300x300'
                     }
