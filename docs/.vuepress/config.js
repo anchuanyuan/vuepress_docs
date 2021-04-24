@@ -39,13 +39,13 @@ module.exports = {
                 link: '/about'
             },
             {
-                text: 'Contact',
+                text: 'email',
                 icon: 'reco-message',
                 items: [
                     {
-                        text: '1162734640',
-                        // link: '1162734640',
-                        icon: 'reco-qq'
+                        text: 'anchuanyuan1995@gmail',
+                        link: '/',
+                        icon: 'reco-mail'
                     }
                 ]
             }
