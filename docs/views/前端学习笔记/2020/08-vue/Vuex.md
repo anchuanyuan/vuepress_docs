@@ -9,6 +9,7 @@ categories:
 ---
 
 # 今日目标
+
 1.Vuex 概述
 
 2.Vuex 基本使用
@@ -16,6 +17,7 @@ categories:
 3.使用 Vuex 完成 todo 案例
 
 # 1.Vuex 概述
+
 Vuex 是实现组件全局状态（数据）管理的一种机制，可以方便的实现组件之间的数据共享
 
 使用 Vuex 管理数据的好处：
@@ -24,6 +26,7 @@ B.能够高效的实现组件之间的数据共享，提高开发效率
 C.存储在 vuex 中的数据是响应式的，当数据发生改变时，页面中的数据也会同步更新
 
 # 2.Vuex 的基本使用
+
 创建带有 vuex 的 vue 项目，打开终端，输入命令：vue ui
 当项目仪表盘打开之后，我们点击页面左上角的项目管理下拉列表，再点击 Vue 项目管理器
 点击创建项目，如下图所示
@@ -38,9 +41,10 @@ C.存储在 vuex 中的数据是响应式的，当数据发生改变时，页面
 ![](images/创建vuex项目05.png)
 
 # 3.使用 Vuex 完成计数器案例
+
 打开刚刚创建的 vuex 项目，找到 src 目录中的 App.vue 组件，将代码重新编写如下：
 
-```
+```js
 <template>
   <div>
     <my-addition></my-addition>
@@ -72,7 +76,7 @@ export default {
 
 在 components 文件夹中创建 Addition.vue 组件，代码如下：
 
-```
+```js
 <template>
     <div>
         <h3>当前最新的count值为：</h3>
@@ -94,7 +98,7 @@ export default {
 
 在 components 文件夹中创建 Subtraction.vue 组件，代码如下：
 
-```
+```js
 <template>
     <div>
         <h3>当前最新的count值为：</h3>
@@ -116,15 +120,17 @@ export default {
 
 最后在项目根目录(与 src 平级)中创建 .prettierrc 文件，编写代码如下：
 
-```
+```json
 {
-    "semi":false,
-    "singleQuote":true
+  "semi": false,
+  "singleQuote": true
 }
 ```
 
 # 4.Vuex 中的核心特性
+
 ## A.State
+
 State 提供唯一的公共数据源，所有共享的数据都要统一放到 Store 中的 State 中存储
 例如，打开项目中的 store.js 文件，在 State 对象中可以添加我们要共享的数据，如：count:0
 
@@ -134,11 +140,12 @@ State 提供唯一的公共数据源，所有共享的数据都要统一放到 S
     然后数据映射为计算属性： computed:{ ...mapState(['全局数据名称']) }
 
 ## B.Mutation
+
 Mutation 用于修改变更$store 中的数据
 使用方式：
 打开 store.js 文件，在 mutations 中添加代码如下
 
-```
+```js
 mutations: {
     add(state,step){
       //第一个形参永远都是state也就是$state对象
@@ -150,7 +157,7 @@ mutations: {
 
 然后在 Addition.vue 中给按钮添加事件代码如下：
 
-```
+```js
 <button @click="Add">+1</button>
 
 methods:{
@@ -171,36 +178,36 @@ methods:{
 }
 如下：
 
-```
-import { mapState,mapMutations } from 'vuex'
+```js
+import { mapState, mapMutations } from 'vuex'
 
 export default {
   data() {
     return {}
   },
-  methods:{
-      //获得mapMutations映射的sub函数
-      ...mapMutations(['sub']),
-      //当点击按钮时触发Sub函数
-      Sub(){
-          //调用sub函数完成对数据的操作
-          this.sub(10);
-      }
+  methods: {
+    //获得mapMutations映射的sub函数
+    ...mapMutations(['sub']),
+    //当点击按钮时触发Sub函数
+    Sub() {
+      //调用sub函数完成对数据的操作
+      this.sub(10)
+    }
   },
-  computed:{
-      ...mapState(['count'])
-
+  computed: {
+    ...mapState(['count'])
   }
 }
 ```
 
 ## C.Action
+
 在 mutations 中不能编写异步的代码，会导致 vue 调试器的显示出错。
 在 vuex 中我们可以使用 Action 来执行异步操作。
 操作步骤如下：
 打开 store.js 文件，修改 Action，如下：
 
-```
+```js
 actions: {
   addAsync(context,step){
     setTimeout(()=>{
@@ -212,7 +219,7 @@ actions: {
 
 然后在 Addition.vue 中给按钮添加事件代码如下：
 
-```
+```js
 <button @click="AddAsync">...+1</button>
 
 methods:{
@@ -230,40 +237,40 @@ methods:{
 }
 如下：
 
-```
-import { mapState,mapMutations,mapActions } from 'vuex'
+```js
+import { mapState, mapMutations, mapActions } from 'vuex'
 
 export default {
   data() {
     return {}
   },
-  methods:{
-      //获得mapMutations映射的sub函数
-      ...mapMutations(['sub']),
-      //当点击按钮时触发Sub函数
-      Sub(){
-          //调用sub函数完成对数据的操作
-          this.sub(10);
-      },
-      //获得mapActions映射的addAsync函数
-      ...mapActions(['subAsync']),
-      asyncSub(){
-          this.subAsync(5);
-      }
+  methods: {
+    //获得mapMutations映射的sub函数
+    ...mapMutations(['sub']),
+    //当点击按钮时触发Sub函数
+    Sub() {
+      //调用sub函数完成对数据的操作
+      this.sub(10)
+    },
+    //获得mapActions映射的addAsync函数
+    ...mapActions(['subAsync']),
+    asyncSub() {
+      this.subAsync(5)
+    }
   },
-  computed:{
-      ...mapState(['count'])
-
+  computed: {
+    ...mapState(['count'])
   }
 }
 ```
 
 ## D.Getter
+
 Getter 用于对 Store 中的数据进行加工处理形成新的数据
 它只会包装 Store 中保存的数据，并不会修改 Store 中保存的数据，当 Store 中的数据发生变化时，Getter 生成的内容也会随之变化
 打开 store.js 文件，添加 getters，如下：
 
-```
+```js
 export default new Vuex.Store({
   .......
   getters:{
@@ -276,11 +283,14 @@ export default new Vuex.Store({
 ```
 
 然后打开 Addition.vue 中，添加插值表达式使用 getters
-```
+
+```js
 <h3>{{$store.getters.showNum}}</h3>
 ```
-或者也可以在Addition.vue中，导入mapGetters，并将之映射为计算属性
-```
+
+或者也可以在 Addition.vue 中，导入 mapGetters，并将之映射为计算属性
+
+```js
 import { mapGetters } from 'vuex'
 computed:{
   ...mapGetters(['showNum'])
@@ -288,43 +298,45 @@ computed:{
 ```
 
 # 5.vuex 案例
+
 ## A.初始化案例
+
 首先使用 vue ui 初始化一个使用 vuex 的案例
 然后打开 public 文件夹，创建一个 list.json 文件，文件代码如下：
 
-```
+```json
 [
-    {
-        "id": 0,
-        "info": "Racing car sprays burning fuel into crowd.",
-        "done": false
-    },
-    {
-        "id": 1,
-        "info": "Japanese princess to wed commoner.",
-        "done": false
-    },
-    {
-        "id": 2,
-        "info": "Australian walks 100km after outback crash.",
-        "done": false
-    },
-    {
-        "id": 3,
-        "info": "Man charged over missing wedding girl.",
-        "done": false
-    },
-    {
-        "id": 4,
-        "info": "Los Angeles battles huge wildfires.",
-        "done": false
-    }
+  {
+    "id": 0,
+    "info": "Racing car sprays burning fuel into crowd.",
+    "done": false
+  },
+  {
+    "id": 1,
+    "info": "Japanese princess to wed commoner.",
+    "done": false
+  },
+  {
+    "id": 2,
+    "info": "Australian walks 100km after outback crash.",
+    "done": false
+  },
+  {
+    "id": 3,
+    "info": "Man charged over missing wedding girl.",
+    "done": false
+  },
+  {
+    "id": 4,
+    "info": "Los Angeles battles huge wildfires.",
+    "done": false
+  }
 ]
 ```
 
 再接着，打开 main.js,添加 store.js 的引入，如下：
 
-```
+```js
 import Vue from 'vue'
 import App from './App.vue'
 import store from './store.js'
@@ -346,7 +358,7 @@ new Vue({
 
 再接着打开 store.js，添加 axios 请求 json 文件获取数据的代码，如下：
 
-```
+```js
 import Vue from 'vue'
 import Vuex from 'vuex'
 import axios from 'axios'
@@ -364,14 +376,14 @@ export default new Vuex.Store({
     initList(state, list) {
       state.list = list
     },
-    setInputValue(state,value){
+    setInputValue(state, value) {
       state.inputValue = value
     }
   },
   actions: {
     getList(context) {
       axios.get('/list.json').then(({ data }) => {
-        console.log(data);
+        console.log(data)
         context.commit('initList', data)
       })
     }
@@ -381,10 +393,15 @@ export default new Vuex.Store({
 
 最后，代开 App.vue 文件，将 store 中的数据获取并展示：
 
-```
+```html
 <template>
   <div id="app">
-    <a-input placeholder="请输入任务" class="my_ipt" :value="inputValue" @change="handleInputChange" />
+    <a-input
+      placeholder="请输入任务"
+      class="my_ipt"
+      :value="inputValue"
+      @change="handleInputChange"
+    />
     <a-button type="primary">添加事项</a-button>
 
     <a-list bordered :dataSource="list" class="dt_list">
@@ -413,78 +430,70 @@ export default new Vuex.Store({
 </template>
 
 <script>
-import { mapState } from 'vuex'
+  import { mapState } from 'vuex'
 
-export default {
-  name: 'app',
-  data() {
-    return {
-      // list:[]
+  export default {
+    name: 'app',
+    data() {
+      return {
+        // list:[]
+      }
+    },
+    created() {
+      // console.log(this.$store);
+      this.$store.dispatch('getList')
+    },
+    methods: {
+      handleInputChange(e) {
+        // console.log(e.target.value)
+        this.$store.commit('setInputValue', e.target.value)
+      }
+    },
+    computed: {
+      ...mapState(['list', 'inputValue'])
     }
-  },
-  created(){
-    // console.log(this.$store);
-    this.$store.dispatch('getList')
-  },
-  methods:{
-    handleInputChange(e){
-      // console.log(e.target.value)
-      this.$store.commit('setInputValue',e.target.value)
-    }
-  },
-  computed:{
-    ...mapState(['list','inputValue'])
   }
-}
 </script>
 
 <style scoped>
-#app {
-  padding: 10px;
-}
+  #app {
+    padding: 10px;
+  }
 
-.my_ipt {
-  width: 500px;
-  margin-right: 10px;
-}
+  .my_ipt {
+    width: 500px;
+    margin-right: 10px;
+  }
 
-.dt_list {
-  width: 500px;
-  margin-top: 10px;
-}
+  .dt_list {
+    width: 500px;
+    margin-top: 10px;
+  }
 
-.footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 </style>
 ```
 
 ## B.完成添加事项
+
 首先，打开 App.vue 文件，给“添加事项”按钮绑定点击事件，编写处理函数
 
-```
+```html
 //绑定事件
 <a-button type="primary" @click="addItemToList">添加事项</a-button>
 
-//编写事件处理函数
-methods:{
-    ......
-    addItemToList(){
-      //向列表中新增事项
-      if(this.inputValue.trim().length <= 0){
-        return this.$message.warning('文本框内容不能为空')
-      }
-
-      this.$store.commit('addItem')
-    }
-  }
+//编写事件处理函数 methods:{ ...... addItemToList(){ //向列表中新增事项
+if(this.inputValue.trim().length <= 0){ return
+this.$message.warning('文本框内容不能为空') } this.$store.commit('addItem') } }
 ```
 
 然后打开 store.js 编写 addItem
 
-```
+```js
 export default new Vuex.Store({
   state: {
     //所有任务列表
@@ -516,9 +525,10 @@ export default new Vuex.Store({
 ```
 
 ## C.完成删除事项
+
 首先，打开 App.vue 文件，给“删除”按钮绑定点击事件，编写处理函数
 
-```
+```js
 //绑定事件
 <a slot="actions" @click="removeItemById(item.id)">删除</a>
 
@@ -534,7 +544,7 @@ methods:{
 
 然后打开 store.js 编写 addItem
 
-```
+```js
 export default new Vuex.Store({
   ......
   mutations: {
@@ -551,9 +561,10 @@ export default new Vuex.Store({
 ```
 
 ## D.完成选中状态的改变
+
 首先，打开 App.vue 文件，给“复选”按钮绑定点击事件，编写处理函数
 
-```
+```js
 //绑定事件
 <a-checkbox :checked="item.done" @change="cbStateChanged(item.id,$event)">{{item.info}}</a-checkbox>
 
@@ -575,7 +586,7 @@ methods:{
 
 然后打开 store.js 编写 addItem
 
-```
+```js
 export default new Vuex.Store({
   ......
   mutations: {
@@ -591,9 +602,10 @@ export default new Vuex.Store({
 ```
 
 ## E.剩余项统计
+
 打开 store.js，添加 getters 完成剩余项统计
 
-```
+```js
 getters:{
   unDoneLength(state){
     const temp = state.list.filter( x => x.done === false )
@@ -605,7 +617,7 @@ getters:{
 
 打开 App.vue，使用 getters 展示剩余项
 
-```
+```js
 //使用映射好的计算属性展示剩余项
 <!-- 未完成的任务个数 -->
 <span>{{unDoneLength}}条剩余</span>
@@ -620,9 +632,10 @@ computed:{
 ```
 
 ## F.清除完成事项
+
 首先，打开 App.vue 文件，给“清除已完成”按钮绑定点击事件，编写处理函数
 
-```
+```js
 <!-- 把已经完成的任务清空 -->
 <a @click="clean">清除已完成</a>
 
@@ -638,7 +651,7 @@ methods:{
 
 然后打开 store.js 编写 addItem
 
-```
+```js
 export default new Vuex.Store({
   ......
   mutations: {
@@ -652,10 +665,11 @@ export default new Vuex.Store({
 ```
 
 ## G.点击选项卡切换事项
+
 打开 App.vue，给“全部”，“未完成”，“已完成”三个选项卡绑定点击事件，编写处理函数
 并将列表数据来源更改为一个 getters。
 
-```
+```js
 <a-list bordered :dataSource="infoList" class="dt_list">
   ......
   <!-- 操作按钮 -->
@@ -683,7 +697,7 @@ computed:{
 
 打开 store.js，添加 getters，mutations，state
 
-```
+```js
 export default new Vuex.Store({
   state: {
     ......
