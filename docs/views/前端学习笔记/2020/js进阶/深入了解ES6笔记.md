@@ -1,5 +1,5 @@
 ---
-title: JS进阶01-深入理解ES2016
+title: JS进阶01-深入理解ES2015
 date: 2020-09-20
 sidebarDepth: 4
 tags:

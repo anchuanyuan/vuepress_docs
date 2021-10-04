@@ -1,5 +1,5 @@
 ---
-title: Vuex基本使用
+title: Day08-Vuex基本使用
 date: 2020-08-20
 sidebarDepth: 4
 tags:
