@@ -1,6 +1,6 @@
 ---
 title:webpack从入门到进阶
-date: 2021-10-5
+date: 2021-10-05
 sidebarDepth: 4
 tags:
   - webpack进阶
