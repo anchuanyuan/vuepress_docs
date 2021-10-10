@@ -1,5 +1,5 @@
 ---
-  title: springboot 框架发展史
+  title: springboot 框架-01
   date: 2021.10.10
   sidebarDepth: 4
   tags:   
@@ -8,7 +8,7 @@
   	- java
 ---
 
-## springboot 框架发展史
+## springboot 框架发展史01
 
 ### 2.1.Spring1.x时代
 
@@ -320,6 +320,189 @@ public @interface Configuration {
 @Target(ElementType.TYPE)
 @configuration
 ```
+
+## 4.Spring MVC零配置创建与部署
+
+基于Spring Mvc5.X使用Maven搭建SpringMvcWeb项目，通过Spring提供的注解与相关配置来对项目
+进行创建与部署。
+
+### 4.1.创建Spring MVC Web工程
+
+创建Maven的web项目
+
+### 4.2.pom.xml添加坐标相关配置
+
+```xml
+<!--spring web-->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-web</artifactId>
+    <version>5.2.4.RELEASE</version>
+</dependency>
+<!--spring mvc-->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-webmvc</artifactId>
+    <version>5.2.4.RELEASE</version>
+</dependency>
+< - - web servlet -- >
+<dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>javax.servlet-api</artifactId>
+    <version>3.0.1</version>
+</dependency>
+<build>
+    <finalName>springmvc</finalName>
+    <plugins>
+        <plugin>
+        <!--指定Maven编译的JDK版本工编码-->
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>2.3.2</version>
+            <configuration>
+                <source>1.8</source>
+                <target>1.8</target>
+                <encoding>utf-8</encoding>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
+```
+
+### 4.3.添加源代码
+
+```java
+@controller
+public class Hellocontroller {
+    
+    @RequestMapping("/index")
+    public string index(){
+        return"index";
+    }
+}
+
+```
+
+### 4.4.添加视图
+
+在WEB-INF/views目录下创建index.jsp(这里以jsp为模板）
+
+```html
+<htm]>
+    <body>
+        <h2>
+            hello mvc
+        </h2>
+    </body>
+</html>
+```
+
+### 4.5.SpringMVC配置类添加
+
+Spring Mvc配置信息MvcConfig文件添加，作为Mvc框架环境，原来是通过xml来进行配置（视图解析
+器、Json转换器、文件上传解析器等）,这里基于注解通过继承WebMvcConfigurerAdapter类并重写相关方法来
+进行配置（注意通过@EnableWebMvc注解来启动MVC环境）。
+
+```java
+/**
+MVC基本配置
+*/
+//配置类
+@configuration
+//在aconfiguration注解的配置类中添加，用于为该应用添加SpringMVC的功能
+@EnablewebMvc
+//扫描包范围
+@ComponentScan("com.xxxx.springboot")
+public class Mvcconfig{
+    /**
+    *配置JSP视图解析器
+    * @return
+    */
+    @Bean//将方法返回的结果交给IOC容器维护
+    public InternairResourceViewResolver viewResolver(){
+        //获取视图解析器
+        InternalResourceViewResolver viewResolver=new InternalResourceViewResolver();
+        //设置前缀
+        viewResolver.setprefix("/WEB-INF/views/");
+        //设置后缀
+        viewResolver.setsuffix(".jsp");
+        //返回解析器对象（交给IOC容器进行维护）
+        return viewResolver;
+    }
+}
+```
+
+4.5.SpringMVC配置类添加
+Spring Mvc配置信息MvcConfig文件添加，作为Mvc框架环境，原来是通过xml来进行配置（视图解析
+器、Json转换器、文件上传解析器等）,这里基于注解通过继承WebMvcConfigurerAdapter类并重写相关方法来
+进行配置（注意通过@EnableWebMvc注解来启动MVC环境）。
+
+MvcConfig类定义好了，那么问题来了，怎么加载MvcConfig类呢，原来在构建Mvc应用时是通过容器启动
+应用时加载web.xml文件实现配置文件加载，现在的环境web.xml文件不存在，此时基于注解方式构建的Mvc
+应用，定义Weblnitializer实现WebApplicationlnitializer接口（该接口用来配置Servlet3.0+配置的接口，用于
+替代web.xml配置）,当servlet容器启动Mvc应用时会通过SpringServletContainerlnitializer接口进行加载，从
+而加载Mvc应用信息配置。实现该接口onStartup方法，加载应用信息配置。
+
+### 4.6.入口文件代码添加
+
+```java
+/**
+*实现WebApplicationinitializer接口的类都可以在web应用程序启动时被加载
+*/
+public class webInitializer implements webApplicationInitializer {
+    @override
+    public void onstartup(Servletcontext servletcontext)throws servletexception{
+        //基于Java的配置类加载spring的应用上下文
+        AnnotationconfigwebApplicationcontext ctx=new
+        AnnotationConfigwebApplicationcontext();
+        //注册MVC配置信息
+        ctx.register(Mvcconfig.class);
+        //设置 Servletcontext 上下文信息
+        ctx.setservletcontext(servletcontext);
+        //配置转发器 Dispatcher
+        ServletRegistration.Dynamic servlet =
+        servletcontext.addservlet("dispatcher",new Dispatcherservlet(ctx));
+        //设置映射路径
+        servlet.addMapping("/");
+        //启动时即实例化 Bean
+        servlet.setLoadonstartup(1);
+    }
+}
+
+```
+
+### 4.7.部署与测试
+
+通过Tomcat启动项目并访问
+
+![1633852237420](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202110/10/155038-914081.png)
+
+此时地址访问成功。
+当项目访问成功后，那么问题来了，如果项目中存在静态资源文件，Handler放行处理该如何配置，定义的
+拦截器怎么应用，此时关注WebMvcConfigurationSupport父类方法，重写相关方法即可。
+
+```java
+//静态资源handler不进行处理直接响应到客户端
+@override
+public void configureDefaultservletHandling(DefaultservletHandlerconfigurer configurer)
+{
+    configurer.enable();
+}
+//配置拦截器
+@Bean
+public LoginInterceptor loginInterceptor(){
+    return new LoginInterceptor();
+}
+//添加拦截器到mvc环境
+@override
+public void addInterceptors(InterceptorRegistry registry){
+    registry.addInterceptor(loginInterceptor();
+}
+```
+
+代码编写(==>p8)
+
+
 
 ## 5.springboot概念与特点
 
@@ -690,3 +873,166 @@ public class Indexcontroller {
 
 
 ![1630825857806](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202109/05/151058-625416.png)
+
+代码编写 =>(p17)
+
+### 7.2.Thymeleaf 视图集成
+
+SpringBoot支持多种视图技术集成，并且SpringBoot官网推荐使用Thymeleaf作为前端视图页面，这里实
+现Thymeleaf视图集成，借助入门项目引入Thymeleaf环境配置。
+
+- starter坐标引入
+
+  ```xml
+  <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-thymeleaf</artifactId>
+  </dependency>
+  ```
+
+- 添加Thymeleaf配置信息
+  Thymeleaf默认默认视图路径文resources/templates目录（由自动化配置类Thymeleaf Properties 类
+  定）,该目录可以进行在application.yml中进行修改。
+
+
+
+- 环境选择配置
+
+```yaml
+spring :
+    thymeleaf:
+        prefix:classpath:/html/
+        ## 关闭thymeleaf页面缓存
+        cache:false
+```
+
+
+- 编写IndexController控制器转发视图
+
+```java
+@controller
+public class Indexcontroller {
+    
+    @RequestMapping("index")
+    public string index(Model model){
+    //设置请求域的值
+    model.addAttribute ( " msg " , " Hello SpringBoot " ) ;
+    return"index";
+}
+```
+
+- html目录下添加index.html视图
+
+```html
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Thymeleaf视图</title>
+    </head>
+    <body>
+        <!--获取请求域的值-->
+        <h2 th:text="${msg}"></h2>
+    </body>
+</html>
+```
+
+## 8.SpringBoot静态资源访问
+
+从入门项目中可以看到：对于Spring Mvc请求拦截规则为'/,Spring Boot默认静态资源路径如下：
+
+![1633854424125](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202110/10/162704-644981.png)
+
+即：我们可以在resources资源目录下存放web应用静态资源文件。
+
+### 8.1.默认静态资源路径
+
+在resources目录下创建static或者public目录，存放images、js、css等静态资源文件
+
+![1633854540772](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202110/10/162901-271362.png)
+
+![1633854714018](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202110/10/163155-488621.png)
+
+### 8.2.自定义静态资源路径
+
+在spring.resources.static-locations后面追加一个配置classpath:/os/
+
+```yml
+spring:
+#修改默认的静态寻址资源目录多个路径之间用逗号隔开
+	resources :
+		static-locations: classpath:/public/,classpath:/static/,classpath:/os/
+```
+
+
+
+## 9.SpringBoot应用打包与部署
+
+当项目开发完毕进行部署上线时，需要对项目进行打包操作，入门中构建的项目属于普通应用，由于
+SpringBoot内嵌Tomcat容器，所有打包后的jar包默认可以自行运行。
+
+### 9.1.Jar包部署
+
+#### 9.1.1.配置打包命令
+
+idea下配置clean compile package-Dmaven.test.skip=true执行打包命令，target目录得到待部署
+的项目文件。
+
+![1633854962597](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202110/10/163602-281225.png)
+
+![1633854989073](C:\Users\AN\AppData\Roaming\Typora\typora-user-images\1633854989073.png)
+
+#### 9..1.2. 部署并访问
+
+打开本地dos窗口，执行java-jar命令部署已打好的jar包文件。
+命令如下：java-jar jar包所在目录
+
+![1633855076348](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202110/10/163757-142620.png)
+
+### 9.2.war 包部署
+
+War包形式部署Web项目在生产环境中是比较常见的部署方式，也是目前大多数web应用部署的方案，这
+里对于Spring Boot Web项目进行打包部署步骤如下
+
+#### 9.2.1.pom.xml修改
+
+- 应用类型修改
+  由于入门项目构建的项目默认为jar应用，所以这里打war需要作如下修改
+
+![1633855375534](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202110/10/164255-607110.png)
+
+- 忽略内嵌Tomcat
+  构建SpringBoot应用时，引入的spring-boot-starter-web默认引入Tomcat容器，这里忽略掉内容Tomcat
+
+```xml
+<dependency>
+    <artifactId>spring-boot-starter-tomcat</artifactId>
+    <scope>provided</scope)I
+    </dependency>
+<build>
+    <!--配置生成的war文件名-->
+    <finalName>springboot</finalName>
+    <plugins>
+        <p]ugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+        </plugin>
+    </plugins>
+</build>
+```
+
+#### 9.2.2  Starter修改
+
+![1633855918315](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202110/10/165158-52700.png)
+
+#### 9.2.3  Starter修改
+
+![1633855945722](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202110/10/165226-462230.png)
+
+#### 9.2.4  部署并访问
+
+![1633856052367](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202110/10/165413-347619.png)
+
+## 10.总结
+
+介绍了Spring框架的发展史，然后引入SpringBoot框架，使用SpringBoot框架的最终目标是简化原生的Spring应用开发带来的繁琐配置，SpringBoot引入的全新的Starter坐标，简化了原有坐标的引入方式，借助SpringBoot的自动化配置让开发者面更加专注业务本身的开发，而不是花费大量的时间来解决配置的问题，同时SpringBoot还提供了便捷的环境切换操作，做到不同环境方便快捷的切换，在开发web项目中遇到的视图整合与静态文件的访问操作，更多要归功于SpringBoot本身Starter坐标与自动化配置功能最后给大家讲了SpringBoot打包与部署问题，相比较原有的Maven项目打包与部署更加简单。
