@@ -551,7 +551,7 @@ url-loader封装了file-loader, 所以使用url-loader时需要安装file-loader
               to: 'assets'
             }
           ]),
-          new webpack.BannerPlugin('黑马程序员牛逼!')
+          new webpack.BannerPlugin('永不秃头!')
         ],
       ```
 
@@ -726,7 +726,7 @@ const app = express()
 // app.use(cors())
 app.get('/api/getUserInfo', (req, res) => {
   res.send({
-    name: '黑马儿',
+    name: '张三',
     age: 13
   })
 });
