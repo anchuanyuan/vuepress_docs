@@ -12,6 +12,49 @@ categories:
 
 # Vue前提知识-es6-node-babel-webpack
 
+# 模块化简介
+
+历史上，JavaScript 一直没有模块（module）体系，无法将一个大程序拆分成互相依赖的小文件，再用简单的方法拼装起来。其他语言都有这项功能，比如 Ruby 的`require`、Python 的`import`，甚至就连 CSS 都有`@import`，但是 JavaScript 任何这方面的支持都没有，这对开发大型的、复杂的项目形成了巨大障碍。
+
+在 ES6 之前，社区制定了一些模块加载方案，最主要的有 CommonJS 和 AMD 两种。前者用于服务器，后者用于浏览器。ES6 在语言标准的层面上，实现了模块功能，而且实现得相当简单，完全可以取代 CommonJS 和 AMD 规范，成为浏览器和服务器通用的模块解决方案。
+
+[CommonJS规范](http://javascript.ruanyifeng.com/nodejs/module.html)
+
+## Node 应用由模块组成，采用 CommonJS 模块规范。
+
+每个文件就是一个模块，有自己的作用域。在一个文件里面定义的变量、函数、类，都是私有的，对其他文件不可见。
+
+
+
+## module对象
+
+ Node内部提供一个`Module`构建函数。所有模块都是`Module`的实例。 
+
+每个模块内部，都有一个`module`对象，代表当前模块。它有以下属性。
+
+- `module.id` 模块的识别符，通常是带有绝对路径的模块文件名。
+- `module.filename` 模块的文件名，带有绝对路径。
+- `module.loaded` 返回一个布尔值，表示模块是否已经完成加载。
+- `module.parent` 返回一个对象，表示调用该模块的模块。
+- `module.children` 返回一个数组，表示该模块要用到的其他模块。
+- `module.exports` 表示模块对外输出的值。
+
+ES6模块化
+
+ [Module 的语法 - ECMAScript 6入门 (ruanyifeng.com)](https://es6.ruanyifeng.com/#docs/module) 
+
+[ES6模块化在node中的使用](https://www.ruanyifeng.com/blog/2020/08/how-nodejs-use-es6-module.html)
+
+Node.js 要求 ES6 模块采用`.mjs`后缀文件名。也就是说，只要脚本文件里面使用`import`或者`export`命令，那么就必须采用`.mjs`后缀名。Node.js 遇到`.mjs`文件，就认为它是 ES6 模块，默认启用严格模式，不必在每个模块文件顶部指定`"use strict"`。
+
+如果不希望将后缀名改成`.mjs`，可以在项目的`package.json`文件中，指定`type`字段为`module`。
+
+## 差异
+
+- CommonJS 模块输出的是一个值的拷贝，ES6 模块输出的是值的引用。
+- CommonJS 模块是运行时加载，ES6 模块是编译时输出接口。
+- CommonJS 模块的`require()`是同步加载模块，ES6 模块的`import`命令是异步加载，有一个独立的模块依赖的解析阶段。
+
 # ES6简介
 
  ES 的全称是 ECMAScript , 它是由 ECMA 国际标准化组织,制定的一项脚本语言的标准化规范。 
