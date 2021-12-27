@@ -91,3 +91,108 @@ categories:
   ```
 
   
+
+## 02 使用nodemon 热重载
+
+- 根目录下面新建nodemon.json
+
+  ```
+  {
+      "watch":["app/**/**.ts","index.ts"],
+      "ignore":["node_modules"],
+      "exec": "ts-node index.ts",
+      "ext":".ts"
+  }
+  ```
+
+- 安装 nodemon 
+
+  ```bash
+  npm i -g nodemon
+  ```
+
+- 修改 package.json 启动脚本
+
+  ```json
+    "scripts": {
+      "start": "nodemon"
+    },
+  ```
+
+## 03 使用jest进行单元测试
+
+- 安装 jest @type/jest  ts-jest
+
+  ```bash
+  yarn add jest @type/jest ts-jest -D
+  ```
+
+- 根目录下面新建test 目录
+
+  test/index.test.ts
+
+  ```
+  describe('sum',()=>{
+      it('sum 1', ()=>{
+          expect(1 + 1).toEqual(2)
+      })
+  })
+  ```
+
+- 安装jest run 插件
+
+  ![1640617481531](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202112/27/230442-600148.png)
+
+![1640617489629](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202112/27/230451-988170.png)
+
+- 使用网络请求进行单元测试
+
+  - 安装包含网络测试的包 supertest @types/supertest -D 
+
+    ```
+    yarn add supertest @types/supertest -D
+    ```
+
+    初始化配置文件
+
+    ```
+    yarn ts-jest config:init
+    ```
+
+    test/http.test.ts
+
+    ```typescript
+    
+    import request from 'supertest'
+    import run from '../app/index'
+    import {Server} from 'http'
+    describe('http测试',()=>{
+        let server: Server;
+        beforeAll( ()=>{
+            server = run(3000)
+        })
+        it('GET /api', ()=>{
+            return request(server)
+            .get('/api')
+            .expect(200)
+        })
+        afterAll( ()=>{
+            server.close()
+        })
+    })
+    ```
+
+  - 报错就安装 typescript      npm i  typescript   -g 并初始化 ts 配置文件
+
+    
+
+## 04 使用dotevn区分环境
+
+- 安装依赖
+
+  ```
+  yarn add dotenv @types/dotenv
+  ```
+
+## 05 使用log4j收集日志
+
