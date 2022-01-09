@@ -2,7 +2,7 @@
 
 ## 初始化springboot项目
 
-![1640876775506](../../../../../../../../AppData/Roaming/Typora/typora-user-images/1640876775506.png)
+![1640876775506](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202201/09/235125-917421.png)
 
  web Data JPA mysql driver
 
