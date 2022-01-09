@@ -194,5 +194,60 @@ categories:
   yarn add dotenv @types/dotenv
   ```
 
+- 新建.evn 文件(通用做法是这个文件不被版本控制 都是新建一个 .envexample )
+
+  ```
+  NODE_ENV=dev
+  PORT=9000
+  ```
+
+  
+
+- 修改入口文件
+
+  ```typescript
+  //引用文件
+  import Koa from 'koa'
+  import router from './router'
+  import {Server} from 'http'
+  import dotenv from 'dotenv'
+  dotenv.config()
+  console.log(process.env);
+  
+  
+  const app = new  Koa()
+  app.use(router.routes())
+  
+  const run = (port:any):Server =>{
+     return app.listen(port)
+  }
+  
+  export default run
+  ```
+
+- app/config/index.ts
+
+  ```typescript
+  export default {
+      server:{
+          port: process.env.PORT
+      },
+      db:{
+  
+      }
+  }
+  ```
+
 ## 05 使用log4j收集日志
 
+[log4js npm介绍](https://www.npmjs.com/package/log4js)
+
+![1641371486803](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\1641371486803.png)
+
+- 添加log4js依赖
+
+  ```
+  yarn add log4js @types/log4js
+  ```
+
+- app/logger/index.ts
