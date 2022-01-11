@@ -242,7 +242,7 @@ categories:
 
 [log4js npm介绍](https://www.npmjs.com/package/log4js)
 
-![1641371486803](C:\Users\admin\AppData\Roaming\Typora\typora-user-images\1641371486803.png)
+![1641371486803](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202201/05/164134-154020.png)
 
 - 添加log4js依赖
 
