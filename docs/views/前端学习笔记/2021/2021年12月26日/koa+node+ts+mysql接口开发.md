@@ -196,9 +196,15 @@ categories:
 
 - 新建.evn 文件(通用做法是这个文件不被版本控制 都是新建一个 .envexample )
 
-  ```
+  ```properties
   NODE_ENV=dev
   PORT=9000
+  
+  DB_HOST=localhost
+  DB_DATABASE=test
+  DB_USERNAME=test
+  DB_PASSWORD=123456
+  DB_PORT=3306
   ```
 
   
@@ -211,8 +217,8 @@ categories:
   import router from './router'
   import {Server} from 'http'
   import dotenv from 'dotenv'
-  dotenv.config()
-  console.log(process.env);
+  //dotenv.config()
+  //console.log(process.env);
   
   
   const app = new  Koa()
@@ -228,12 +234,18 @@ categories:
 - app/config/index.ts
 
   ```typescript
+  import dotenv from 'dotenv'
+  dotenv.config()
   export default {
       server:{
           port: process.env.PORT
       },
       db:{
-  
+          host:process.env.DB_HOST,
+          database:process.env.DB_DATABASE,
+          username:process.env.DB_USERNAME,
+          password:process.env.DB_PASSWORD,
+          port:process.env.DB_PORT
       }
   }
   ```
@@ -251,3 +263,132 @@ categories:
   ```
 
 - app/logger/index.ts
+
+  ```typescript
+  import { configure, getLogger } from "log4js";
+   
+  configure({
+    appenders: { cheese: { type: "file", filename: "cheese.log" } },
+    categories: { default: { appenders: ["cheese"], level: "error" } }
+  });
+  
+  export default getLogger()
+  ```
+
+- 控制器中使用
+
+  ```typescript
+  import { Context } from "koa";
+  import logger from '../logger'
+  class IndexController {
+      index (ctx:Context) {
+          logger.info('msg',ctx)
+          ctx.body = ['a','b',"c",'d','q123']
+      }
+  }
+  
+  export default new IndexController()
+  ```
+
+## 06 使用sequelize-typescript orm框架
+
+[sequelize介绍](https://github.com/demopark/sequelize-docs-Zh-CN)
+
+[中文简介](https://www.sequelize.com.cn/)
+
+[sequelize-typescript](https://www.npmjs.com/package/sequelize-typescript)
+
+- 前置依赖 @types/node @types/validator
+
+  ```
+  yarn add  @types/node @types/validator -D
+  ```
+
+- 需要的依赖
+
+  ```bash
+  yarn add sequelize reflect-metadata sequelize-typescript
+  ```
+
+- tsconfig.json 需要重新配置
+
+  ```bash
+  "target": "es6", // or a more recent ecmascript version
+  "experimentalDecorators": true,
+  "emitDecoratorMetadata": true
+  ```
+
+- db/index.ts
+
+  ```typescript
+  import path from 'path';
+  import  {Sequelize} from 'sequelize-typescript'
+  import config from '../config';
+  console.log(config);
+  
+  const sequelize = new Sequelize(config.db.database as string, config.db.username as string, config.db.password, {
+      host: config.db.host,
+      port:Number(config.db.port),
+      dialect:'mysql', /* 选择 'mysql' | 'mariadb' | 'postgres' | 'mssql' 其一 */
+      models:[path.join(__dirname,'models','**/*.ts'),path.join(__dirname,'models','**/*.js')],
+      define:{
+        timestamps:false,
+        updatedAt:'updatedAt',
+        createdAt:'createdAt',
+      }
+    });
+    
+    const db =async()=>{
+      try {
+        await sequelize.authenticate();
+        console.log('Connection has been established successfully.');
+      } catch (error) {
+        console.error('Unable to connect to the database:', error);
+      }
+    }
+  export default db
+  ```
+
+- service/UserService.ts
+
+  ```typescript
+  import User from "../db/models/UserModel";
+  class UserService {
+      async getUser(){
+        return  await User.findOne({where:{name:'zs'}})
+      }
+  }
+  
+  export default new UserService
+  ```
+
+- db/models/UserModel.ts
+
+  ```typescript
+  import { Column, Model, Table,PrimaryKey } from "sequelize-typescript";
+  
+  @Table({ tableName: 'User'})
+  export default class User extends Model {
+      @Column
+      name!:string 
+  }
+  ```
+
+- 控制器
+
+  ```typescript
+  import { Context } from "koa";
+  import logger from '../logger'
+  import UserService from "../service/UserService";
+  class IndexController {
+      async index (ctx:Context) {
+          logger.info('msg',ctx)
+          const user =await UserService.getUser()
+          ctx.body ={ arr:['a','b',"c",'d','q123'], user}
+      }
+  }
+  
+  export default new IndexController()
+  ```
+
+  
