@@ -1,3 +1,14 @@
+---
+title: 从零开始新建Vue3项目(vite)
+date: 2022-01-12
+sidebarDepth: 4
+tags:
+  - Vue3
+categories:
+  - Vue3
+---
+
+
 # 从零开始新建Vue3项目(vite)
 
 ## 1.vite 创建项目
