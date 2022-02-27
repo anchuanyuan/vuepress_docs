@@ -1,11 +1,11 @@
 ---
-title: JavaSE笔记06
-date: 2022.02.27
-sidebarDepth: 4
-tags:
-- JavaSE
-  categories:
-- javaSE
+  title: JavaSE笔记06
+  date: 2022.02.27
+  sidebarDepth: 4
+  tags:   
+    - JavaSE
+  categories:   
+    - javaSE
 ---
 
 
