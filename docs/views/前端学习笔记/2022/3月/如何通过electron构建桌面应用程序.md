@@ -82,7 +82,7 @@ yarn
 
 404 仓库找不到electron
 
-我们得去找个靠谱的electron 镜像地址 因为源版地址在海外正常下载估计得下个 个把月才能把那个几十MB包下载下来
+我们得去找个靠谱的electron 镜像地址 因为源版地址在海外正常下载估计得个把月才能把那个几十MB包下载下来
 
 - 我们来试试淘宝的镜像
 
@@ -124,7 +124,7 @@ ok 页面生效了
 
 ## 浅尝一下nodejs的能力
 
-看看官网怎么读取系统文件目录的,我们尝试遍历一下当前目录
+看看nodejs 的api怎么读取系统文件目录的,我们尝试遍历一下当前目录
 
 ![1646580859961](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202203/06/233421-984018.png)
 
@@ -203,8 +203,12 @@ vue add electron-builder
 yarn run electron:serve
 ```
 
-哦吼!一个vue项目直接变成桌面程序启动了
+哦吼!一个vue项目直接变成桌面程序启动了!
 
 ![1646584428880](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202203/07/003350-631220.png)
 
 ## 后面说怎么打包 怎么做图标 托盘 开机自启 主进程 和渲染进程通信等等
+
+### 打包
+
+待续...
