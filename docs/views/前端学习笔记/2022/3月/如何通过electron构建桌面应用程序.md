@@ -22,8 +22,7 @@ categories:
 
 ....
 
-![1646577150497](C:/Users/admin/AppData/Roaming/Typora/typora-user-images/1646577150497.png)
-
+![1646577150497](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202203/07/005020-726202.png)
 官网有这么一段示例demo
 
 ```
