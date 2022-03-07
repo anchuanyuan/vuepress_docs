@@ -70,11 +70,10 @@ yarn
 
 大概意思就是我没有 yarn 作为包管理的 .lock文件 
 
-那我就吧 npm package-lock.json 删掉 再装一遍试试
+那我就吧 项目根目录的 package-lock.json 删掉 再装一遍试试
 
-![1646578940810](C:/Users/admin/AppData/Roaming/Typora/typora-user-images/1646578940810.png)
 
-哦豁 又报错了
+哦豁 又报错了(或者不会报错就是下载的很慢)
 
 ![1646579130930](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202203/06/230531-188026.png)
 
