@@ -70,11 +70,10 @@ yarn
 
 大概意思就是我没有 yarn 作为包管理的 .lock文件 
 
-那我就吧 npm package-lock.json 删掉 再装一遍试试
+那我就吧 项目根目录的 package-lock.json 删掉 再装一遍试试
 
-![1646578940810](C:/Users/admin/AppData/Roaming/Typora/typora-user-images/1646578940810.png)
 
-哦豁 又报错了
+哦豁 又报错了(或者不会报错就是下载的很慢)
 
 ![1646579130930](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202203/06/230531-188026.png)
 
@@ -210,3 +209,350 @@ yarn run electron:serve
 ### 打包
 
 待续...
+
+
+1首页出现两个 是因为 路径的问题
+ const tagPath = path.resolve(basePath, route.path)
+          // const tagPath = path.posix.resolve(basePath, route.path)
+2.区分环境 然后尝试自己拼接路径
+
+3. -win ---ia32
+
+background.js
+```js
+'use strict'
+
+import { app, protocol, BrowserWindow ,nativeImage,Tray,Menu,ipcMain,Notification} from 'electron'
+import { createProtocol } from 'vue-cli-plugin-electron-builder/lib'
+import installExtension, { VUEJS_DEVTOOLS } from 'electron-devtools-installer'
+import path from 'path'
+import checkForUpdates from "./update";
+import {autoUpdater} from "electron-updater";
+import {updateApp} from "./update";
+const isDevelopment = process.env.NODE_ENV !== 'production'
+// Scheme must be registered before the app is ready
+protocol.registerSchemesAsPrivileged([
+  { scheme: 'app', privileges: { secure: true, standard: true } }
+])
+let win = null
+// 禁止双开
+const isFirstInstance = app.requestSingleInstanceLock()
+if (!isFirstInstance) {
+  // log.info('is second instance')
+  console.log("禁止双开")
+  setTimeout(() => {
+    app.quit()
+  }, 1000)
+  // win.show()
+}else {
+  async function createWindow() {
+    app.commandLine.appendSwitch('autoplay-policy', 'no-user-gesture-required');
+    // Create the browser window.
+    win = new BrowserWindow({
+      width: 1280,
+      height: 960,
+      webPreferences: {
+
+        // Use pluginOptions.nodeIntegration, leave this alone
+        // See nklayman.github.io/vue-cli-plugin-electron-builder/guide/security.html#node-integration for more info
+        nodeIntegration: process.env.ELECTRON_NODE_INTEGRATION,
+        contextIsolation: !process.env.ELECTRON_NODE_INTEGRATION,
+        webSecurity: false
+      }
+    })
+
+    if (process.env.WEBPACK_DEV_SERVER_URL) {
+      // Load the url of the dev server if in development mode
+      await win.loadURL(process.env.WEBPACK_DEV_SERVER_URL)
+      if (!process.env.IS_TEST) win.webContents.openDevTools()
+    } else {
+      createProtocol('app')
+      // Load the index.html when not in development
+      await win.loadURL('app://./index.html')
+    }
+    // 更新客户端
+    // updateApp(win)
+  }
+
+// Quit when all windows are closed.
+  app.on('window-all-closed', () => {
+    // On macOS it is common for applications and their menu bar
+    // to stay active until the user quits explicitly with Cmd + Q
+    if (process.platform !== 'darwin') {
+      app.quit()
+    }
+  })
+
+  app.on('activate', () => {
+    // On macOS it's common to re-create a window in the app when the
+    // dock icon is clicked and there are no other windows open.
+    if (BrowserWindow.getAllWindows().length === 0) createWindow()
+  })
+
+// This method will be called when Electron has finished
+// initialization and is ready to create browser windows.
+// Some APIs can only be used after this event occurs.
+  app.on('ready', async () => {
+    if (isDevelopment && !process.env.IS_TEST) {
+      // Install Vue Devtools
+      try {
+        // await installExtension(VUEJS_DEVTOOLS)
+      } catch (e) {
+        console.error('Vue Devtools failed to install:', e.toString())
+      }
+    }
+    await createWindow()
+    try {
+      // 最小化到托盘
+      tray = setTray()
+    } catch (err) {
+      // log.info('err', err)
+    }
+    win.on('close', (e) => {
+      if (forceClose) {
+        return
+      }
+      e.preventDefault()
+      hideWin()
+    })
+  })
+
+  ipcMain.on('showNotify',(event,data)=>{
+    showNotification(data)
+  })
+  ipcMain.on('checkUpdate',(event,data)=>{
+    console.log('检查更新',data)
+    updateApp(win,data)
+    // autoUpdaterInstance.checkForUpdates()
+  })
+}
+function hideWin () {
+  if (win) {
+    win.hide()
+  }
+}
+// Exit cleanly on request from parent process in development mode.
+if (isDevelopment) {
+  if (process.platform === 'win32') {
+    process.on('message', (data) => {
+      if (data === 'graceful-exit') {
+        app.quit()
+      }
+    })
+  } else {
+    process.on('SIGTERM', () => {
+      app.quit()
+    })
+  }
+}
+
+let tray // 防止被内存清理
+let forceClose = false
+// 隐藏主窗口，并创建托盘，绑定关闭事件
+function setTray () {
+  // const topMenu = Menu.buildFromTemplate({})
+  // Menu.setApplicationMenu(topMenu)
+  // 用一个 Tray 来表示一个图标,这个图标处于正在运行的系统的通知区
+  // 通常被添加到一个 context menu 上.
+  // 系统托盘右键菜单
+  const trayMenuTemplate = [
+
+    {
+      // 系统托盘图标目录
+      label: '退出',
+      click: () => {
+        // log.info('force quit')
+        forceClose = true
+        app.quit()
+      }
+    }
+  ]
+  // 设置系统托盘图标
+  let iconRootPath
+  iconRootPath = path.join(__dirname,'bundled/logo')
+  // console.log()
+  if(app.isPackaged) {
+    iconRootPath = path.join(__dirname, '/logo')
+  }
+  let iconPath = path.join(iconRootPath, 'djk-logo.png')
+  console.log({iconPath})
+
+  const trayIcon = nativeImage.createFromPath(iconPath)
+  const appTray = new Tray(trayIcon)
+
+
+  // 图标的上下文菜单
+  const contextMenu = Menu.buildFromTemplate(trayMenuTemplate)
+
+  // 设置托盘悬浮提示
+  appTray.setToolTip('泉城药易购后台管理程序')
+  // 单击托盘小图标显示应用
+  appTray.on('click', () => {
+    // 显示主程序
+    showWin()
+  })
+
+  appTray.on('right-click', function (event, bounds) {
+    setTimeout(function () {
+      appTray.popUpContextMenu(contextMenu)
+    }, 200)
+  })
+
+  return appTray
+}
+
+function showWin () {
+  if (win) {
+    win.show()
+  }
+}
+app.on('close', (e) => {
+  if (forceClose) {
+    return
+  }
+  // 隐藏窗口
+  hideWin()
+})
+
+// 设置开机自启
+const exeName = path.basename(process.execPath)
+app.setLoginItemSettings({
+  openAtLogin: app.isPackaged,
+  openAsHidden: !app.isPackaged,
+  path: process.execPath,
+  args: [
+    '--processStart', `${exeName}`,
+  ]
+})
+// 消息通知
+function showNotification (data) {
+  const {title ,body} = data
+  new Notification({ title: title, body: body }).show()
+}
+```
+
+vue.config.js
+```
+pluginOptions: {
+    electronBuilder: {
+      nodeIntegration: true,
+      builderOptions: {
+        extraResources: [
+          // {
+          //   from: resolve(__dirname, '/src/assets/logo'),
+          //   to: '/logo'
+          // }
+          {
+            "from": './extraResources/',
+            "to": "extraResources"
+          }
+        ],
+        directories: {                  // 输出文件夹
+          output: "djk"
+        },
+        appId: 'djkyyg',
+        productName: '泉城药易购后台管理系统',
+        // eslint-disable-next-line no-template-curly-in-string
+        artifactName: 'djk-${version}.${ext}',
+        copyright: 'Copyright © 2020-2021 ybdjk',
+        win: {
+          icon: 'public/logo/djk-logo.ico'
+          // requestedExecutionLevel: 'highestAvailable' // 加了这个无法开机自启
+        },
+        nsis: {
+          oneClick: false,
+          perMachine: true,
+          allowElevation: true,
+          allowToChangeInstallationDirectory: true,
+          // include: './build/installer.nsh'
+        },
+        publish: {
+          provider: 'generic',
+          url: config.updateURL
+        }
+      }
+    }
+}
+```
+
+updata.js
+
+```
+import { autoUpdater } from 'electron-updater'
+import { ipcMain } from 'electron'
+const  config = require('./config')
+const feedUrl = config.updateURL
+// const log = require('@/commonJs/log')
+let mainWindow = null;
+let isUpdateAsar = false;
+let autoUpdaterInstance = autoUpdater
+export function updateApp(window,URL) {
+  let updateURL = URL || feedUrl
+  mainWindow = window;
+  // logger('in')
+  // autoUpdaterInstance.hasInstace = true
+  if(autoUpdaterInstance.hasInstace) {
+    autoUpdaterInstance.setFeedURL(updateURL);
+    autoUpdaterInstance.checkForUpdates()
+  }else {
+    autoUpdaterInstance.hasInstace = true
+    autoUpdaterInstance.autoDownload = true//检查到更新时是否自动下载
+    autoUpdaterInstance.setFeedURL(updateURL);
+    autoUpdaterInstance.on('error', function (error) {
+      sendUpdateMessage({
+        cmd: 'error',
+        msg: error
+      })
+    });
+    //监听开始检测更新事件
+    autoUpdaterInstance.on('checking-for-update', function (message) {
+      sendUpdateMessage({
+        cmd: 'checking-for-update',
+        msg: message
+      })
+
+    });
+    //监听发现可用更新事件
+    autoUpdaterInstance.on('update-available', function (message) {
+      sendUpdateMessage({
+        cmd: 'update-available',
+        msg: message
+      })
+    });
+    //监听没有可用更新事件
+    autoUpdaterInstance.on('update-not-available', function (message) {
+      sendUpdateMessage({
+        cmd: 'update-not-available',
+        msg: message
+      })
+    });
+    // 更新下载进度事件
+    autoUpdaterInstance.on('download-progress', function (message) {
+      // logger('download-progress:' + JSON.stringify(message))
+      sendUpdateMessage({
+        cmd: 'download-progress',
+        msg: message
+      })
+    });
+    //监听下载完成事件
+    autoUpdaterInstance.on('update-downloaded', function (message) {
+      // logger('update-downloaded:' + JSON.stringify(message))
+      sendUpdateMessage({
+        cmd: 'update-downloaded',
+        msg: message
+      })
+      autoUpdaterInstance.quitAndInstall()
+    });
+    autoUpdaterInstance.checkForUpdates()
+  }
+}
+
+function sendUpdateMessage(data) {
+  const {cmd, msg} = data
+  mainWindow.webContents.send(cmd, msg)
+  // ipcMain.
+}
+function logger(line) {
+}
+// export  default autoUpdaterInstance
+```
