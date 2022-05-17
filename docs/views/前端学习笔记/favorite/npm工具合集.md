@@ -41,5 +41,8 @@ categories:
 ## 20+ css高频实用片段，提高幸福感的小技能你可以拥有噢
 [20+ css高频实用片段，提高幸福感的小技能你可以拥有噢](https://mp.weixin.qq.com/s/yXt_YHmYEoJR21rZVMWreQ)
 
+### 45个 GIT 经典操作场景，专治不会合代码
+
+[45个 GIT 经典操作场景，专治不会合代码](https://mp.weixin.qq.com/s/W-V4VYrnt1lLwEVmucJn0g)
 
 
