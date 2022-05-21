@@ -210,7 +210,7 @@ package.json
 
 ```
   "lint-staged": {
-    "*.js": "eslint --cache --fix",
+    "/**/*.{js,vue}": "eslint  --fix",
     "*.{js,jsx,vue,ts,tsx}": "prettier --write"
   }
 ```
@@ -220,3 +220,6 @@ package.json
 
 
 ### 4.4 配置完成进行 commit 实验
+
+随便乱提交点东西
+
