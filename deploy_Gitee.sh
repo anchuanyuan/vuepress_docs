@@ -4,7 +4,7 @@
 # set -e
 rm -rf docs/.vuepress/dist
 # 生成静态文件
-pnpm install run build
+npm install run build
 
 # 进入生成的文件夹
 cd docs/.vuepress/dist
