@@ -1,27 +1,38 @@
 {
-    "name": "my-blog",
-    "version": "1.0.0",
-    "author": "reco_luan",
-    "scripts": {
-        "dev": "vuepress dev docs",
-        "build": "vuepress build docs",
-        "deploy": "bash bash.sh"
-    },
-    "devDependencies": {
-        "cz-customizable": "^6.3.0",
-        "prettier": "^2.2.1",
-        "vuepress": "^1.4.1",
-        "vuepress-theme-reco": "1.4.6"
-    },
-    "description": "yuan",
-    "dependencies": {
-        "@vuepress-reco/vuepress-plugin-bgm-player": "^1.1.3",
-        "@vuepress-reco/vuepress-plugin-kan-ban-niang": "^1.0.5",
-        "esm": "^3.0.0"
-    },
-    "config": {
-        "commitizen": {
-            "path": "node_modules/cz-customizable"
-        }
+  "name": "my-blog",
+  "version": "1.0.0",
+  "author": "reco_luan",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "deploy": "bash bash.sh",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.0",
+    "@commitlint/config-conventional": "^17.0.0",
+    "cz-customizable": "^6.3.0",
+    "eslint": "^8.16.0",
+    "eslint-config-prettier": "^8.5.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^12.4.1",
+    "prettier": "^2.2.1",
+    "vuepress": "^1.4.1",
+    "vuepress-theme-reco": "1.4.6"
+  },
+  "description": "yuan",
+  "dependencies": {
+    "@vuepress-reco/vuepress-plugin-bgm-player": "^1.1.3",
+    "@vuepress-reco/vuepress-plugin-kan-ban-niang": "^1.0.5",
+    "esm": "^3.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
     }
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,jsx,vue,ts,tsx}": "prettier --write"
+  }
 }

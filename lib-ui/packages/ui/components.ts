@@ -1,2 +1,1 @@
-import {default as AButton} from "button";
-
+import { default as AButton } from 'button'
