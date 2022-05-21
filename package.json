@@ -6,7 +6,8 @@
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
     "deploy": "bash bash.sh",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "preinstall": "npx only-allow pnpm"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.0",

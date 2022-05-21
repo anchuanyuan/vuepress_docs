@@ -193,7 +193,7 @@ pre-commit
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-pnpx lint-staged
+npx lint-staged
 
 ```
 
@@ -203,7 +203,7 @@ commit-msg
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-pnpx  commitlint  --edit "$1"
+npx  commitlint  --edit "$1"
 ```
 
 package.json
