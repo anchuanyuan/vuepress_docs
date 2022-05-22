@@ -81,7 +81,7 @@ var fn = new Function('参数 1 ','参数 2 '..., '函数体')
 
 ##### 一般指向我们的调用者.
 
-![1594482947264](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/11/235548-301229.png)
+![1594482947264](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/11/235548-301229.png)
 
 ### 2. 2 改变函数内部 this 指向
 
@@ -105,7 +105,7 @@ fn.call(o, 1 , 2 )//此时的this指向的是对象o,参数使用逗号隔开,�
 
 ##### 以上代码运行结果为:
 
-![1594483064248](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/11/235745-70865.png)
+![1594483064248](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/11/235745-70865.png)
 
 #### 2. 2. 2 apply方法
 
@@ -125,7 +125,7 @@ fn()// 此时的this指向的是window 运行结果为 3
 fn.apply(o,[ 1 , 2 ])//此时的this指向的是对象o,参数使用数组传递 运行结果为 3
 ```
 
-![1594483217607](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/12/000019-993864.png)
+![1594483217607](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/12/000019-993864.png)
 
 #### 2. 2. 3 bind方法
 
@@ -266,7 +266,7 @@ setTimeout(function() {
 
 ##### 出。
 
-![1594483903292](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/12/001144-707918.png)
+![1594483903292](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/12/001144-707918.png)
 
 此时fn 就是一个高阶函数
 
@@ -287,7 +287,7 @@ setTimeout(function() {
 
 闭包（closure）指有权访问另一个函数作用域中变量的函数。简单理解就是 ，一个作用域可以访问另外一个函数内部的局部变量。
 
-![1594484008363](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/12/001329-152232.png)
+![1594484008363](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/12/001329-152232.png)
 
 
 ### 5. 3 闭包的作用

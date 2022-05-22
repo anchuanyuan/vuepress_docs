@@ -35,9 +35,9 @@ categories:
 
 ### 1.1.1 键盘事件
 
-![webAPI第4天1551318122855](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190334-868976.png)
+![webAPI第4天1551318122855](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190334-868976.png)
 
-![webAPI第4天1551318160371](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190335-462155.png)
+![webAPI第4天1551318160371](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190335-462155.png)
 
 ```js
     <script>
@@ -61,9 +61,9 @@ categories:
 
 ### 1.1.2 键盘事件对象
 
-![webAPI第4天1551318355505](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190337-783231.png)
+![webAPI第4天1551318355505](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190337-783231.png)
 
-![webAPI第4天1551318404238](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190602-61888.png)
+![webAPI第4天1551318404238](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190602-61888.png)
 
 **使用keyCode属性判断用户按下哪个键**
 
@@ -90,7 +90,7 @@ categories:
 
 当我们按下 s 键， 光标就定位到搜索框（文本框获得焦点）。
 
-![webAPI第4天1551318669520](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190340-805122.png)
+![webAPI第4天1551318669520](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190340-805122.png)
 
  注意：触发获得焦点事件，可以使用 元素对象.focus()
 
@@ -114,9 +114,9 @@ categories:
 
 要求：当我们在文本框中输入内容时，文本框上面自动显示大字号的内容。
 
-![webAPI第4天1551318882189](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190344-226049.png)
+![webAPI第4天1551318882189](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190344-226049.png)
 
-![webAPI第4天1551318909264](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190345-845877.png)
+![webAPI第4天1551318909264](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190345-845877.png)
 
 ```js
     <div class="search"
@@ -164,17 +164,17 @@ categories:
 
 ​	BOM 缺乏标准，JavaScript 语法的标准化组织是 ECMA，DOM 的标准化组织是 W3C，BOM 最初是Netscape 浏览器标准的一部分。
 
-![webAPI第4天1551319264407](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190349-798358.png)
+![webAPI第4天1551319264407](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190349-798358.png)
 
 ### 1.2.2. BOM的构成
 
 BOM 比 DOM 更大，它包含 DOM。
 
-![webAPI第4天1551319344183](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190350-45865.png)
+![webAPI第4天1551319344183](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190350-45865.png)
 
 ### 1.2.3. 顶级对象window
 
-![webAPI第4天1551319372909](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190352-154375.png)
+![webAPI第4天1551319372909](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190352-154375.png)
 
 ### 1.2.4. window对象的常见事件
 
@@ -182,15 +182,15 @@ BOM 比 DOM 更大，它包含 DOM。
 
 **第1种**
 
-![webAPI第4天1551319525109](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190353-308418.png)
+![webAPI第4天1551319525109](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190353-308418.png)
 
 window.onload 是窗口 (页面）加载事件，**当文档内容完全加载完成**会触发该事件(包括图像、脚本文件、CSS 文件等), 就调用的处理函数。
 
-![webAPI第4天1551319600263](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190652-322330.png)
+![webAPI第4天1551319600263](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190652-322330.png)
 
 **第2种**
 
-![webAPI第4天1551319620299](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190355-291257.png)
+![webAPI第4天1551319620299](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190355-291257.png)
 
 ​	DOMContentLoaded 事件触发时，仅当DOM加载完成，不包括样式表，图片，flash等等。
 
@@ -217,7 +217,7 @@ window.onload 是窗口 (页面）加载事件，**当文档内容完全加载�
 
 #### 调整窗口大小事件
 
-![webAPI第4天1551319803117](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190357-347479.png)
+![webAPI第4天1551319803117](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190357-347479.png)
 
 ​	window.onresize 是调整窗口大小加载事件,  当触发时就调用的处理函数。
 
@@ -261,11 +261,11 @@ window 对象给我们提供了 2 个非常好用的方法-定时器。
 
 ##### 开启定时器
 
-![webAPI第4天1551320279307](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190400-303717.png)
+![webAPI第4天1551320279307](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190400-303717.png)
 
-![webAPI第4天1551320408854](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190711-121584.png)
+![webAPI第4天1551320408854](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190711-121584.png)
 
-![webAPI第4天1551320298981](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190711-359773.png)
+![webAPI第4天1551320298981](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190711-359773.png)
 
  ```
  普通函数是按照代码顺序直接调用。
@@ -297,11 +297,11 @@ window 对象给我们提供了 2 个非常好用的方法-定时器。
 
 ##### 案例：5秒后关闭广告
 
-![webAPI第4天1551320924828](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190405-267555.png)
+![webAPI第4天1551320924828](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190405-267555.png)
 
 
 
-![webAPI第4天1551320959756](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190407-100143.png)
+![webAPI第4天1551320959756](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190407-100143.png)
 
 ```js
 <body>
@@ -319,9 +319,9 @@ window 对象给我们提供了 2 个非常好用的方法-定时器。
 
 ##### 停止定时器
 
-![webAPI第4天1551321051001](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190409-555550.png)
+![webAPI第4天1551321051001](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190409-555550.png)
 
-![webAPI第4天1551321064154](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190409-905966.png)
+![webAPI第4天1551321064154](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190409-905966.png)
 
 ```js
     <button>点击停止定时器</button>
@@ -345,7 +345,7 @@ window 对象给我们提供了 2 个非常好用的方法-定时器。
 
 ##### 开启定时器
 
-![webAPI第4天1551321162158](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190413-807430.png)
+![webAPI第4天1551321162158](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190413-807430.png)
 
 ```js
     <script>
@@ -358,9 +358,9 @@ window 对象给我们提供了 2 个非常好用的方法-定时器。
 
 ##### 案例：倒计时
 
-![webAPI第4天1551321298787](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190418-637866.png)
+![webAPI第4天1551321298787](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190418-637866.png)
 
-![webAPI第4天1551321322188](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190420-279292.png)
+![webAPI第4天1551321322188](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190420-279292.png)
 
 ```js
     <div>
@@ -398,15 +398,15 @@ window 对象给我们提供了 2 个非常好用的方法-定时器。
 
 ##### 停止定时器
 
-![webAPI第4天1551321444559](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190422-513592.png)
+![webAPI第4天1551321444559](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190422-513592.png)
 
 #### 案例：发送短信倒计时
 
 ​	点击按钮后，该按钮60秒之内不能再次点击，防止重复发送短信。
 
-![webAPI第4天1551321540676](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190757-783804.png)
+![webAPI第4天1551321540676](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190757-783804.png)
 
-![webAPI第4天1551321564247](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190425-507838.png)
+![webAPI第4天1551321564247](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190425-507838.png)
 
 ```js
     手机号码： <input type="number" <button>发送</button>
@@ -486,25 +486,25 @@ window 对象给我们提供了 2 个非常好用的方法-定时器。
 
 #### 什么是 location 对象
 
-![webAPI第4天1551322091638](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190430-763994.png)
+![webAPI第4天1551322091638](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190430-763994.png)
 
 #### URL
 
-![webAPI第4天1551322373704](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190432-797309.png)
+![webAPI第4天1551322373704](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190432-797309.png)
 
-![webAPI第4天1551322387201](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190432-357083.png)
+![webAPI第4天1551322387201](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190432-357083.png)
 
 #### location 对象的属性
 
-![webAPI第4天1551322416716](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190437-353684.png)
+![webAPI第4天1551322416716](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190437-353684.png)
 
-![1594033934237](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/191215-446334.png)
+![1594033934237](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/191215-446334.png)
 
 #### 案例：5分钟自动跳转页面
 
-![webAPI第4天1551322496871](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190438-538894.png)
+![webAPI第4天1551322496871](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190438-538894.png)
 
-![webAPI第4天1551322517605](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190440-424507.png)
+![webAPI第4天1551322517605](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190440-424507.png)
 
 ```js
     <button>点击</button>
@@ -530,9 +530,9 @@ window 对象给我们提供了 2 个非常好用的方法-定时器。
 
 #### 案例：获取URL参数
 
-![webAPI第4天1551322622640](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190442-956980.png)
+![webAPI第4天1551322622640](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190442-956980.png)
 
-![webAPI第4天1551322639241](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190443-915508.png)
+![webAPI第4天1551322639241](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190443-915508.png)
 
 ```js
     <div></div>
@@ -552,7 +552,7 @@ window 对象给我们提供了 2 个非常好用的方法-定时器。
 
 #### location对象的常见方法
 
-![webAPI第4天1551322750241](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190445-771158.png)
+![webAPI第4天1551322750241](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190445-771158.png)
 
 ```js
     <button>点击</button>
@@ -586,11 +586,11 @@ if((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobil
 
 ​	window对象给我们提供了一个 history对象，与浏览器历史记录进行交互。该对象包含用户（在浏览器窗口中）访问过的URL。
 
-![webAPI第4天1551322885216](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190453-809447.png)
+![webAPI第4天1551322885216](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190453-809447.png)
 
 history对象一般在实际开发中比较少用，但是会在一些 OA 办公系统中见到。
 
-![webAPI第4天1551322959148](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190454-677138.png)
+![webAPI第4天1551322959148](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190454-677138.png)
 
 ## 1.3. JS执行机制
 
@@ -622,7 +622,7 @@ history对象一般在实际开发中比较少用，但是会在一些 OA 办公
 
 ### 1.3.1 JS 是单线程
 
-![webAPI第4天1551415019322](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190849-560858.png)
+![webAPI第4天1551415019322](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190849-560858.png)
 
 ```js
 	单线程就意味着，所有任务需要排队，前一个任务结束，才会执行后一个任务。如果前一个任务耗时很长，后一个任务就不得不一直等着。
@@ -643,7 +643,7 @@ history对象一般在实际开发中比较少用，但是会在一些 OA 办公
 
 ​	你在做一件事情时，因为这件事情会花费很长时间，在做这件事的同时，你还可以去处理其他事情。比如做饭的异步做法，我们在烧水的同时，利用这10分钟，去切菜，炒菜。
 
-![webAPI第4天1551434295074](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190459-35414.png)
+![webAPI第4天1551434295074](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190459-35414.png)
 
  ```js
  JS中所有任务可以分成两种，一种是同步任务（synchronous），另一种是异步任务（asynchronous）。
@@ -654,15 +654,15 @@ history对象一般在实际开发中比较少用，但是会在一些 OA 办公
  	不进入主线程、而进入”任务队列”的任务，当主线程中的任务运行完了，才会从”任务队列”取出异步任务放入主线程执行。
  ```
 
-![webAPI第4天1551434972778](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190459-955765.png)
+![webAPI第4天1551434972778](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190459-955765.png)
 
 ### 1.3.3 JS执行机制（事件循环）
 
-![webAPI第4天1551435335464](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190504-421379.png)
+![webAPI第4天1551435335464](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190504-421379.png)
 
-![webAPI第4天1551435398306](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190507-607413.png)
+![webAPI第4天1551435398306](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190507-607413.png)
 
-![webAPI第4天1551435449634](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190508-370324.png)
+![webAPI第4天1551435449634](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190508-370324.png)
 
 ### 1.3.4 代码思考题
 

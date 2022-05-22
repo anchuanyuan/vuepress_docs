@@ -21,13 +21,13 @@ categories:
 -   样式冲突，遵循的原则是就近原则，哪个样式离结构近，就执行哪个样式
 -   样式不冲突，不会层叠
 
-![1571490015544](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/003407-164766.png)
+![1571490015544](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/003407-164766.png)
 
 ### 2、继承性
 
 ​ CSS 中的继承: 子标签会继承父标签的某些样式，如文本颜色和字号。恰当地使用继承可以简化代码，降低 CSS 样式的复杂性。
 
-![1571490049279](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/003410-686950.png)
+![1571490049279](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/003410-686950.png)
 
 子元素可以继承父元素的样式：
 
@@ -57,7 +57,7 @@ body {
 
 选择器优先级计算表格：
 
-![1571490129794](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/003417-398702.png)
+![1571490129794](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/003417-398702.png)
 
 优先级注意点:
 
@@ -84,7 +84,7 @@ body {
 
 网页布局的核心本质： 就是利用 CSS 摆盒子。
 
-![1571492334739](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/003419-979078.png)
+![1571492334739](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/003419-979078.png)
 
 网页布局过程：
 
@@ -98,7 +98,7 @@ body {
 
 ​ CSS 盒子模型本质上是一个盒子，封装周围的 HTML 元素，它包括：**边框**、**外边距**、**内边距**、和 **实际内容**
 
-![1571492536942](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/003422-826286.png)
+![1571492536942](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/003422-826286.png)
 
 ### 3、边框（border）
 
@@ -112,7 +112,7 @@ body {
 border: border-width || border-style || border-color;
 ```
 
-![1571492659260](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/003938-818873.png)
+![1571492659260](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/003938-818873.png)
 
 边框样式 border-style 可以设置如下值：
 
@@ -166,11 +166,11 @@ border-collapse: collapse; 表示相邻边框合并在一起
 
 合写属性：
 
-![1571493298248](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/003428-523683.png)
+![1571493298248](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/003428-523683.png)
 
 分写属性：
 
-![1571493260536](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/004210-960506.png)
+![1571493260536](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/004210-960506.png)
 
 #### 4.2、内边距会影响盒子实际大小
 
@@ -195,7 +195,7 @@ border-collapse: collapse; 表示相邻边框合并在一起
 
 margin 属性用于设置外边距，即控制盒子和盒子之间的距离。
 
-![1571493741272](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/003450-443352.png)
+![1571493741272](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/003450-443352.png)
 
 #### 5.2、外边距典型应用
 
@@ -225,7 +225,7 @@ margin: 0 auto;
 
 ​ 当上下相邻的两个块元素（兄弟关系）相遇时，如果上面的元素有下外边距 margin-bottom，下面的元素有上外边距 margin-top ，则他们之间的垂直间距不是 margin-bottom 与 margin-top 之和。取两个值中的较大者这种现象被称为相邻块元素垂直外边距的合并。
 
-![1571494239103](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/003456-236767.png)
+![1571494239103](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/003456-236767.png)
 
 解决方案：
 尽量只给一个盒子添加 margin 值。
@@ -234,7 +234,7 @@ margin: 0 auto;
 
 ​ 对于两个嵌套关系（父子关系）的块元素，父元素有上外边距同时子元素也有上外边距，此时父元素会塌陷较大的外边距值。
 
-![1571494373778](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/003457-585520.png)
+![1571494373778](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/003457-585520.png)
 
 解决方案：
 
@@ -269,4 +269,4 @@ margin: 0 auto;
 -   用选区拖动 可以测量大小
 -   Ctrl+ D 可以取消选区，或者在旁边空白处点击一下也可以取消选区
 
-![1571494543539](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/003504-375539.png)
+![1571494543539](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/003504-375539.png)

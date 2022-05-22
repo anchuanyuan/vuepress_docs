@@ -32,13 +32,13 @@ transpileDependencies: [/node_modules[/\\\\](element-ui|vuex|)[/\\\\]/],
 
 现象二: 打包发布以后 Element 继续报错 exports is not defined
 
-![1621648310860](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202105/22/095151-654758.png)
+![1621648310860](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202105/22/095151-654758.png)
 
 查阅发现网友给出答案
 
 解决 : 在 babel.config.js 中加入如下代码 (注意格式)
 
-![1621648527687](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202105/22/095529-582681.png)
+![1621648527687](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202105/22/095529-582681.png)
 
 注意这要再套一个数组
 

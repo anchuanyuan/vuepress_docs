@@ -54,7 +54,7 @@ JS 中创建数组有两种方式：
 
 ​		索引 (下标) ：用来访问数组元素的序号（数组下标从 0 开始）。
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/015934-588275.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/015934-588275.png)
 
 ​		数组可以通过索引来访问、设置、修改对应的数组元素，可以通过“数组名[索引]”的形式来获取数组中的元素。
 
@@ -152,7 +152,7 @@ function 函数名() {
 
 - 简单理解：封装类似于将电脑配件整合组装到机箱中 ( 类似快递打包）  
 
-  ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/020017-201958.png)
+  ![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/020017-201958.png)
 
   例子：封装计算1-100累加和
 
@@ -181,7 +181,7 @@ function 函数名() {
 
 - 实参：函数调用时传入小括号内的真实数据
 
-  ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/020032-415481.png)
+  ![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/020032-415481.png)
 
   ​	参数的作用 : 在函数内部某些值不能固定，我们可以通过参数在调用函数时传递不同的值进去。
 
@@ -203,7 +203,7 @@ function 函数名() {
 
 #### 函数形参和实参数量不匹配时
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/020059-122825.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/020059-122825.png)
 
 	注意：在JavaScript中，形参的默认值是undefined。
 

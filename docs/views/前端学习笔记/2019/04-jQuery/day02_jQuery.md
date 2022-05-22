@@ -26,7 +26,7 @@ categories:
 
 **语法**
 
-![prop](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/221918-654214.png)
+![prop](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/221918-654214.png)
 
 ​	注意：prop() 除了普通属性操作，更适合操作表单属性：disabled / checked / selected 等。
 
@@ -36,7 +36,7 @@ categories:
 
 **语法**
 
-![attr](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/221926-754732.png)
+![attr](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/221926-754732.png)
 
 ​	注意：attr() 除了普通属性操作，更适合操作自定义属性。（该方法也可以获取 H5 自定义属性）
 
@@ -46,7 +46,7 @@ categories:
 
 **语法**
 
-![data](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/221927-910462.png)
+![data](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/221927-910462.png)
 
 ​	注意：同时，还可以读取 HTML5 自定义属性  data-index ，得到的是数字型。
 
@@ -102,7 +102,7 @@ categories:
 
 **语法**
 
-![html](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/221932-499434.png)
+![html](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/221932-499434.png)
 
 ​	注意：html() 可识别标签，text() 不识别标签。
 
@@ -161,13 +161,13 @@ categories:
 
 **语法1**
 
-![each1](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/221936-866446.png)
+![each1](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/221936-866446.png)
 
 ​	注意：此方法用于遍历 jQuery 对象中的每一项，回调函数中元素为 DOM 对象，想要使用 jQuery 方法需要转换。
 
 **语法2**
 
-![each2](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/221938-319864.png)
+![each2](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/221938-319864.png)
 
 ​	注意：此方法用于遍历 jQuery 对象中的每一项，回调函数中元素为 DOM 对象，想要使用 jQuery 方法需要转换。
 
@@ -227,13 +227,13 @@ categories:
 
 **语法总和**
 
-![create](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/221943-316520.png)
+![create](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/221943-316520.png)
 
-![append1](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/221944-941693.png)
+![append1](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/221944-941693.png)
 
-![append2](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/221946-509203.png)
+![append2](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/221946-509203.png)
 
-![remove](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/221947-237247.png)
+![remove](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/221947-237247.png)
 
 ​	注意：以上只是元素的创建、添加、删除方法的常用方法，其他方法请参详API。
 
@@ -297,7 +297,7 @@ categories:
 
 **语法**
 
-![size](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/221951-715518.png)
+![size](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/221951-715518.png)
 
 **代码演示**
 
@@ -331,9 +331,9 @@ categories:
 
 **语法**
 
-![offset](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/221913-243096.png)
-![position](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/222059-289479.png)
-![scroll](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/222025-774363.png)
+![offset](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/221913-243096.png)
+![position](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/222059-289479.png)
+![scroll](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/222025-774363.png)
 
 **代码演示**
 
@@ -426,5 +426,5 @@ categories:
 
 ## 1.5. 今日总结
 
-![总结](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/222000-660019.png)
+![总结](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/222000-660019.png)
 

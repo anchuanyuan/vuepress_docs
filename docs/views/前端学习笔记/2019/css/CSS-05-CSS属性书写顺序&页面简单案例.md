@@ -43,11 +43,11 @@ PS 有很多的切图方式：图层切图、切片切图、PS 插件切图等�
 
 ​	① 使用**移动工具**，点击需要的图片
 
-![1571299959992](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/163824-312337.png)
+![1571299959992](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/163824-312337.png)
 
 ​	② 查看右侧，找到图片对应的图层，右击图层 → 快速导出为 PNG
 
-![1571300150618](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/163825-38648.png)
+![1571300150618](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/163825-38648.png)
 
 
 
@@ -59,7 +59,7 @@ PS 有很多的切图方式：图层切图、切片切图、PS 插件切图等�
 
 ​	② 图层菜单 → 合并图层(ctrl+e)   
 
-​	![1571300529539](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/163827-128068.png)
+​	![1571300529539](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/163827-128068.png)
 
 ​	③ 查看右侧生成的新图层，在合并后的图层上，右击 →  快速导出为 PNG
 
@@ -71,7 +71,7 @@ PS 有很多的切图方式：图层切图、切片切图、PS 插件切图等�
 
 ​	① 利用切片选中图片 ：利用切片工具手动划出
 
-![1571301270696](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/163829-399537.png) 
+![1571301270696](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/163829-399537.png) 
 
 ​	② 导出选中的图片：文件菜单  →  导出  → 存储为 web 设备所用格式  →  选择我们要的图片格式 →  存储 。
 
@@ -79,7 +79,7 @@ PS 有很多的切图方式：图层切图、切片切图、PS 插件切图等�
 
 ​	注意：保存的时候，要选“选中的切片”：
 
-![1571301357818](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/163830-858029.png) 
+![1571301357818](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/163830-858029.png) 
 
 ### 1.4. 插件切图
 
@@ -101,7 +101,7 @@ Cutterman是一款运行在photoshop中的插件，能够自动将你需要的�
 
 ​	② 如果是扩展功能右侧是可以使用的，表示就是完整版的，可以安装cutterman插件快速切图
 
-![1571302032310](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/163833-972232.png)
+![1571302032310](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/163833-972232.png)
 
 
 
@@ -111,7 +111,7 @@ Cutterman是一款运行在photoshop中的插件，能够自动将你需要的�
 
 当cutterman 安装完成后，重启PS，会发现扩展功能里面多了一个cutterman工具：
 
-![1571302286467](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/163834-905656.png)
+![1571302286467](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/163834-905656.png)
 
 
 
@@ -127,11 +127,11 @@ Cutterman是一款运行在photoshop中的插件，能够自动将你需要的�
 
 ​	⑤ 点击 “导出选中图层” 按钮
 
-![1571303715362](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/163836-865536.png) 
+![1571303715362](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/163836-865536.png) 
 
 示意图：
 
-![1591778587022](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/164308-716229.png)
+![1591778587022](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/164308-716229.png)
 
 
 
@@ -182,7 +182,7 @@ Cutterman是一款运行在photoshop中的插件，能够自动将你需要的�
 
 页面展示：
 
-![1571304358699](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/163847-257775.png)
+![1571304358699](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/163847-257775.png)
 
 
 
@@ -217,7 +217,7 @@ Cutterman是一款运行在photoshop中的插件，能够自动将你需要的�
 
 7. 样式表写入清除内外边距的样式，来检测样式表是否引入成功。
 
-![1571305757590](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/163849-639324.png) 
+![1571305757590](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/163849-639324.png) 
 
 ### 3.3. 页面布局整体思路
 
@@ -250,7 +250,7 @@ Cutterman是一款运行在photoshop中的插件，能够自动将你需要的�
 
 **结构图如下：**
 
-![1591778677883](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/164439-315461.png)
+![1591778677883](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/164439-315461.png)
 
 - 1号是版心盒子 **header**  1200 *  42 的盒子水平居中对齐, 上下给一个margin值就好了。
 - 版心盒子 里面包含 2号盒子 **logo** 图标
@@ -283,15 +283,15 @@ Cutterman是一款运行在photoshop中的插件，能够自动将你需要的�
 
 ​	技巧：input和button都，属于行内块元素，会有缝隙，使用浮动，可以去缝隙。
 
-![1571307430101](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/163904-347745.png)
+![1571307430101](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/163904-347745.png)
 
 #### 3.4.2. banner制作
 
 结构图如下：
 
-![1571314623135](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/163908-723217.png)
+![1571314623135](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/163908-723217.png)
 
-![1591778748347](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/164549-608754.png)
+![1591778748347](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/164549-608754.png)
 
 
 
@@ -302,7 +302,7 @@ Cutterman是一款运行在photoshop中的插件，能够自动将你需要的�
 
 ##### 3.4.2.1  subnav 侧导航栏 (左侧的)
 
-![1571314874385](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/163913-653988.png)   
+![1571314874385](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/163913-653988.png)   
 
 - subnav 盒子 背景色 黑色半透明
 - 重要的导航栏，li 包 a ，行高45px
@@ -315,7 +315,7 @@ Cutterman是一款运行在photoshop中的插件，能够自动将你需要的�
 
 结构图如下：
 
- ![1591778800668](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/164643-534406.png)
+ ![1591778800668](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/164643-534406.png)
 
 - 1号盒子 是  228 * 300 的盒子 右浮动  **注意 浮动的元素 不会有外边距塌陷的问题**
 - 1号盒子内 分为 上下 两个 子盒子
@@ -325,7 +325,7 @@ Cutterman是一款运行在photoshop中的插件，能够自动将你需要的�
 #### 3.4.3. 精品推荐小模块
 
 结构图如下：
-![1591778849175](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/164730-152506.png)
+![1591778849175](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/164730-152506.png)
 
 - **复习点：**  因为里面三个盒子都要垂直居中，我们利用 继承性，给 最大的盒子 一个垂直居中的代码就好了，还记得 那些 样式可以继承吗？？？ font-  line-  text- color
 
@@ -343,7 +343,7 @@ Cutterman是一款运行在photoshop中的插件，能够自动将你需要的�
 
 结构图如下：
 
-![1591778907137](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/164828-831318.png)
+![1591778907137](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/164828-831318.png)
 
 - 1号盒子为最大的盒子 **box**  版心水平居中对齐
 - 2号盒子为上面部分 **box-hd**  -- 里面   左侧标题H3 左浮动   右侧 链接 a 右浮动
@@ -355,7 +355,7 @@ Cutterman是一款运行在photoshop中的插件，能够自动将你需要的�
 
 结构图如下：
 
-![1591778939792](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/164859-132185.png)
+![1591778939792](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/164859-132185.png)
 
 - 1号盒子通栏大盒子 底部 **footer**  给高度  底色是白色
 

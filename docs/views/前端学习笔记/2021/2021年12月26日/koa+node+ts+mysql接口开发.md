@@ -141,9 +141,9 @@ categories:
 
 - 安装jest run 插件
 
-  ![1640617481531](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202112/27/230442-600148.png)
+  ![1640617481531](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202112/27/230442-600148.png)
 
-![1640617489629](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202112/27/230451-988170.png)
+![1640617489629](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202112/27/230451-988170.png)
 
 - 使用网络请求进行单元测试
 
@@ -254,7 +254,7 @@ categories:
 
 [log4js npm介绍](https://www.npmjs.com/package/log4js)
 
-![1641371486803](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202201/05/164134-154020.png)
+![1641371486803](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202201/05/164134-154020.png)
 
 - 添加log4js依赖
 
@@ -391,4 +391,3 @@ categories:
   export default new IndexController()
   ```
 
-  

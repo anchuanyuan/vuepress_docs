@@ -195,7 +195,7 @@ continue 关键字用于立即跳出本次循环，继续下一次循环（本�
 
 运行结果：
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/015027-256495.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/015027-256495.png)
 
   break 关键字用于立即跳出整个循环（循环结束）。
 
@@ -214,7 +214,7 @@ continue 关键字用于立即跳出本次循环，继续下一次循环（本�
 
   
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/015247-666493.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/015247-666493.png)
 
 ## 2 - 代码规范
 
@@ -251,4 +251,4 @@ for (var i = 1; i <= 5; i++) {
 
 关键词、操作符之间后加空格
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/015031-852059.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/015031-852059.png)

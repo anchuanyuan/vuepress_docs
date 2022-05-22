@@ -22,7 +22,7 @@ categories:
 
     - z 轴：垂直屏幕 -- **注意：往外边的是正值，往里面的是负值**
 
-        ![1591782603304](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/175004-795460.png)">
+        ![1591782603304](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/175004-795460.png)">
 
 ​
 
@@ -78,7 +78,7 @@ transform: translate3d(100px, 100px, 0)
 
         - z：就是 z 轴，z 轴越大(正值)，我们看到的物体就越大
 
-            ![1591782623499](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/175024-612957.png)
+            ![1591782623499](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/175024-612957.png)
 
     ​
 
@@ -131,7 +131,7 @@ img:hover {
 
     - 其余手指的弯曲方向就是该元素沿着 x 轴旋转的方向
 
-        ![1591782640133](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/175041-655116.png)>
+        ![1591782640133](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/175041-655116.png)>
 
 ​
 
@@ -161,7 +161,7 @@ img:hover {
 
     - 其余的手指弯曲方向就是该元素沿着 y 轴旋转的方向(正值)
 
-        ![1591782653233](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/190226-539927.png)">
+        ![1591782653233](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/190226-539927.png)">
 
 ### 七、 `3D` 旋转 `rotateZ`
 

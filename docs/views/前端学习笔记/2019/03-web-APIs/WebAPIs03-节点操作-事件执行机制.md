@@ -34,7 +34,7 @@ categories:
 
 ### 1.1.1 删除节点
 
-![webAPI第3天1551163384254](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185337-932703.png)
+![webAPI第3天1551163384254](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/185337-932703.png)
 
 node.removeChild() 方法从 node 节点中删除一个子节点，返回删除的节点。
 
@@ -64,9 +64,9 @@ node.removeChild() 方法从 node 节点中删除一个子节点，返回删除�
 
 ### 1.1.2 案例：删除留言
 
-![webAPI第3天1551163586475](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185341-429003.png)
+![webAPI第3天1551163586475](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/185341-429003.png)
 
-![webAPI第3天1551163635501](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185343-394552.png)
+![webAPI第3天1551163635501](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/185343-394552.png)
 
 ```js
     <textarea name="" id=""</textarea>
@@ -108,7 +108,7 @@ node.removeChild() 方法从 node 节点中删除一个子节点，返回删除�
 
 ### 1.1.3 复制（克隆）节点
 
-![webAPI第3天1551163763825](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185344-592111.png)
+![webAPI第3天1551163763825](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/185344-592111.png)
 
 ```js
     <ul>
@@ -127,9 +127,9 @@ node.removeChild() 方法从 node 节点中删除一个子节点，返回删除�
 
 ### 1.1.4 案例：动态生成表格
 
-![webAPI第3天1551163900675](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185347-885868.png)
+![webAPI第3天1551163900675](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/185347-885868.png)
 
-![webAPI第3天1551163924396](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185351-414141.png)
+![webAPI第3天1551163924396](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/185351-414141.png)
 
 ```js
     <script>
@@ -190,7 +190,7 @@ node.removeChild() 方法从 node 节点中删除一个子节点，返回删除�
 
 ### 1.1.5 创建元素的三种方式
 
-![webAPI第3天1551164214925](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185352-735255.png)
+![webAPI第3天1551164214925](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/185352-735255.png)
 
 ```js
     <script>
@@ -280,35 +280,35 @@ node.removeChild() 方法从 node 节点中删除一个子节点，返回删除�
 
 ## 1.2. DOM 的核心总结
 
-![webAPI第3天1551164669434](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185601-501408.png)
+![webAPI第3天1551164669434](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/185601-501408.png)
 
-![webAPI第3天1551164715018](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185357-243181.png)
+![webAPI第3天1551164715018](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/185357-243181.png)
 
 关于 dom 操作，我们主要针对于元素的操作。主要有创建、增、删、改、查、属性操作、事件操作。
 
 ### 1.2.1. 创建
 
-![webAPI第3天1551164797164](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185612-729246.png)
+![webAPI第3天1551164797164](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/185612-729246.png)
 
 ### 1.2.2. 增加
 
-![webAPI第3天1551164829832](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185613-842520.png)
+![webAPI第3天1551164829832](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/185613-842520.png)
 
 ### 1.2.3. 删
 
-![webAPI第3天1551164872533](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185615-246288.png)
+![webAPI第3天1551164872533](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/185615-246288.png)
 
 ### 1.2.4. 改
 
-![webAPI第3天1551164907830](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185631-577028.png)
+![webAPI第3天1551164907830](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/185631-577028.png)
 
 ### 1.2.5. 查
 
-![webAPI第3天1551164936214](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185638-202684.png)
+![webAPI第3天1551164936214](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/185638-202684.png)
 
 ### 1.2.6. 属性操作
 
-![webAPI第3天1551164985383](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185638-111083.png)
+![webAPI第3天1551164985383](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/185638-111083.png)
 
 ### 1.2.7. 事件操作（重点）
 
@@ -316,13 +316,13 @@ node.removeChild() 方法从 node 节点中删除一个子节点，返回删除�
 
 ### 1.3.1. 注册事件（2 种方式）
 
-![webAPI第3天1551165252019](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185401-367190.png)
+![webAPI第3天1551165252019](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/185401-367190.png)
 
 ### 1.3.2 事件监听
 
 #### addEventListener()事件监听（IE9 以后支持）
 
-![webAPI第3天1551165364122](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185404-969281.png)
+![webAPI第3天1551165364122](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/185404-969281.png)
 
 eventTarget.addEventListener()方法将指定的监听器注册到 eventTarget（目标对象）上，当该对象触发指定的事件时，就会执行事件处理函数。
 
@@ -330,11 +330,11 @@ eventTarget.addEventListener()方法将指定的监听器注册到 eventTarget�
 
 #### attacheEvent()事件监听（IE678 支持）
 
-![webAPI第3天1551165781836](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185403-209672.png)
+![webAPI第3天1551165781836](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/185403-209672.png)
 
 ​ eventTarget.attachEvent()方法将指定的监听器注册到 eventTarget（目标对象） 上，当该对象触发指定的事件时，指定的回调函数就会被执行。
 
-![webAPI第3天1551165843912](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185406-6406.png)
+![webAPI第3天1551165843912](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/185406-6406.png)
 
 ```js
 <button>传统注册事件</button>
@@ -369,11 +369,11 @@ eventTarget.addEventListener()方法将指定的监听器注册到 eventTarget�
 
 封装一个函数，函数中判断浏览器的类型：
 
-![webAPI第3天1551166023885](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185406-765631.png)
+![webAPI第3天1551166023885](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/185406-765631.png)
 
 ### 1.3.3. 删除事件（解绑事件）
 
-![webAPI第3天1551166185410](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185408-781522.png)
+![webAPI第3天1551166185410](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/185408-781522.png)
 
 ```js
     <div>1</div>
@@ -404,7 +404,7 @@ eventTarget.addEventListener()方法将指定的监听器注册到 eventTarget�
 
 **删除事件兼容性解决方案 **
 
-![webAPI第3天1551166332453](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185409-231882.png)
+![webAPI第3天1551166332453](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/185409-231882.png)
 
 ### 1.3.4. DOM 事件流
 
@@ -415,13 +415,13 @@ html中的标签都是相互嵌套的，我们可以将元素想象成一个盒�
 那么是先执行父元素的单击事件，还是先执行div的单击事件 ？？？
 ```
 
-![webAPI第3天1551166423144](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190023-342404.png)
+![webAPI第3天1551166423144](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190023-342404.png)
 
 比如：我们给页面中的一个 div 注册了单击事件，当你单击了 div 时，也就单击了 body，单击了 html，单击了 document。
 
-![webAPI第3天1551166555833](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185410-506445.png)
+![webAPI第3天1551166555833](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/185410-506445.png)
 
-![webAPI第3天155116658webAPI第3天1552](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185952-302083.png)
+![webAPI第3天155116658webAPI第3天1552](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/185952-302083.png)
 
 ```
 当时的2大浏览器霸主谁也不服谁！
@@ -444,9 +444,9 @@ DOM 事件流会经历 3 个阶段：
 
 ​ 我们向水里面扔一块石头，首先它会有一个下降的过程，这个过程就可以理解为从最顶层向事件发生的最具体元素（目标点）的捕获过程；之后会产生泡泡，会在最低点（ 最具体元素）之后漂浮到水面上，这个过程相当于事件冒泡。
 
-![webAPI第3天1551169007768](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185413-369113.png)
+![webAPI第3天1551169007768](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/185413-369113.png)
 
-![webAPI第3天1551169042295](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185414-825776.png)
+![webAPI第3天1551169042295](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/185414-825776.png)
 
 **事件冒泡**
 
@@ -521,7 +521,7 @@ DOM 事件流会经历 3 个阶段：
 
 所以，在事件处理函数中声明 1 个形参用来接收事件对象。
 
-![webAPI第3天1551169537789](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185419-872957.png)
+![webAPI第3天1551169537789](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/185419-872957.png)
 
 #### 事件对象的兼容性处理
 
@@ -531,7 +531,7 @@ DOM 事件流会经历 3 个阶段：
 
 2. 在 IE6~8 中，浏览器不会给方法传递参数，如果需要的话，需要到 window.event 中获取查找。
 
-![webAPI第3天1551169680823](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/190214-443772.png)
+![webAPI第3天1551169680823](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/190214-443772.png)
 
 ```
 只要“||”前面为false, 不管“||”后面是true 还是 false，都返回 “||” 后面的值。
@@ -552,7 +552,7 @@ DOM 事件流会经历 3 个阶段：
 
 #### 事件对象的属性和方法
 
-![webAPI第3天1551169931778](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185421-65187.png)
+![webAPI第3天1551169931778](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/185421-65187.png)
 
 #### e.target 和 this 的区别
 
@@ -628,7 +628,7 @@ html 中一些标签有默认行为，例如 a 标签被单击后，默认会进
 
 事件冒泡本身的特性，会带来的坏处，也会带来的好处。
 
-![webAPI第3天1551171467194](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185425-949435.png)
+![webAPI第3天1551171467194](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/185425-949435.png)
 
 ```js
     <div class="father"
@@ -657,7 +657,7 @@ html 中一些标签有默认行为，例如 a 标签被单击后，默认会进
 
 **阻止事件冒泡的兼容性处理**
 
-![webAPI第3天1551171657513](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185428-307552.png)
+![webAPI第3天1551171657513](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/185428-307552.png)
 
 ### 1.3.8 事件委托
 
@@ -675,11 +675,11 @@ html 中一些标签有默认行为，例如 a 标签被单击后，默认会进
 
 **生活中的代理：**
 
-![webAPI第3天1551172082624](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185430-862373.png)
+![webAPI第3天1551172082624](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/185430-862373.png)
 
 **js 事件中的代理：**
 
-![webAPI第3天1551172159273](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185430-959129.png)
+![webAPI第3天1551172159273](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/185430-959129.png)
 
 #### 事件委托的原理
 
@@ -711,11 +711,11 @@ html 中一些标签有默认行为，例如 a 标签被单击后，默认会进
 
 ## 1.4. 常用鼠标事件
 
-![webAPI第3天1551172699854](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185433-662481.png)
+![webAPI第3天1551172699854](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/185433-662481.png)
 
 ### 1.4.1 案例：禁止选中文字和禁止右键菜单
 
-![webAPI第3天1551172755484](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185434-59418.png)
+![webAPI第3天1551172755484](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/185434-59418.png)
 
 ```js
 <body>
@@ -735,7 +735,7 @@ html 中一些标签有默认行为，例如 a 标签被单击后，默认会进
 
 ### 1.4.2 鼠标事件对象
 
-![webAPI第3天1551173103741](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185438-554629.png)
+![webAPI第3天1551173103741](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/185438-554629.png)
 
 ### 1.4.3 获取鼠标在页面的坐标
 
@@ -763,9 +763,9 @@ html 中一些标签有默认行为，例如 a 标签被单击后，默认会进
 
 ### 1.4.4 案例：跟随鼠标的天使
 
-![webAPI第3天1551173172613](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185441-450870.png)
+![webAPI第3天1551173172613](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/185441-450870.png)
 
-![webAPI第3天1551173186812](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185444-256324.png)
+![webAPI第3天1551173186812](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/185444-256324.png)
 
 ```js
     <img src="images/angel.gif" alt=""

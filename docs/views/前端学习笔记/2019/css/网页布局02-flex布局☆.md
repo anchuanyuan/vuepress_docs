@@ -56,17 +56,17 @@ item），简称"项目"。
 + 默认主轴方向就是 x 轴方向，水平向右
 + 默认侧轴方向就是 y 轴方向，水平向下
 
-![1592552039888](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/19/153400-633730.png)
+![1592552039888](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/19/153400-633730.png)
 
 + 注意： 主轴和侧轴是会变化的，就看 flex-direction 设置谁为主轴，剩下的就是侧轴。而我们的子元素是跟着主轴来排列的
 
-  ![1592552071862](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/19/153433-403002.png)
+  ![1592552071862](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/19/153433-403002.png)
 
   
 
 ### 3.2 justify-content 设置主轴上的子元素排列方式
 
-![1592552084015](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/19/153445-268303.png)>
+![1592552084015](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/19/153445-268303.png)>
 
 ### 3.3 flex-wrap  设置是否换行
 
@@ -86,7 +86,7 @@ item），简称"项目"。
 
 设置子项在侧轴上的排列方式 并且只能用于子项出现 换行 的情况（多行），在单行下是没有效果的。
 
-![1592552111881](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/19/153512-187703.png)
+![1592552111881](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/19/153512-187703.png)
 
 
 
@@ -157,7 +157,7 @@ span:nth-child(2) {
 
 2.搭建相关文件夹
 
-![1592552318453](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/19/153839-152797.png)
+![1592552318453](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/19/153839-152797.png)
 
 3.设置视口标签以及引入初始化样式
 
@@ -186,4 +186,4 @@ body {
 
 5.模块名字划分
 
-![1592552345203](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/19/153906-74051.png)
+![1592552345203](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/19/153906-74051.png)

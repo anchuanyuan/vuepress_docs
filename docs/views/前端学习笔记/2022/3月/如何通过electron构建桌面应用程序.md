@@ -22,7 +22,7 @@ categories:
 
 ....
 
-![1646577150497](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202203/07/005020-726202.png)
+![1646577150497](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202203/07/005020-726202.png)
 官网有这么一段示例demo
 
 ```
@@ -38,7 +38,7 @@ npm install && npm start
 
 我们下载下来 研究一哈目录,随便点点 看看写了什么
 
-![1646578003476](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202203/06/224644-47416.png)
+![1646578003476](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202203/06/224644-47416.png)
 
 我们隐约猜到大概就是electron帮我们启动了一个谷歌浏览器,然后用这个浏览器打开了一个HTML页面
 
@@ -66,7 +66,7 @@ yarn
 
 哦吼 报错了
 
-![1646578861043](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202203/06/230101-946921.png)
+![1646578861043](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202203/06/230101-946921.png)
 
 大概意思就是我没有 yarn 作为包管理的 .lock文件 
 
@@ -75,7 +75,7 @@ yarn
 
 哦豁 又报错了(或者不会报错就是下载的很慢)
 
-![1646579130930](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202203/06/230531-188026.png)
+![1646579130930](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202203/06/230531-188026.png)
 
 404 仓库找不到electron
 
@@ -83,7 +83,7 @@ yarn
 
 - 我们来试试淘宝的镜像
 
-  ![1646579728623](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202203/06/231528-984661.png)
+  ![1646579728623](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202203/06/231528-984661.png)
 
 执行下面的命令
 
@@ -95,7 +95,7 @@ yarn
 
 ok 开始下载了 挺快的 淘宝还挺管事  用了近140s
 
-![1646579983281](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202203/06/231944-600329.png)
+![1646579983281](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202203/06/231944-600329.png)
 
 好的 看package.json 里面就一个脚本命令 咱们启动
 
@@ -105,33 +105,33 @@ yarn start
 
 ok 桌面程序启动成功了 
 
-![1646580091242](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202203/06/232131-378829.png)
+![1646580091242](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202203/06/232131-378829.png)
 
 改改html里面的内容
 
-![1646580190810](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202203/06/232312-892592.png)
+![1646580190810](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202203/06/232312-892592.png)
 
 重载一下页面
 
-![1646580388954](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202203/06/232629-656339.png)
+![1646580388954](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202203/06/232629-656339.png)
 
 ok 页面生效了
 
-![1646580614140](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202203/06/233014-643151.png)
+![1646580614140](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202203/06/233014-643151.png)
 
 ## 浅尝一下nodejs的能力
 
 看看nodejs 的api怎么读取系统文件目录的,我们尝试遍历一下当前目录
 
-![1646580859961](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202203/06/233421-984018.png)
+![1646580859961](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202203/06/233421-984018.png)
 
 照着文档 写函数 获取文件名字遍历输出
 
-![1646582968649](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202203/07/000929-307631.png)
+![1646582968649](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202203/07/000929-307631.png)
 
 ok 完事了 就遍历了一层 有些其实还是目录(node_moudules等都是目录,不重要 就是验证一nodejs能力)
 
-![1646583023932](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202203/07/001025-103347.png)
+![1646583023932](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202203/07/001025-103347.png)
 
 好的 就到这里 后面讲如何把一个vue项目 直接变成一个electron项目,并完成系统托盘 开机自启 自动更新等功能
 
@@ -164,7 +164,7 @@ vue create vue-electron-demo
 # 一路回车
 ```
 
-![1646583691555](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202203/07/002132-862149.png)
+![1646583691555](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202203/07/002132-862149.png)
 
 ### 启动一下项目
 
@@ -173,11 +173,11 @@ cd vue-electron-demo
 npm  run server
 ```
 
-![1646583887469](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202203/07/002447-815852.png)
+![1646583887469](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202203/07/002447-815852.png)
 
 ok 项目正常
 
-![1646583929673](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202203/07/002529-215688.png)
+![1646583929673](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202203/07/002529-215688.png)
 
 ### 变成electron项目
 
@@ -192,7 +192,7 @@ vue add electron-builder
 
 发现文件目录有所变化,package.json 多了electron,启动命令 src下面还多了个background.js
 
-![1646584193384](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202203/07/002955-919395.png)
+![1646584193384](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202203/07/002955-919395.png)
 
 ### 启动试试
 
@@ -202,7 +202,7 @@ yarn run electron:serve
 
 哦吼!一个vue项目直接变成桌面程序启动了!
 
-![1646584428880](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202203/07/003350-631220.png)
+![1646584428880](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202203/07/003350-631220.png)
 
 ## 后面说怎么打包 怎么做图标 托盘 开机自启 主进程 和渲染进程通信等等
 

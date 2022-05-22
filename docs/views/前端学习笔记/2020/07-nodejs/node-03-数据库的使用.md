@@ -21,7 +21,7 @@ categories:
 
 常见的数据库软件有：mysql、mongoDB、oracle。
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202008/31/203414-189790.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202008/31/203414-189790.png)
 
 ### MongoDB数据库安装
 
@@ -33,7 +33,7 @@ Node.js通常使用MongoDB作为其数据库，具有高性能，易使用，存
 
 MongoDB可视化操作软件，使用图形界面操作数据库的一种方式。[下载](https://www.mongodb.com/download-center#compass)
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202008/31/203416-529517.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202008/31/203416-529517.png)
 
 ### Mongoose第三方包
 
@@ -193,7 +193,7 @@ Post.find()
       .then((err, result) => console.log(result));
 ```
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202008/31/203511-706887.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202008/31/203511-706887.png)
 
 #### Mongoose验证
 

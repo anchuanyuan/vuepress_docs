@@ -55,7 +55,7 @@ components: { zhuye, keji, caijing, yule } })
 
 Vue router [官网 https://router.vuejs.org/zh/](https://router.vuejs.org/zh/)
 
-![1584547950431](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202108/31/003123-327108.png)
+![1584547950431](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202108/31/003123-327108.png)
 
 #### 2.2 Vue router 使用步骤
 

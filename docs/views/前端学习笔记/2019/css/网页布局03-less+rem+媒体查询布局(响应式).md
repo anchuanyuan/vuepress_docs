@@ -59,7 +59,7 @@ rem的优势：父元素文字大小可能不一致， 但是整个页面只有�
 
 将不同的终端设备划分成不同的类型，称为媒体类型
 
-[1592586987915](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/011630-645339.png)
+[1592586987915](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/011630-645339.png)
 
 2. 关键字
 关键字将媒体类型或多个媒体特性连接到一起做为媒体查询的条件。
@@ -74,7 +74,7 @@ rem的优势：父元素文字大小可能不一致， 但是整个页面只有�
 
 注意他们要加小括号包含
 
-   ![1592552876170](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/19/154757-611589.png)
+   ![1592552876170](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/19/154757-611589.png)
 
    
 
@@ -82,7 +82,7 @@ rem的优势：父元素文字大小可能不一致， 但是整个页面只有�
 
 注意： 为了防止混乱，媒体查询我们要按照从小到大或者从大到小的顺序来写,但是我们最喜欢的还是从小到大来写，这样代码更简洁
 
-   ![1592552903962](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/19/154825-924335.png)
+   ![1592552903962](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/19/154825-924335.png)
 
    
 
@@ -148,7 +148,7 @@ Easy LESS 插件用来把less文件编译为css文件
 
 只要保存一下Less文件，会自动生成CSS文件。
 
-![1592552929525](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/19/154850-455094.png)
+![1592552929525](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/19/154850-455094.png)
 
 Less 嵌套
 
@@ -263,7 +263,7 @@ width: (@width + 5) * 2;
 
 2、搭建文件结构
 
-![1592552948024](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/19/154909-903361.png)
+![1592552948024](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/19/154909-903361.png)
 
 3、设置视口标签以及引入初始化样式
 
@@ -312,7 +312,7 @@ VSCode  px 转换rem 插件 cssrem
 
 因为cssrem中css自动转化为rem是参照默认插件的16转换的所以需要自己配置
 
-![1592553015896](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/011138-689374.png)
+![1592553015896](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/011138-689374.png)
 
-![1592552985012](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/19/154946-180402.png)>
+![1592552985012](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/19/154946-180402.png)>
 

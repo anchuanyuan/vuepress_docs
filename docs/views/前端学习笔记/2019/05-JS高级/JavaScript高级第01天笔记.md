@@ -289,7 +289,7 @@ var son = new Son(5, 3); son.subtract(); //2 son.sum();//8
 
 以上代码运行结果为:
 
-![1594532510395](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/12/134151-398288.png)
+![1594532510395](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/12/134151-398288.png)
 
 4. 时刻注意this的指向问题,类里面的共有的属性和方法一定要加this使用.
    1. constructor中的this指向的是new出来的实例对象
@@ -298,7 +298,7 @@ var son = new Son(5, 3); son.subtract(); //2 son.sum();//8
 
 5. 在 ES6 中类没有变量提升，所以必须先定义类，才能通过类实例化对象 
 
-![1594532537454](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/12/134218-364847.png)
+![1594532537454](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/12/134218-364847.png)
 
 
 

@@ -28,7 +28,7 @@ categories:
 
 **语法**
 
-![register](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/222153-211907.png)
+![register](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/222153-211907.png)
 
 **演示代码**
 
@@ -63,11 +63,11 @@ categories:
 
 **语法**
 
-![on1](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/222157-771765.png)
+![on1](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/222157-771765.png)
 
-![on2](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/222308-926843.png)
+![on2](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/222308-926843.png)
 
-![on3](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/222159-394555.png)
+![on3](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/222159-394555.png)
 
 **演示代码**
 
@@ -128,7 +128,7 @@ categories:
 
 **语法**
 
-![off](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/222203-804896.png)
+![off](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/222203-804896.png)
 
 
 
@@ -178,9 +178,9 @@ categories:
 
 **语法**
 
-![t1](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/222205-90928.png)
+![t1](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/222205-90928.png)
 
-![t2](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/222206-997343.png)
+![t2](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/222206-997343.png)
 
 **演示代码**
 
@@ -222,7 +222,7 @@ categories:
 
 **语法**
 
-![event](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/222208-817678.png)
+![event](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/222208-817678.png)
 
 **演示代码**
 
@@ -253,7 +253,7 @@ categories:
 
 **语法**
 
-![extend](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/222210-897602.png)
+![extend](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/222210-897602.png)
 
 **演示代码**
 
@@ -291,7 +291,7 @@ categories:
 
 **语法**
 
-![noconfig](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/222213-737328.png)
+![noconfig](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/222213-737328.png)
 
 **演示代码**
 
@@ -327,9 +327,9 @@ jQuery文件，因此也称为 jQuery 插件。
 
 **下载位置**
 
-![water](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/222217-485312.png)
+![water](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/222217-485312.png)
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/222219-844277.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/222219-844277.png)
 
 **代码演示**
 
@@ -661,5 +661,5 @@ http://www.dowebok.com/demo/2014/77/
 
 ## 1.8. 今日总结
 
-![总结](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/222232-565028.png)
+![总结](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/222232-565028.png)
 

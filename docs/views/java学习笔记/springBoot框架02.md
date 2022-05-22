@@ -10,7 +10,7 @@
 
 ## 1.学习目标
 
-![1633856334880](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202110/10/165855-145360.png)
+![1633856334880](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202110/10/165855-145360.png)
 
 ## 2.Mybatis整合&数据访问
 
@@ -23,7 +23,7 @@
 
 - Idea下创建Maven普通工程springboot_mybatis
 
-![1633856629483](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202110/10/170349-640835.png)
+![1633856629483](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202110/10/170349-640835.png)
 
 - pom.xml 添加核心依赖
 

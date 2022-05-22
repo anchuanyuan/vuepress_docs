@@ -70,7 +70,7 @@ Vscode 快速格式化代码: `shift+alt+f`
 
 **语法：**
 
-![1570867555401](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/235446-628748.png)
+![1570867555401](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/235446-628748.png)
 
 ​ 上述语法表示选择元素 1 里面的所有元素 2 (后代元素)。
 
@@ -83,7 +83,7 @@ Vscode 快速格式化代码: `shift+alt+f`
 
 **例子：**
 
-![1570867652832](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/235448-614885.png)
+![1570867652832](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/235448-614885.png)
 
 ### 3、子选择器 (重要）
 
@@ -95,7 +95,7 @@ Vscode 快速格式化代码: `shift+alt+f`
 
 **语法：**
 
-![1591718877453](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/000758-43083.png)
+![1591718877453](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/000758-43083.png)
 
 ​ 上述语法表示选择元素 1 里面的所有直接后代(子元素) 元素 2。
 
@@ -107,7 +107,7 @@ Vscode 快速格式化代码: `shift+alt+f`
 
 **例子：**
 
-![1570867652832](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/235453-604091.png)
+![1570867652832](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/235453-604091.png)
 
 ### 4、并集选择器 (重要）
 
@@ -117,7 +117,7 @@ Vscode 快速格式化代码: `shift+alt+f`
 
 **语法：**
 
-![1591718921266](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/000843-450014.png)
+![1591718921266](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/000843-450014.png)
 
 ​ 上述语法表示选择元素 1 和 元素 2。
 
@@ -129,7 +129,7 @@ Vscode 快速格式化代码: `shift+alt+f`
 
 **例子：**
 
-![1570867652832](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/235459-168368.png)
+![1570867652832](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/235459-168368.png)
 
 ### 5、伪类选择器
 
@@ -166,7 +166,7 @@ Vscode 快速格式化代码: `shift+alt+f`
 
 **链接伪类选择器实际工作开发中的写法**：
 
-![1570868845786](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/235506-536817.png)
+![1570868845786](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/235506-536817.png)
 
 ### 7、:focus 伪类选择器
 
@@ -178,11 +178,11 @@ Vscode 快速格式化代码: `shift+alt+f`
 
 例子：
 
-![1570868891669](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/235508-831492.png)
+![1570868891669](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/235508-831492.png)
 
 ### 复合选择器总结
 
-![1570868930472](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/235510-372955.png)
+![1570868930472](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/235510-372955.png)
 
 ## 三、css 的显示模式
 
@@ -291,7 +291,7 @@ Vscode 快速格式化代码: `shift+alt+f`
 
 #### 2.4、元素显示模式总结
 
-![1570870718415](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/235520-679753.png)
+![1570870718415](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/235520-679753.png)
 
 ​ 学习元素显示模式的主要目的就是分清它们各自的特点，当我们网页布局的时候，在合适的地方用合适的标签元素。
 
@@ -314,9 +314,9 @@ Vscode 快速格式化代码: `shift+alt+f`
 
 ​ 让文字的行高等于盒子的高度 就可以让文字在当前盒子内垂直居中
 
-![1570870368253](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/235521-470978.png)
+![1570870368253](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/235521-470978.png)
 
-![1570870387089](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/235523-536245.png)
+![1570870387089](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/235523-536245.png)
 
 **简单理解**:
 
@@ -339,13 +339,13 @@ Vscode 快速格式化代码: `shift+alt+f`
 
 **使用方式**：
 
-![1570886137899](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/235525-888169.png)
+![1570886137899](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/235525-888169.png)
 
 **其他说明**：
 
 ​ 元素背景颜色默认值是 transparent（透明）
 
-![1570886176292](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/235526-846936.png)
+![1570886176292](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/235526-846936.png)
 
 ### 2、背景图片
 
@@ -355,7 +355,7 @@ Vscode 快速格式化代码: `shift+alt+f`
 
 **使用方式**：
 
-![1570886322557](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/235527-427469.png)
+![1570886322557](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/235527-427469.png)
 
 ![1570886362813](images/1570886362813.png)
 
@@ -373,9 +373,9 @@ Vscode 快速格式化代码: `shift+alt+f`
 
 **使用方式：**
 
-![1570886648887](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/235531-757473.png)
+![1570886648887](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/235531-757473.png)
 
-![1570886688306](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/235530-790593.png)
+![1570886688306](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/235530-790593.png)
 
 ### 4、背景图片位置
 
@@ -385,11 +385,11 @@ Vscode 快速格式化代码: `shift+alt+f`
 
 **使用方式：**
 
-​ ![1570886973530](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/235533-378589.png)
+​ ![1570886973530](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/235533-378589.png)
 
 ​ 参数代表的意思是：x 坐标和 y 坐标。 可以使用 方位名词 或者 精确单位
 
-![1570887034135](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/235534-773451.png)
+![1570887034135](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/235534-773451.png)
 
 **其他说明：**
 
@@ -417,9 +417,9 @@ Vscode 快速格式化代码: `shift+alt+f`
 
 **使用方式：**
 
-​ ![1570887652404](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/235537-447966.png)
+​ ![1570887652404](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/235537-447966.png)
 
-![1570887699177](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/235536-230894.png)
+![1570887699177](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/235536-230894.png)
 
 **其他说明：**
 
@@ -433,7 +433,7 @@ Vscode 快速格式化代码: `shift+alt+f`
 
 **使用方式：**
 
-![1570887809455](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/235539-162236.png)
+![1570887809455](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/235539-162236.png)
 
 ### 7、背景色半透明
 
@@ -441,7 +441,7 @@ CSS3 提供了背景颜色半透明的效果。
 
 **使用方式：**
 
-![1570887978061](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/235541-405221.png)
+![1570887978061](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/235541-405221.png)
 
 -   最后一个参数是 alpha 透明度，取值范围在 0~1 之间
 -   我们习惯把 0.3 的 0 省略掉，写为 `background: rgba(0, 0, 0, .3);`
@@ -453,4 +453,4 @@ CSS3 提供了背景颜色半透明的效果。
 
 ### 8、背景总结
 
-![1570888283511](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/235543-888879.png)
+![1570888283511](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/235543-888879.png)

@@ -344,7 +344,7 @@ RESTful API 概述
 | ---- | ---- | ---- | ------ |
 | 获取数据 | 添加数据 | 更新数据 | 删除数据   |
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202009/17/013858-805670.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202009/17/013858-805670.png)
 
 ## XML基础
 

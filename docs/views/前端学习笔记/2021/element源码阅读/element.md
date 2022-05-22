@@ -58,7 +58,7 @@ categories:
 
   - packages文件夹新建button/index.js  button/src/index.vue
 
-    ![1637417232573](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202111/20/220827-946155.png)
+    ![1637417232573](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202111/20/220827-946155.png)
 
   - button/index.js  
 
@@ -176,13 +176,13 @@ categories:
 
 - 然后可以打包试一下 会提示你让你安装 webpack-cli 输入yes进行安装
 
-  ![1637418364965](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202111/20/222605-601510.png)
+  ![1637418364965](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202111/20/222605-601510.png)
 
 - 然后打包就报错了,因为目前解析不了.vue文件,所以需要添加vueloader
 
   [vue-loader介绍](https://vue-loader.vuejs.org/zh/)
 
-  ![1637418648220](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202111/20/223049-831756.png)
+  ![1637418648220](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202111/20/223049-831756.png)
 
   ```
   npm install -D vue-loader vue-template-compiler

@@ -46,7 +46,7 @@ categories:
 
 - jQuery 出现的目的是加快前端人员的开发速度，我们可以非常方便的调用和使用它，从而提高开发效率。
 
-  ![jQuery概述](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/221716-153649.jpeg)
+  ![jQuery概述](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/221716-153649.jpeg)
 
 ### 1.1.3 jQuery的优点
 
@@ -123,7 +123,7 @@ $(document).ready(function(){
 >
 > 只有 jQuery 对象才能使用 jQuery 方法，DOM 对象则使用原生的 JavaScirpt 方法。
 
-![jQuery对象和DOM对象](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/221720-702573.png)
+![jQuery对象和DOM对象](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/221720-702573.png)
 
 ### 1.2.6.  jQuery 对象和 DOM 对象转换
 
@@ -155,13 +155,13 @@ var domObject2 = $('div').get(0)
 $("选择器")   //  里面选择器直接写 CSS 选择器即可，但是要加引号 
 ```
 
-​	![基础选择器](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/221724-835571.png)
+​	![基础选择器](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/221724-835571.png)
 
 ### 1.3.2. 层级选择器
 
 ​	层级选择器最常用的两个分别为：后代选择器和子代选择器。
 
-​	![层级选择器](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/221728-709311.png)
+​	![层级选择器](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/221728-709311.png)
 
 **基础选择器和层级选择器案例代码**
 
@@ -188,7 +188,7 @@ $("选择器")   //  里面选择器直接写 CSS 选择器即可，但是要加
 
 ​	筛选选择器，顾名思义就是在所有的选项中选择满足条件的进行筛选选择。常见如下 :
 
-![筛选选择器](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/221731-54976.png)
+![筛选选择器](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/221731-54976.png)
 
 **案例代码**
 
@@ -223,7 +223,7 @@ $("选择器")   //  里面选择器直接写 CSS 选择器即可，但是要加
 
 另:  jQuery中还有一些筛选方法，类似DOM中的通过一个节点找另外一个节点，父、子、兄以外有所加强。
 
-![筛选方法](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/221734-84544.png)
+![筛选方法](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/221734-84544.png)
 
 偏重于记忆，演示代码略。
 
@@ -347,11 +347,11 @@ var bool = $("div").hasClass("current");
 
 ​	语法规范如下:
 
-![show](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/221740-865185.png)
+![show](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/221740-865185.png)
 
-![hide](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/221742-242836.png)
+![hide](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/221742-242836.png)
 
-![toggle](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/221744-593857.png)
+![toggle](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/221744-593857.png)
 
 **代码演示**
 
@@ -388,11 +388,11 @@ var bool = $("div").hasClass("current");
 
 ​	语法规范如下:
 
-![slideDown](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/221747-511029.png)
+![slideDown](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/221747-511029.png)
 
-![slideUp](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/221748-429267.png)
+![slideUp](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/221748-429267.png)
 
-![slideToggle](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/221751-191164.png)
+![slideToggle](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/221751-191164.png)
 
 **代码演示**
 
@@ -429,13 +429,13 @@ var bool = $("div").hasClass("current");
 
 ​	语法规范如下:
 
-![fadeIn](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/221754-370169.png)
+![fadeIn](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/221754-370169.png)
 
-![fadeOut](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/221756-459340.png)
+![fadeOut](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/221756-459340.png)
 
-![fadeToggle](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/221757-191245.png)
+![fadeToggle](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/221757-191245.png)
 
-![fadeTo](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/221758-399550.png)
+![fadeTo](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/221758-399550.png)
 
 **代码演示**
 
@@ -475,7 +475,7 @@ var bool = $("div").hasClass("current");
 
 ​	语法规范如下:
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/221801-899245.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/221801-899245.png)
 
 **代码演示**
 
@@ -576,6 +576,6 @@ hover([over,]out)     // 其中over和out为两个函数
 
 ## 1.6. 今日总结
 
-![总结](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/221806-822647.png)
+![总结](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/221806-822647.png)
 
 

@@ -217,9 +217,55 @@ package.json
 
 
 
-
-
 ### 4.4 配置完成进行 commit 实验
 
-随便乱提交点东西
+随便乱提交点东西 就会有相关提示
+
+## 5 安装element-plus
+
+按照官网来就行 
+
+## 6css中绑定 js的变量
+
+css 里面直接用 v-bind 函数 就是这么神奇
+
+```vue
+<script setup lang="ts">
+const boxwidth = '100px'
+</script>
+
+<template>
+  <el-button>Default</el-button>
+  <el-button type="primary">Primary</el-button>
+  <el-button type="success">Success</el-button>
+  <el-button type="info">Info</el-button>
+  <el-button type="warning">Warning</el-button>
+  <el-button type="danger">Danger</el-button>
+  <el-button>中文</el-button>
+  <div class="box"></div>
+</template>
+<style>
+.box {
+  width: v-bind(boxwidth);
+  height: 100px;
+  background-color: red;
+}
+</style>
+```
+
+## 7.完成登录页面
+
+## 引入SvgICon组件
+
+## 引入请求库
+
+添加路由守卫
+
+制定layout
+
+引入国际化库i18n
+
+添加全屏
+
+添加引导
 

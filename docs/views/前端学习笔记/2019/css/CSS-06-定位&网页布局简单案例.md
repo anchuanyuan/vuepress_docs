@@ -27,13 +27,13 @@ categories:
 
 **场景1**： 某个元素可以自由的在一个盒子内移动位置，并且压住其他盒子.
 
-![1591779362960](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/165604-114355.png)
+![1591779362960](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/165604-114355.png)
 
 
 
 **场景2**：当我们滚动窗口的时候，盒子是固定屏幕某个位置的。
 
-![1591779382715](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/165624-464490.png)
+![1591779382715](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/165624-464490.png)
 
 
 
@@ -92,7 +92,7 @@ categories:
 | `absolute` | **绝对**定位 |
 | `fixed`    | **固定**定位 |
 
-![1591779401895](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/165642-249638.png)
+![1591779401895](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/165642-249638.png)
 
 ### 1.3 定位模式介绍
 
@@ -133,7 +133,7 @@ categories:
 
 - 效果图：
 
-![相对定位案例](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/165240-35869.gif)
+![相对定位案例](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/165240-35869.gif)
 
 
 
@@ -159,13 +159,13 @@ categories:
 
 2. **父元素没有定位**，则以**浏览器**为准定位（Document 文档）。
 
-   ![1591779429745](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/165713-740018.png)
+   ![1591779429745](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/165713-740018.png)
 
 3. **父元素要有定位**
 
    * 元素将依据最近的已经定位（绝对、固定或相对定位）的父元素（祖先）进行定位。
 
-![1591779446176](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/165727-596130.png)
+![1591779446176](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/165727-596130.png)
 
 
 
@@ -215,9 +215,9 @@ categories:
 
 观察下图，思考一下在布局时，**左右两个方向的箭头图片**以及**父级盒子**的定位方式。
 
-![1591779461429](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/165742-304072.png)
+![1591779461429](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/165742-304072.png)
 
-![1591779487905](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/165810-767597.png)
+![1591779487905](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/165810-767597.png)
 
 **分析**：
 
@@ -258,7 +258,7 @@ categories:
 
 > 固定定位举例：
 
-![固定定位案例](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/165309-352035.png)
+![固定定位案例](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/165309-352035.png)
 
 **提示**：IE 6 等低版本浏览器不支持固定定位。
 
@@ -313,7 +313,7 @@ categories:
 
 ### **2. 1 案例截图**：
 
-![1571385860679](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/165313-54023.png) 
+![1571385860679](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/165313-54023.png) 
 
 ### 2.2 案例分析
 
@@ -396,17 +396,17 @@ categories:
 
 就可以让固定定位的盒子**贴着版心右侧对齐**了。
 
-![1591779543997](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/165905-896749.png)
+![1591779543997](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/165905-896749.png)
 
 
 
-![1591779559902](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/165921-521550.png)
+![1591779559902](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/165921-521550.png)
 
 
 
 案例效果：
 
-![1571389241926](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/165321-127866.png)
+![1571389241926](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/165321-127866.png)
 
 ```html
 <style>
@@ -463,7 +463,7 @@ categories:
 
 - 应用 `z-index` 层叠等级属性可以**调整盒子的堆叠顺序**。如下图所示：
 
-![zindex示意图](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/165324-690931.png)
+![zindex示意图](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/165324-690931.png)
 
 
 
@@ -481,7 +481,7 @@ categories:
 >
 > 但是可以通过以下计算方法实现水平和垂直居中，可以按照下图的方法：
 
-![绝对定位水平居中](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/165326-11502.png)
+![绝对定位水平居中](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/165326-11502.png)
 
 1. `left: 50%;`：让**盒子的左侧**移动到**父级元素的水平中心位置**；
 2. `margin-left: -100px;`：让盒子**向左**移动**自身宽度的一半**。
@@ -492,7 +492,7 @@ categories:
 
 **盒子居中定位示意图**
 
-![绝对定位居中示意图](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/165328-58617.png)
+![绝对定位居中示意图](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/165328-58617.png)
 
 ### 4.2 定位特殊特性
 
@@ -528,16 +528,16 @@ categories:
 
 浮动之所以不会压住文字，因为浮动产生的目的最初是为了做文字环绕效果的。 文字会围绕浮动元素
 
-![1591779895460](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/170456-748213.png)
+![1591779895460](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/170456-748213.png)
 
 ## 5. 综合案例 - 淘宝轮播图(重点)
 
 ### 5.1 效果图
 
-![1591779582671](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/165944-936736.png)
+![1591779582671](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/165944-936736.png)
 
 ### 5.2 布局分析
-![1571397019689](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/165335-854129.png)
+![1571397019689](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/165335-854129.png)
 
 
 
@@ -751,7 +751,7 @@ border-radius: 左上角 右上角  右下角  左下角;
 
   > 配合后面js做特效，比如下拉菜单，原先没有，鼠标经过，显示下拉菜单， 应用极为广泛
 
-![1591779951677](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/170552-823843.png)
+![1591779951677](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/170552-823843.png)
 
 > 
 
@@ -773,7 +773,7 @@ border-radius: 左上角 右上角  右下角  左下角;
 
 - 如果隐藏元素不想要原来位置， 就用 display：none  (用处更多 重点）
 
-![1591779992104](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/170633-504501.png)
+![1591779992104](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/170633-504501.png)
 
 ### 7.3. overflow 溢出（重点）
 
@@ -791,7 +791,7 @@ border-radius: 左上角 右上角  右下角  左下角;
 
 
 
-![1591779613082](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/170014-912879.png)
+![1591779613082](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/170014-912879.png)
 
 
 
@@ -814,7 +814,7 @@ border-radius: 左上角 右上角  右下角  左下角;
 
 ### 8.1. 效果图
 
-![1591779628403](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/170029-339704.png)
+![1591779628403](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/170029-339704.png)
 
 ### 8.2. 案例目标
 

@@ -19,15 +19,15 @@ categories:
 
 服务器端：在服务器中运行的部分，负责存储数据和处理应用逻辑。
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202008/31/205838-153527.png)
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202008/31/210440-486464.jpeg)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202008/31/205838-153527.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202008/31/210440-486464.jpeg)
 
 
 ### 1.2 Node 网站服务器
 
 能够提供网站访问服务的机器就是网站服务器，它能够接收客户端的请求，能够对请求做出响应。
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202008/31/205841-300705.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202008/31/205841-300705.png)
 
 ### 1.3 IP地址
 
@@ -35,7 +35,7 @@ categories:
 
 IP是 Internet Protocol Address 的简写，代表互联网协议地址
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202008/31/205843-214294.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202008/31/205843-214294.png)
 
 ### 1.4 域名
 
@@ -51,7 +51,7 @@ http://www.itheima.com  =>  http://124.165.219.100/
 
 使用端口区分不同的服务，它是一些具有一定范围的数字, 范围是0到65535, 每一个向外界提供服务的软件, 都要占用一个端口
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202008/31/205845-958141.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202008/31/205845-958141.png)
 
 
 
@@ -100,7 +100,7 @@ http：超文本传输协议，提供了一种发布和接收HTML页面的方法
 
 超文本传输协议（英文：HyperText Transfer Protocol，缩写：HTTP）规定了如何从网站服务器传输超文本到本地浏览器，它基于客户端服务器架构工作，是客户端（用户）和服务器端（网站）请求和应答的标准。
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202008/31/205847-831904.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202008/31/205847-831904.png)
 
 
 
@@ -108,7 +108,7 @@ http：超文本传输协议，提供了一种发布和接收HTML页面的方法
 
 在HTTP请求和响应的过程中传递的数据块就叫报文，包括要传送的数据和一些附加信息，并且要遵守规定好的格式。
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202008/31/210547-983607.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202008/31/210547-983607.png)
 
 
 
@@ -175,7 +175,7 @@ http：超文本传输协议，提供了一种发布和接收HTML页面的方法
 
 客户端向服务器端发送请求时，有时需要携带一些客户信息，客户信息需要通过请求参数的形式传递到服务器端，比如登录操作。
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202008/31/205850-165066.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202008/31/205850-165066.png)
 
 
 
@@ -231,7 +231,7 @@ http：超文本传输协议，提供了一种发布和接收HTML页面的方法
 
 
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202008/31/205852-578317.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202008/31/205852-578317.png)
 
 
 
@@ -261,13 +261,13 @@ http：超文本传输协议，提供了一种发布和接收HTML页面的方法
 
 相同的请求地址不同的响应资源，这种资源就是动态资源
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202008/31/205855-844712.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202008/31/205855-844712.png)
 
 
 
 ### 4.7 客户端请求途径
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202008/31/210310-622685.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202008/31/210310-622685.png)
 
 ## NodeJS 异步编程
 
@@ -387,7 +387,7 @@ console.log('代码结束执行');
 
 ```
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202008/31/205902-450683.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202008/31/205902-450683.png)
 
 ### 5.7 Node.js中的异步API
 

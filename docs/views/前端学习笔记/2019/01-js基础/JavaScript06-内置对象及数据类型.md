@@ -71,7 +71,7 @@ function getRandom(min, max) {
 
 -   使用 Date 实例的方法和属性
 
-    ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/021649-265478.png)
+    ![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/021649-265478.png)
 
 -   通过 Date 实例获取总毫米数
 
@@ -149,7 +149,7 @@ function getRandom(min, max) {
 
 -   数组中有进行增加、删除元素的方法，部分方法如下表
 
-    ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/021720-164047.png)
+    ![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/021720-164047.png)
 
     注意：push、unshift 为增加元素方法；pop、shift 为删除元素的方法
 
@@ -157,7 +157,7 @@ function getRandom(min, max) {
 
 -   数组中有对数组本身排序的方法，部分方法如下表
 
-    ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/021723-592678.png)
+    ![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/021723-592678.png)
 
     注意：sort 方法需要传入参数来设置升序、降序排序
 
@@ -168,13 +168,13 @@ function getRandom(min, max) {
 
 -   数组中有获取数组指定元素索引值的方法，部分方法如下表
 
-    ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/021725-600547.png)
+    ![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/021725-600547.png)
 
 #### 数组转换为字符串
 
 -   数组中有把数组转化为字符串的方法，部分方法如下表
 
-    ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/021726-108338.png)
+    ![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/021726-108338.png)
 
     注意：join 方法如果不传入参数，则按照 “ , ”拼接元素
 
@@ -182,7 +182,7 @@ function getRandom(min, max) {
 
 -   数组中还有其他操作方法，同学们可以在课下自行查阅学习
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/021727-258224.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/021727-258224.png)
 
 ### 1.6 字符串对象
 
@@ -222,7 +222,7 @@ temp = null
 
 ​ 字符串通过基本包装类型可以调用部分方法来操作字符串，以下是返回指定字符的位置的方法：
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/021730-452301.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/021730-452301.png)
 
 ​ 案例：查找字符串"abcoefoxyozzopp"中所有 o 出现的位置以及次数
 
@@ -234,11 +234,11 @@ temp = null
 
 ​ 字符串通过基本包装类型可以调用部分方法来操作字符串，以下是根据位置返回指定位置上的字符：
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/021731-976389.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/021731-976389.png)
 
 ​ 在上述方法中，charCodeAt 方法返回的是指定位置上字符对应的 ASCII 码，ASCII 码对照表如下：
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/021735-960220.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/021735-960220.png)
 
 ​ 案例：判断一个字符串 'abcoefoxyozzopp' 中出现次数最多的字符，并统计其次数
 
@@ -254,7 +254,7 @@ temp = null
 
 ​ 字符串通过基本包装类型可以调用部分方法来操作字符串，以下是部分操作方法：
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/021738-437615.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/021738-437615.png)
 
 #### replace()方法
 
@@ -294,19 +294,19 @@ temp = null
 
 2、堆（操作系统）：存储复杂类型(对象)，一般由程序员分配释放，若程序员不释放，由垃圾回收机制回收。
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/021742-486680.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/021742-486680.png)
 
 -   简单数据类型的存储方式
 
     ​ 值类型变量的数据直接存放在变量（栈空间）中
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/021743-581474.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/021743-581474.png)
 
 -   复杂数据类型的存储方式
 
     ​ 引用类型变量（栈空间）里存放的是地址，真正的对象实例存放在堆空间中
 
-    ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/021745-280997.png)
+    ![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/021745-280997.png)
 
 ### 2.4 简单类型传参
 
@@ -324,7 +324,7 @@ console.log(x)；
 
 ​ 运行结果如下：
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/021747-126984.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/021747-126984.png)
 
 ### 2.5 复杂数据类型传参
 
@@ -347,4 +347,4 @@ console.log(p.name);    // 4. 这个输出什么 ?
 
 ​ 运行结果如下：
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/021751-128963.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/021751-128963.png)

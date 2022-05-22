@@ -25,7 +25,7 @@ categories:
 
 ES 的全称是 ECMAScript , 它是由 ECMA 国际标准化组织,制定的一项脚本语言的标准化规范。
 
-![1598805639545](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202008/31/004040-233014.png)
+![1598805639545](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202008/31/004040-233014.png)
 
 ### 为什么使用 ES6 ?
 
@@ -72,7 +72,7 @@ arr[1]()
 
 经典面试题图解：此题的关键点在于变量 i 是全局的，函数执行时输出的都是全局作用域 下的 i 值。
 
-![1598805869956](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202008/31/004431-71051.png)
+![1598805869956](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202008/31/004431-71051.png)
 
 经典面试题图解：此题的关键点在于每次循环都会产生一个块级作用域，每个块级作用 域中的变量都是不同的，函数执行时输出的是自己上一级`（循环产生的块级作用域）`作 用域下的 i 值.
 小结
@@ -128,7 +128,7 @@ ary = ['a', 'b'] // Assignment to constant variable
 
 使用 var 声明的变量，其作用域为该语句所在的函数内，且存在变量提升现象使用 let 声明的变量，其作用域为该语句所在的代码块内，不存在变量提升使用 const 声明的是常量，在后面出现的代码中不能再修改该常量的值
 
-![1598806283716](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202008/31/005124-758821.png)
+![1598806283716](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202008/31/005124-758821.png)
 
 ### 解构赋值`★★★`
 

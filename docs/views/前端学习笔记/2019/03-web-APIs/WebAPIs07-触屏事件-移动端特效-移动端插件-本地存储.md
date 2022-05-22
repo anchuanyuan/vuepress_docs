@@ -30,7 +30,7 @@ categories:
 
 常见的触屏事件如下：
 
-![图片1](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/193039-291125.png)
+![图片1](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/193039-291125.png)
 
 ### 1.1.2 触摸事件对象（TouchEvent）
 
@@ -40,7 +40,7 @@ touchstart、touchmove、touchend 三个事件都会各自有事件对象。
 
 触摸事件对象重点我们看三个常见对象列表：
 
-![图片2](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/193040-613053.png)
+![图片2](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/193040-613053.png)
 
  **因为平时我们都是给元素注册触摸事件，所以重点记住 targetTocuhes**
 
@@ -94,7 +94,7 @@ touchstart、touchmove、touchend 三个事件都会各自有事件对象。
 
 7. 此时图片，去掉过渡效果，然后移动
 
-   ![webAPI第7天1551795483](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/193048-206572.jpeg)
+   ![webAPI第7天1551795483](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/193048-206572.jpeg)
 
 ## 1.2.3 classList 属性
 
@@ -138,7 +138,7 @@ focus.classList.toggle('current');
 
 4. 但是，是等着过渡结束之后变化，所以这个写到 transitionend 事件里面
 
-   ![webAPI第7天1551796072](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/193052-776624.jpeg)
+   ![webAPI第7天1551796072](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/193052-776624.jpeg)
 
 
 1. 手指滑动轮播图
@@ -152,9 +152,9 @@ focus.classList.toggle('current');
 9. 如果是左滑就播放下一张 （index++）
 10. 如果是右滑就播放上一张  (index--)
 
-![webAPI第7天1551796363](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/193054-999484.jpeg)
+![webAPI第7天1551796363](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/193054-999484.jpeg)
 
-![webAPI第7天1551796502](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/193055-657203.jpeg)
+![webAPI第7天1551796502](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/193055-657203.jpeg)
 
 
 
@@ -173,7 +173,7 @@ focus.classList.toggle('current');
 3. 如果被卷去的头部（window.pageYOffset ）大于某个数值
 4. 点击，window.scroll(0,0) 返回顶部
 
-![webAPI第7天1551797003](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/193057-47951.jpeg)
+![webAPI第7天1551797003](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/193057-47951.jpeg)
 
 
 
@@ -225,7 +225,7 @@ function tap (obj, callback) {
 
 3. 使用插件。fastclick 插件解决300ms 延迟。 
 
-   ![webAPI第7天1551797533](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/193100-814619.jpeg)
+   ![webAPI第7天1551797533](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/193100-814619.jpeg)
 
 ## 1.5. 移动端常用开发插件
 
@@ -426,7 +426,7 @@ localStorage.clear()
 
 5. 如果勾选，就存储，否则就移除
 
-   ![webAPI第7天1551800263](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/193106-930809.jpeg)
+   ![webAPI第7天1551800263](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/193106-930809.jpeg)
 
 
 

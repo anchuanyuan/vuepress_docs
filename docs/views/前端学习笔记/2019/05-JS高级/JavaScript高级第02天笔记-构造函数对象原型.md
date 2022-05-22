@@ -81,7 +81,7 @@ console.log(Star.sex);//静态成员只能通过构造函数来访问
 ### **1.3** 构造函数的问题
 
 构造函数方法很好用，但是存在浪费内存的问题。
- ![1594566410066](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/12/230654-795596.png)
+ ![1594566410066](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/12/230654-795596.png)
 
  
 
@@ -118,9 +118,9 @@ var ldh = new Star('刘德华', 18); var zxy = new Star('张学友', 19); ldh.si
 
 `__proto__` 对象原型的意义就在于为对象的查找机制提供一个方向，或者说一条路线，但是它是一个非标准属性，因此实际开发中，不可以使用这个属性，它只是内部指向原型对象prototype
 
- ![1594566591037](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/12/230951-49264.png)
+ ![1594566591037](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/12/230951-49264.png)
 
-![1594566609063](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/12/231009-914027.png)
+![1594566609063](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/12/231009-914027.png)
 
 ### **1.6** **constructor**构造函数
 
@@ -161,11 +161,11 @@ console.log(zxy)
 以上代码运行结果,设置constructor属性如图:
 
 
- ![1594568935015](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/12/234912-477828.png)
+ ![1594568935015](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/12/234912-477828.png)
 
 如果未设置constructor属性,如图:
 
- ![1594569023841](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/12/235024-696791.png)
+ ![1594569023841](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/12/235024-696791.png)
 
  
 
@@ -185,7 +185,7 @@ console.log(zxy)
 
 3. 构造函数的原型对象的constructor属性指向了构造函数,实例对象的原型的constructor属性也指向了构造函数
 
- ![1594569333973](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/12/235535-36161.png)
+ ![1594569333973](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/12/235535-36161.png)
 
  
 

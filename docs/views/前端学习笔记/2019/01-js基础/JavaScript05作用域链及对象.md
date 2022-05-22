@@ -106,7 +106,7 @@ var num = 456;
 f1();
 ```
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/020751-342965.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/020751-342965.png)
 
 作用域链：采取就近原则的方式来查找变量最终的值。
 
@@ -129,7 +129,7 @@ function fn1() {
 fn1();
 ```
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/020808-686836.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/020808-686836.png)
 
 ## 4 - 预解析
 
@@ -200,7 +200,7 @@ var  fn = function() {
 
   - 方法：事物的行为，在对象中用方法来表示（常用动词）
 
-    ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/020916-550032.png)
+    ![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/020916-550032.png)
 
 - 为什么需要对象？
 

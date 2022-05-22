@@ -27,7 +27,7 @@ categories:
 
 - 实际上计算机最终所执行的都是 机器语言，它是由“0”和“1”组成的二进制数，二进制是计算机语言的基础。
 
-  ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/012358-24195.png)
+  ![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/012358-24195.png)
 
 ### 1.3 编程语言
 
@@ -39,13 +39,13 @@ categories:
 | **汇编语言** | 汇编语言和机器语言实质是相同的，都是直接对硬件操作，只不过指令采用了英文缩写的标识符，容易识别和记忆。 |
 | **高级语言** | 高级语言主要是相对于低级语言而言，它并不是特指某一种具体的语言，而是包括了很多编程语言，常用的有C语言、C++、Java、C#、Python、PHP、JavaScript、Go语言、Objective-C、Swift等。 |
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/012404-498902.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/012404-498902.png)
 
 ### 1.4 翻译器
 
 ​	高级语言所编制的程序不能直接被计算机识别，必须经过转换才能被执行，为此，我们需要一个翻译器。翻译器可以将我们所编写的源代码转换为机器语言，这也被称为二进制化。
 
- ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/012409-202073.png)
+ ![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/012409-202073.png)
 
 ### 1.5 编程语言和标记语言区别
 
@@ -66,7 +66,7 @@ categories:
 
 ### 2.1 计算机组成
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/012448-495677.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/012448-495677.png)
 
 ![](images\JS基础第一天06.png)
 
@@ -105,7 +105,7 @@ categories:
 
 ### 3.1 JavaScript 是什么
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/012453-726419.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/012453-726419.png)
 
 - JavaScript 是世界上最流行的语言之一，是一种运行在客户端的脚本语言 （Script 是脚本的意思）
 - 脚本语言：不需要编译，运行过程中由 js 解释器( js 引擎）逐行来进行解释并执行
@@ -125,23 +125,23 @@ categories:
 
 ### 3.3 HTML/CSS/JS 的关系
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/012518-251664.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/012518-251664.png)
 
 ### 3.4 浏览器执行 JS 简介
 
 **浏览器分成两部分：渲染引擎和 JS 引擎**
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/173410-803196.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/173410-803196.png)
 
 
 
 浏览器本身并不会执行JS代码，而是通过内置 JavaScript 引擎(解释器) 来执行 JS 代码 。JS 引擎执行代码时逐行解释每一句源码（转换为机器语言），然后由计算机去执行，所以 JavaScript 语言归为脚本语言，会逐行解释执行。
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/012521-328609.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/012521-328609.png)
 
 ### 3.5 JS 的组成
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/012529-97387.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/012529-97387.png)
 
 
 
@@ -149,7 +149,7 @@ categories:
 
    	​		ECMAScript 是由ECMA 国际（ 原欧洲计算机制造商协会）进行标准化的一门编程语言，这种语言在万维网上应用广泛，它往往被称为 JavaScript或 JScript，但实际上后两者是 ECMAScript 语言的实现和扩展。
 
-   ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/012536-101046.png)
+   ![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/012536-101046.png)
 
    ​		ECMAScript：规定了JS的编程语法和基础核心知识，是所有浏览器厂商共同遵守的一套JS语法工业标准。
 
@@ -254,13 +254,13 @@ vscode → 首选项按钮 → 键盘快捷方式 → 查找 原来的快捷键 
 白话：变量就是一个装东西的盒子。
 
 通俗：变量是用于存放数据的容器。 我们通过 变量名 获取数据，甚至数据可以修改。
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/012653-485816.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/012653-485816.png)
 
 ### 6.2 变量在内存中的存储
 
 		本质：变量是程序在内存中申请的一块用来存放数据的空间。类似我们酒店的房间，一个房间就可以看做是一个变量。  
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/012658-857410.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/012658-857410.png)
 
 ## 7 - 变量的使用
 
@@ -374,7 +374,7 @@ JS 把数据类型分为两类：
 
 JavaScript 中的简单数据类型及其说明如下：
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/012352-11699.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/012352-11699.png)
 
 - 数字型 Number
 
@@ -419,7 +419,7 @@ JavaScript中数值的最大和最小值
   
 用来判断一个变量是否为非数字的类型，返回 true 或者 false
 
-   ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/012921-297680.png)
+   ![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/012921-297680.png)
 
    ```js
      var usrAge = 21;
@@ -553,7 +553,7 @@ JavaScript中数值的最大和最小值
 
   ​		不同类型的返回值
 
-  ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/012951-484029.png)
+  ![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/012951-484029.png)
 
 - 字面量
 
@@ -577,21 +577,21 @@ JavaScript中数值的最大和最小值
 
 - 转换为字符串
 
-  ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/012954-274476.png)
+  ![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/012954-274476.png)
 
   - toString() 和 String()  使用方式不一样。
   - 三种转换方式，更多第三种加号拼接字符串转换方式， 这一种方式也称之为隐式转换。
 
 - 转换为数字型（重点）
 
-  ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/012956-608242.png)
+  ![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/012956-608242.png)
 
   - 注意 parseInt 和 parseFloat 单词的大小写，这2个是重点
   - 隐式转换是我们在进行算数运算的时候，JS 自动转换了数据类型
 
 - 转换为布尔型
 
-  ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/012904-761515.png)
+  ![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/012904-761515.png)
 
   - 代表空、否定的值会被转换为 false  ，如 ''、0、NaN、null、undefined  
 
@@ -622,7 +622,7 @@ JavaScript中数值的最大和最小值
 
 ### 9.2 执行过程
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/012903-829483.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/012903-829483.png)
 
 类似于请客吃饭：
 	

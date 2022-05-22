@@ -29,7 +29,7 @@ JavaScript中常用的运算符有：
 
   概念：算术运算使用的符号，用于执行两个变量或值的算术运算。
 
-  ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/013712-477886.png)
+  ![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/013712-477886.png)
 
 - 浮点数的精度问题
 
@@ -90,11 +90,11 @@ JavaScript中常用的运算符有：
 
   	概念：比较运算符（关系运算符）是两个数据进行比较时所使用的运算符，比较运算后，会返回一个布尔值（true / false）作为比较运算的结果。
 
-  ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/013720-347486.png)
+  ![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/013720-347486.png)
 
 - 等号比较
 
-  ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/013722-312558.png)
+  ![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/013722-312558.png)
 
   ```js
   console.log(18 == '18');
@@ -107,23 +107,23 @@ JavaScript中常用的运算符有：
 
   	概念：逻辑运算符是用来进行布尔值运算的运算符，其返回值也是布尔值。后面开发中经常用于多个条件的判断
 
-  ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/013725-893455.png)
+  ![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/013725-893455.png)
 
 - 逻辑与&&
 
   两边都是 true才返回 true，否则返回 false
 
   
-  ​           ![1592588395186](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/013955-787489.png)
+  ​           ![1592588395186](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/013955-787489.png)
   
-  ​         ![1592588410715](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/014010-265922.png)
+  ​         ![1592588410715](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/014010-265922.png)
   
 - 逻辑或 ||
 
   两边都是 true才返回 true，否则返回 false
 
   
-  ​        ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/014118-804453.png)
+  ​        ![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/014118-804453.png)
   
   
   
@@ -172,7 +172,7 @@ console.log( 123 || 456 || 789 );  //  123
 
 概念：用来把数据赋值给变量的运算符。
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/014047-45908.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/014047-45908.png)
 
 ```js
 var age = 10;
@@ -183,7 +183,7 @@ age *= 10; // 相当于 age = age * 10;
 
 ### 1.7 运算符优先级
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/014049-74502.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/014049-74502.png)
 
 - 一元运算符里面的逻辑非优先级很高
 - 逻辑与比逻辑或优先级高
@@ -198,19 +198,19 @@ age *= 10; // 相当于 age = age * 10;
 
 流程控制主要有三种结构，分别是**顺序结构**、**分支结构**和**循环结构**，代表三种代码执行的顺序。
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/014055-971209.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/014055-971209.png)
 
 ### 2.2 顺序流程控制
 	
 顺序结构是程序中最简单、最基本的流程控制，它没有特定的语法结构，程序会按照代码的先后顺序，依次执行，程序中大多数的代码都是这样执行的。
-​                ![1592588530373](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/014212-872175.png)
+​                ![1592588530373](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/014212-872175.png)
 
 ### 2.3 分支流程控制
 
 - 分支结构
 
 由上到下执行代码的过程中，根据不同的条件，执行不同的路径代码（执行代码多选一的过程），从而得到不同的结果
-            ![1592588545596](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/014229-179247.png)
+            ![1592588545596](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/014229-179247.png)
 
 JS 语言提供了两种分支结构语句：if 语句、switch 语句
 
@@ -229,7 +229,7 @@ JS 语言提供了两种分支结构语句：if 语句、switch 语句
 
     - 执行流程
 
-    ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/014242-389269.png)
+    ![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/014242-389269.png)
 
 - if else语句（双分支语句）
 
@@ -247,7 +247,7 @@ JS 语言提供了两种分支结构语句：if 语句、switch 语句
 
     - 执行流程
 
-    ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/014251-976763.png)
+    ![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/014251-976763.png)
 
 - if else if 语句(多分支语句)
 
@@ -270,7 +270,7 @@ JS 语言提供了两种分支结构语句：if 语句、switch 语句
 
     - 执行逻辑
 
-    ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/20/014254-845495.png)
+    ![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/20/014254-845495.png)
 
 ### 2.4 三元表达式
 

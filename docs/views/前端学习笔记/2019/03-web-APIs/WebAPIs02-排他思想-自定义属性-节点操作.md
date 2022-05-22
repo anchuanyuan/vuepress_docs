@@ -37,7 +37,7 @@ categories:
 
 ### 1.1.1 排他思想
 
-![webAPI第二天二1550914482628](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/183413-302371.png)
+![webAPI第二天二1550914482628](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/183413-302371.png)
 
 如果有同一组元素，我们想要某一个元素实现某种样式， 需要用到循环的排他思想算法：
 
@@ -75,8 +75,8 @@ categories:
 
 ## 1.2 案例：百度换肤
 
-![webAPI第二天二1550914640677](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/183434-384775.png)
-![webAPI第二天二1550914663042](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/183954-583598.png)
+![webAPI第二天二1550914640677](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/183434-384775.png)
+![webAPI第二天二1550914663042](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/183954-583598.png)
 
 ```js
 <body>
@@ -105,9 +105,9 @@ categories:
 
 ## 1.3 案例：表格隔行变色
 
-![webAPI第二天二1550914791881](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/183955-871596.png)
+![webAPI第二天二1550914791881](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/183955-871596.png)
 
-![webAPI第二天二1550914812202](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/184012-31402.png)
+![webAPI第二天二1550914812202](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/184012-31402.png)
 
 ```js
     <script>
@@ -130,9 +130,9 @@ categories:
 
 ## 1.4 案例：全选
 
-![webAPI第二天二1550914980274](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/184026-581325.png)
+![webAPI第二天二1550914980274](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/184026-581325.png)
 
-![webAPI第二天二1550915005393](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/184220-151327.png)
+![webAPI第二天二1550915005393](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/184220-151327.png)
 
 ```js
     <script>
@@ -174,7 +174,7 @@ categories:
 
 ### 1.5.1 获取属性值
 
-![webAPI第二天二1550915376339](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/184029-326279.png)
+![webAPI第二天二1550915376339](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/184029-326279.png)
 
 ```js
     <div id="demo" index="1" class="nav"</div>
@@ -193,7 +193,7 @@ categories:
 
 ### 1.5.2. 设置属性值
 
-![webAPI第二天二1550915445026](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/184031-755268.png)
+![webAPI第二天二1550915445026](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/184031-755268.png)
 
 ```js
     // 2. 设置元素属性值
@@ -209,7 +209,7 @@ categories:
 
 ### 1.5.3. 移出属性
 
-![webAPI第二天二15509webAPI第二天二15513137](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/184357-423032.png)
+![webAPI第二天二15509webAPI第二天二15513137](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/184357-423032.png)
 
 ```js
 		// class 不是className
@@ -220,9 +220,9 @@ categories:
 
 
 ### 1.5.4. 案例：tab栏
-![webAPI第二天二1550915567627](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/184145-955905.png)
+![webAPI第二天二1550915567627](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/184145-955905.png)
 
-![webAPI第二天二1550915590707](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/184154-50206.png)
+![webAPI第二天二1550915590707](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/184154-50206.png)
 
 ```js
     <script>
@@ -268,9 +268,9 @@ categories:
 
 H5给我们新增了自定义属性：
 
-![webAPI第二天二1550915798516](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/184426-605640.png)
+![webAPI第二天二1550915798516](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/184426-605640.png)
 
-![webAPI第二天二15509158webAPI第二天二15571](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/184444-660248.png)
+![webAPI第二天二15509158webAPI第二天二15571](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/184444-660248.png)
 
 ```js
     <div getTime="20" data-index="2" data-list-name="andy"</div>
@@ -301,21 +301,21 @@ H5给我们新增了自定义属性：
 ​	网页中的所有内容都是节点（标签、属性、文本、注释等），在DOM 中，节点使用 node 来表示。
 
 ​	HTML DOM 树中的所有节点均可通过 JavaScript 进行访问，所有 HTML 元素（节点）均可被修改，也可以创建或删除。
-![webAPI第二天二1550970944363](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/184120-462038.png)
+![webAPI第二天二1550970944363](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/184120-462038.png)
 
 ​	一般地，节点至少拥有nodeType（节点类型）、nodeName（节点名称）和nodeValue（节点值）这三个基本属性。
 
-![webAPI第二天二1550970986988](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/184113-78545.png)
+![webAPI第二天二1550970986988](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/184113-78545.png)
 
 ### 1.6.2. 节点层级
 
 ​	利用 DOM 树可以把节点划分为不同的层级关系，常见的是**父子兄层级关系**。
 
-![webAPI第二天二1550971058781](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/184118-398439.png)
+![webAPI第二天二1550971058781](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/184118-398439.png)
 
 ### 1.6.3. 父级节点
 
-![webAPI第二天二1550971196686](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/184113-230595.png)
+![webAPI第二天二1550971196686](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/184113-230595.png)
 
 ```js
     <div class="demo"
@@ -336,11 +336,11 @@ H5给我们新增了自定义属性：
 
 **所有子节点**
 
-![webAPI第二天二1550971263925](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/184114-639574.png)
+![webAPI第二天二1550971263925](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/184114-639574.png)
 
 **子元素节点**
 
-![webAPI第二天二1550971325828](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/184115-743028.png)
+![webAPI第二天二1550971325828](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/184115-743028.png)
 
 ```js
     <ul>
@@ -364,21 +364,21 @@ H5给我们新增了自定义属性：
 
 **第1个子节点**
 
-![webAPI第二天二1550971774758](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/184620-365776.png)
+![webAPI第二天二1550971774758](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/184620-365776.png)
 
 **最后1个子节点**
-![webAPI第二天二1550971825493](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/184619-130190.png)
+![webAPI第二天二1550971825493](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/184619-130190.png)
 
 **第1个子元素节点**
 
-![webAPI第二天二1550972014509](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/184622-542949.png)
+![webAPI第二天二1550972014509](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/184622-542949.png)
 
 **最后1个子元素节点**
 
-![webAPI第二天二1550972106485](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/184623-848058.png)
+![webAPI第二天二1550972106485](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/184623-848058.png)
 
 ​	实际开发中，firstChild 和 lastChild 包含其他节点，操作不方便，而 firstElementChild 和 lastElementChild 又有兼容性问题，那么我们如何获取第一个子元素节点或最后一个子元素节点呢？
-![webAPI第二天二1550972648014](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/184704-712627.png)
+![webAPI第二天二1550972648014](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/184704-712627.png)
 
 ```js
     <ol>
@@ -405,9 +405,9 @@ H5给我们新增了自定义属性：
 ### 1.6.5. 案例：新浪下拉菜单
 
 
-![webAPI第二天二1550974934894](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/184717-435506.png)
+![webAPI第二天二1550974934894](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/184717-435506.png)
 
-![webAPI第二天二1550975025608](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/184727-316817.png)
+![webAPI第二天二1550975025608](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/184727-316817.png)
 
 实现代码
 
@@ -432,11 +432,11 @@ H5给我们新增了自定义属性：
 
 **下一个兄弟节点**
 
-![webAPI第二天二1550973538696](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/184849-305858.png)
+![webAPI第二天二1550973538696](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/184849-305858.png)
 
 **上一个兄弟节点**
 
-![webAPI第二天二1550973558511](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/184909-62185.png)
+![webAPI第二天二1550973558511](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/184909-62185.png)
 
 ```js
     <div>我是div</div>
@@ -454,16 +454,16 @@ H5给我们新增了自定义属性：
 
 **下一个兄弟元素节点（有兼容性问题）**
 
-![webAPI第二天二1550973610223](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185017-284327.png)
+![webAPI第二天二1550973610223](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/185017-284327.png)
 
 **上一个兄弟元素节点（有兼容性问题）**
 
-![webAPI第二天二1550973630150](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185034-797784.png)
+![webAPI第二天二1550973630150](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/185034-797784.png)
 
 
-![webAPI第二天二1550973722805](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185048-857868.png)
+![webAPI第二天二1550973722805](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/185048-857868.png)
 
-![webAPI第二天二1550973799759](../../../../../%E5%A4%87%E8%AF%BE%E8%B5%84%E6%96%99/![webAPI第二天二1550973799759](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185111-895194.png)
+![webAPI第二天二1550973799759](../../../../../%E5%A4%87%E8%AF%BE%E8%B5%84%E6%96%99/![webAPI第二天二1550973799759](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/185111-895194.png)
 
 ```js
    function getNextElementSibling(element) {
@@ -479,11 +479,11 @@ H5给我们新增了自定义属性：
 
 ### 1.6.7. 创建节点
 
-![webAPI第二天二1550975514321](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185007-512565.png)
+![webAPI第二天二1550975514321](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/185007-512565.png)
 
 ### 1.6.8. 添加节点
 
-![webAPI第二天二1550975640170](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185153-904104.png)
+![webAPI第二天二1550975640170](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/185153-904104.png)
 
 ```js
     <ul>
@@ -504,9 +504,9 @@ H5给我们新增了自定义属性：
 
 ### 1.6.9. 案例：简单版发布留言
 
-![webAPI第二天二1550975849302](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185207-4486.png)
+![webAPI第二天二1550975849302](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/185207-4486.png)
 
-![webAPI第二天二1550975887017](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/185231-813436.png)
+![webAPI第二天二1550975887017](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/185231-813436.png)
 
 ```js
 <body>

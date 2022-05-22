@@ -21,7 +21,7 @@ categories:
 
 ​	它是浏览器提供的一套方法，可以实现页面无刷新更新数据，提高用户浏览网站应用的体验。
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202009/17/013627-115930.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202009/17/013627-115930.png)
 
 #### Ajax 应用场景
 
@@ -40,7 +40,7 @@ categories:
 
 Ajax 相当于浏览器发送请求与接收响应的代理人，以实现在不影响用户浏览页面的情况下，局部更新页面数据，从而提高用户体验。
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202009/17/013712-927754.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202009/17/013712-927754.png)
 
 #### Ajax的实现步骤
 
@@ -116,7 +116,7 @@ Ajax传递方式
 
 在 HTTP 请求和响应的过程中传递的数据块就叫报文，包括要传送的数据和一些附加信息，这些数据和信息要遵守规定好的格式。
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202009/17/013723-927585.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202009/17/013723-927585.png)
 
 #### 请求参数的格式
 
@@ -177,7 +177,7 @@ xhr.readyState // 获取Ajax 状态码
 
 ##### 两种获取服务器端响应方式的区别
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202009/17/013742-660617.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202009/17/013742-660617.png)
 
 #### Ajax 错误处理
 

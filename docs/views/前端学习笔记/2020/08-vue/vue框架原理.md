@@ -9,7 +9,7 @@ categories:
 ---
 # 深入Vue原理
 
-![vue原理](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202009/28/231808-933441.png)
+![vue原理](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202009/28/231808-933441.png)
 
 
 
@@ -392,7 +392,7 @@ class Watcher {
 
 实际上`__ob__`就是`Observer`对象，并且对象上存储了一个`Dep实例`
 
-![__ob__](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202009/28/231817-370224.png)
+![__ob__](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202009/28/231817-370224.png)
 
 可以看到，这个`dep`是和之前`defineReactive`闭包中的“筐”不同的另外一个“筐”，当属性的值是一个对象时，把触发`getter`的`watcher`也收集了一份在自己的`subs`中，这样就方便我们之后通过代码`命令式地`去触发这个属性对象的`watcher`。
 
@@ -847,11 +847,11 @@ class Watcher {
 
 实际Vue中：
 
-![computed1](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202009/28/231833-190139.png)
+![computed1](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202009/28/231833-190139.png)
 
 我们的实现中：
 
-![computed2](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202009/28/231833-309192.png)
+![computed2](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202009/28/231833-309192.png)
 
 分析原因：
 
@@ -1007,7 +1007,7 @@ Vue实例如果传入了dom或者template，首先就是要把模板字符串转
 - 第二步是对 `AST` 进行静态节点标记，主要用来做虚拟DOM的渲染优化（优化器）（本课程忽略）
 - 第三步是 使用 `element ASTs` 生成 `render` 函数代码字符串（代码生成器）
 
-![解析器](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202009/28/231841-503099.png)
+![解析器](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202009/28/231841-503099.png)
 
 AST是什么？
 
@@ -1030,7 +1030,7 @@ Vue中对模板parse后的AST长什么样？
 
 源代码生成AST一般包含两个步骤：词法分析和语法分析
 
-![AST](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202009/28/232058-458870.png)
+![AST](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202009/28/232058-458870.png)
 
 Vue中的parse是每解析到一个token会立即对token进行处理
 
@@ -1231,7 +1231,7 @@ VDOM有什么用？
 
 如果视图通过vdom来描述，那么当数据发生改变时，**可以将新的vdom和旧的vdom进行对比，找到哪里发生了改变，再去对应的dom上改变相应的元素**
 
-![VDOM](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202009/28/232123-491457.png)
+![VDOM](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202009/28/232123-491457.png)
 
 2. 上述步骤只有最后一步更新需要依赖dom api，意味着只要能跑js的地方就可以用vdom去描述当前视图，更新时只用调用相应平台的api就行，实现了**跨平台**。
 

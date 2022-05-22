@@ -32,9 +32,9 @@ offset 翻译过来就是偏移量， 我们使用 offset系列相关属性可�
 
 3. 注意：返回的数值都不带单位
 
-   ![webAPI第5天图片1](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/192107-836375.png)
+   ![webAPI第5天图片1](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/192107-836375.png)
 
-![webAPI第5天图片2](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/192118-293008.png)
+![webAPI第5天图片2](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/192118-293008.png)
 
 ### 1.1.2 offset 与 style 区别 
 
@@ -163,11 +163,11 @@ this.innerHTML = 'x坐标是' + x + ' y坐标是' + y;
 9. 如果大于遮挡层最大的移动距离，就把坐标设置为最大的移动距离
 10. 遮挡层的最大移动距离：小图片盒子宽度 减去 遮挡层盒子宽度
 
-![1551881487(1)](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/192145-363175.png)
+![1551881487(1)](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/192145-363175.png)
 
 
 
-![1551881563(1)](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/192311-21474.png)
+![1551881563(1)](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/192311-21474.png)
 
 ```javascript
 window.addEventListener('load', function() {
@@ -231,9 +231,9 @@ window.addEventListener('load', function() {
 client 翻译过来就是客户端，我们使用 client 系列的相关属性来获取元素可视区的相关信息。通过 client
 系列的相关属性可以动态的得到该元素的边框大小、元素大小等。
 
-![webAPI第5天图片3](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/192201-753215.png)
+![webAPI第5天图片3](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/192201-753215.png)
 
-![webAPI第5天图片4](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/192204-67726.png)
+![webAPI第5天图片4](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/192204-67726.png)
 
 ### 1.2.2. 淘宝 flexible.js 源码分析
 
@@ -265,9 +265,9 @@ client 翻译过来就是客户端，我们使用 client 系列的相关属性�
 
 scroll 翻译过来就是滚动的，我们使用 scroll 系列的相关属性可以动态的得到该元素的大小、滚动距离等。
 
-![webAPI第5天图片3](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/191505-892023.png)
+![webAPI第5天图片3](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/191505-892023.png)
 
-![webAPI第5天图片6](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/192206-671136.png)
+![webAPI第5天图片6](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/192206-671136.png)
 
 ### 1.3.2. 页面被卷去的头部
 
@@ -344,7 +344,7 @@ function getScroll() {
 
 ## 1.4. 三大系列总结
 
-![webAPI第5天图片7](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/192210-857107.png)
+![webAPI第5天图片7](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/192210-857107.png)
 
 他们主要用法：
 

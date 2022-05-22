@@ -14,7 +14,7 @@ categories:
 >
 > 让开发者以更加友好的方式拼接字符串，使项目代码更加清晰、更加易于维护。
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202008/31/214103-783944.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202008/31/214103-783944.png)
 
 ### art-template
 
@@ -149,11 +149,11 @@ categories:
 
 
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202008/31/214121-988106.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202008/31/214121-988106.png)
 
 
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202008/31/214123-264869.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202008/31/214123-264869.png)
 
 
 
@@ -194,7 +194,7 @@ categories:
 
 
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202008/31/214125-265992.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202008/31/214125-265992.png)
 
 1. 建立项目文件夹并生成项目描述文件
 

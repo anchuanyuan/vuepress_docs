@@ -49,7 +49,7 @@ app.listen('5000', () => {
 
 ### Tip 关于 http-client 的使用(查看文末的补充)
 
-![1593960842054](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/000640-545598.png)
+![1593960842054](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/000640-545598.png)
 
 ## 2.连接数据库定义数据模型
 

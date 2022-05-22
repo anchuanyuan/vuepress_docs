@@ -29,7 +29,7 @@ categories:
 
 API（Application Programming Interface，应用程序编程接口）是一些预先定义的函数，目的是提供应用程序与开发人员基于某软件或硬件得以访问一组例程的能力，而又无需访问源码，无需理解其内部工作机制细节，只需直接调用使用即可。
 
-![1550719355829](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/182641-127082.png)
+![1550719355829](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/182641-127082.png)
 
 - 举例解释什么是API。
 >
@@ -75,7 +75,7 @@ API（Application Programming Interface，应用程序编程接口）是一些�
 
 ### 1.2.2. DOM树
 
-![1550731974575](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/182538-93165.png)
+![1550731974575](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/182538-93165.png)
 
 DOM树 又称为文档树模型，把文档映射成树形结构，通过节点对象对其处理，处理的结果可以加入到当前的页面。
 
@@ -83,7 +83,7 @@ DOM树 又称为文档树模型，把文档映射成树形结构，通过节点�
 - 节点：网页中的所有内容，在文档树中都是节点（标签、属性、文本、注释等），使用node表示
 - 标签节点：网页中的所有标签，通常称为元素节点，又简称为“元素”，使用element表示
 
-![1550732362134](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/182718-504150.png)
+![1550732362134](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/182718-504150.png)
 
 ## 1.3. 获取元素
 
@@ -160,15 +160,15 @@ DOM树 又称为文档树模型，把文档映射成树形结构，通过节点�
 </body>
 ```
 
-![1550733441663](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/182748-995875.png)
+![1550733441663](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/182748-995875.png)
 
 注意：getElementsByTagName()获取到是动态集合，即：当页面增加了标签，这个集合中也就增加了元素。
 
 ### 1.3.3. H5新增获取元素方式
 
-![1550733518278](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/182800-936.png)
+![1550733518278](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/182800-936.png)
 
-![1550733734425](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/182811-977186.png)
+![1550733734425](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/182811-977186.png)
 
 **案例代码**
 
@@ -204,7 +204,7 @@ DOM树 又称为文档树模型，把文档映射成树形结构，通过节点�
 
 ### 1.3.4 获取特殊元素（body，html）
 
-![1550733794816](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/182823-735537.png)
+![1550733794816](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/182823-735537.png)
 ## 1.4. 事件基础
 
 ### 1.4.1. 事件概述
@@ -242,7 +242,7 @@ JavaScript 使我们有能力创建动态页面，而事件是可以被 JavaScri
 
 ### 1.4.3. 执行事件的步骤
 
-![1550734387056](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/182859-192284.png)
+![1550734387056](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/182859-192284.png)
 
 **案例代码**
 
@@ -265,7 +265,7 @@ JavaScript 使我们有能力创建动态页面，而事件是可以被 JavaScri
 ```
 
 ### 1.4.4. 常见的鼠标事件
-![1550734506084](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/182911-632815.png)
+![1550734506084](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/182911-632815.png)
 
 ### 1.4.5. 分析事件三要素
 
@@ -279,7 +279,7 @@ JavaScript 使我们有能力创建动态页面，而事件是可以被 JavaScri
 
 ### 1.5.1. 改变元素内容（获取或设置）
 
-![1550735016756](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/182926-409188.png)
+![1550735016756](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/182926-409188.png)
 
 **innerText改变元素内容**
 
@@ -348,7 +348,7 @@ JavaScript 使我们有能力创建动态页面，而事件是可以被 JavaScri
 
 ### 1.5.2. 常用元素的属性操作
 
-![1550735556297](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/183000-430609.png)
+![1550735556297](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/183000-430609.png)
 
 **获取属性的值**
 
@@ -388,13 +388,13 @@ JavaScript 使我们有能力创建动态页面，而事件是可以被 JavaScri
 
 ### 1.5.3. 案例：分时问候
 
-![1550735858049](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/183015-458102.png)
+![1550735858049](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/183015-458102.png)
 
-![1550735877145](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/183025-724163.png)
+![1550735877145](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/183025-724163.png)
 
 ### 1.5.4. 表单元素的属性操作
 
-![1550736039005](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/183036-501732.png)
+![1550736039005](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/183036-501732.png)
 
 **获取属性的值**
 
@@ -431,9 +431,9 @@ JavaScript 使我们有能力创建动态页面，而事件是可以被 JavaScri
 
 ### 1.5.5. 案例：仿京东显示密码
 
-![1550736330331](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/183055-906424.png)
+![1550736330331](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/183055-906424.png)
 
-![1550736346822](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/183104-108644.png)
+![1550736346822](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/183104-108644.png)
 
 ### 1.5.6. 样式属性操作
 
@@ -441,7 +441,7 @@ JavaScript 使我们有能力创建动态页面，而事件是可以被 JavaScri
 
 **常用方式**
 
-![1550736488634](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/183107-798069.png)
+![1550736488634](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/183107-798069.png)
 
 
 
@@ -451,7 +451,7 @@ JavaScript 使我们有能力创建动态页面，而事件是可以被 JavaScri
 >
 - 元素对象.style.样式属性 = 值;
 
-![1550736620181](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/183129-420403.png)
+![1550736620181](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/183129-420403.png)
 
 **案例代码**
 
@@ -473,21 +473,21 @@ JavaScript 使我们有能力创建动态页面，而事件是可以被 JavaScri
 
 #### 案例：淘宝点击关闭二维码
 
-![1550736843659](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/183131-547296.png)
+![1550736843659](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/183131-547296.png)
 
-![1550736940082](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/183202-294905.png)
+![1550736940082](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/183202-294905.png)
 
 #### 案例：循环精灵图背景
 
-![1550736940082](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/183202-294905.png)
+![1550736940082](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/183202-294905.png)
 
-![1550736956754](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/183216-777626.png)
+![1550736956754](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/183216-777626.png)
 
 #### 案例：显示隐藏文本框内容
 
-![1550737006593](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/183234-464069.png)
+![1550737006593](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/183234-464069.png)
 
-![1550737019729](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/183239-704161.png)
+![1550737019729](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/183239-704161.png)
 
 #### 方式2：通过操作className属性
 
@@ -495,7 +495,7 @@ JavaScript 使我们有能力创建动态页面，而事件是可以被 JavaScri
 >
 - 因为class是关键字，所有使用className。
 
-![1550737214510](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/183259-487889.png)
+![1550737214510](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/183259-487889.png)
 
 **案例代码**
 
@@ -522,11 +522,11 @@ JavaScript 使我们有能力创建动态页面，而事件是可以被 JavaScri
 
 #### 案例：密码框格式提示错误信息
 
-![1550737269546](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/183321-152582.png)
+![1550737269546](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/183321-152582.png)
 
-![1550737284218](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/183320-588133.png)
+![1550737284218](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/183320-588133.png)
 
 ## 1.6. 今日总结
 
-![1550737354861](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202007/06/183336-550430.png)
+![1550737354861](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202007/06/183336-550430.png)
 

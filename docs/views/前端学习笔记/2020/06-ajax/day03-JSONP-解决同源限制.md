@@ -198,7 +198,7 @@ url：https://wis.qq.com/weather/common
 
 CORS：全称为 Cross-origin-resource sharing，即跨域资源共享，它允许浏览器向跨域服务器发送 Ajax 请求，克服了 Ajax 只能同源使用的限制。
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202009/16/233803-231966.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202009/16/233803-231966.png)
 
 ```
 origin: http://localhost:3000
@@ -224,11 +224,11 @@ Node 服务器端设置响应头示例代码：
 
 #### 访问非同源数据 服务器端解决方案
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202009/16/233805-103387.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202009/16/233805-103387.png)
 
 #### cookie 复习
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202009/16/233811-857504.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202009/16/233811-857504.png)
 
 #### withCredentials属性
 

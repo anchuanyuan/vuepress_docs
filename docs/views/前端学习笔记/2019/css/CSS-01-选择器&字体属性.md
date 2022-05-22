@@ -18,14 +18,14 @@ CSS 主要用于设置 HTML 页面中的文本内容（字体、大小、对齐�
 CSS 让我们的网页更加丰富多彩，布局更加灵活自如。简单理解：CSS 可以美化 HTML , 让 HTML 更漂亮， 让页面布局更简单。
 CSS 最大价值: 由 HTML 专注去做结构呈现，样式交给 CSS，即 结构 ( HTML ) 与样式( CSS ) 相分离
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/231501-825560.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/231501-825560.png)
 
 ### css 语法规范
 
 1. 使用 HTML 时，需要遵从一定的规范，CSS 也是如此。要想熟练地使用 CSS 对网页进行修饰，首先需要了解 CSS 样式规则。
 2. CSS 规则由两个主要的部分构成：选择器以及一条或多条声明。
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/231459-208707.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/231459-208707.png)
 
 1.选择器是用于指定 CSS 样式的 HTML 标签，花括号内是对该对象设置的具体样式
 
@@ -96,7 +96,7 @@ h3 {
 
 答：选择器(选择符)就是根据不同需求把不同的标签选出来这就是选择器的作用。 简单来说，就是选择标签用的。
 
-​ ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/231456-706500.png)
+​ ![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/231456-706500.png)
 
 找到所有的 h1 标签。 选择器（选对人）
 设置这些标签的样式，比如颜色为红色（做对事）。
@@ -149,7 +149,7 @@ h3 {
 我们可以给一个标签指定多个类名，从而达到更多的选择目的。 这些类名都可以选出这个标签.
 简单理解就是一个标签有多个名字.
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/231452-795154.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/231452-795154.png)
 
 多类名的具体使用：
 
@@ -182,7 +182,7 @@ HTML 元素以 id 属性来设置 id 选择器，CSS 中 id 选择器以“#" �
 3. id 选择器和类选择器最大的不同在于使用次数上。
 4. 类选择器在修改样式中用的最多，id 选择器一般用于页面唯一性的元素上，经常和 JavaScript 搭配使用。
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/231449-309734.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/231449-309734.png)
 
 ### 通配符选择器：
 
@@ -207,7 +207,7 @@ HTML 元素以 id 属性来设置 id 选择器，CSS 中 id 选择器以“#" �
 
 ### 选择器总结
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/231447-117039.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/231447-117039.png)
 
 ## css 字体属性:
 
@@ -239,7 +239,7 @@ p {
 }
 ```
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/231445-193356.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/231445-193356.png)
 
 1.学会让加粗标签(比如 h 和 strong 等) 不加粗，或者其他标签加粗 2.实际开发时，我们更喜欢用数字表示粗细 ###字体样式：
 CSS 使用 `font-style` 属性设置文本的风格。
@@ -251,7 +251,7 @@ p {
 }
 ```
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/231443-611065.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/231443-611065.png)
 
 ### 字体的综合写法
 
@@ -267,7 +267,7 @@ body {
 
 ### 字体总结：
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/231441-996990.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/231441-996990.png)
 
 ## css 文本属性：
 
@@ -282,7 +282,7 @@ div {
 }
 ```
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/231439-352325.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/231439-352325.png)
 
 开发中最常用的是十六进制 ###文本对齐：
 text-align 属性用于设置元素内文本内容的水平对齐方式。
@@ -294,7 +294,7 @@ div {
 }
 ```
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/231438-134031.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/231438-134031.png)
 
 ### 修饰文本：
 
@@ -306,7 +306,7 @@ text-decoration：underline；
 }
 ```
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/231433-972731.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/231433-972731.png)
 
 重点记住如何添加下划线 ? 如何删除下划线 ? 其余了解即可.
 
@@ -323,7 +323,7 @@ div {
 }
 ```
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/231435-807404.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/231435-807404.png)
 
 em 是一个相对单位，就是当前元素(font-size) 1 个文字的大小, 如果当前元素没有设置大小，则会按照父元素的 1 个文字大小。
 
@@ -391,11 +391,11 @@ p {
 <link rel="stylesheet"  href="css文件路径">
 ```
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/231340-286384.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/231340-286384.png)
 
 ## Chrome 调试工具：
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/193418-291268.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/193418-291268.png)
 
 1. Ctrl+滚轮 可以放大开发者工具代码大小。
 2. 左边是 HTML 元素结构，右边是 CSS 样式。

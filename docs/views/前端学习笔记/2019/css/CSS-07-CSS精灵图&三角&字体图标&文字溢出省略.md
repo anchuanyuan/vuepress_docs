@@ -27,7 +27,7 @@ categories:
 
 ### 1.1 为什么需要精灵图
 
-![1571482435259](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/170948-160298.png)
+![1571482435259](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/170948-160298.png)
 
 一个网页中往往会应用很多小的背景图像作为修饰，当网页中的图像过多时，服务器就会频繁地接收和发送请求图片，造成服务器请求压力过大，这将大大降低页面的加载速度。
 
@@ -41,7 +41,7 @@ categories:
 
 **精灵图举例**:
 
-![1571519067073](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/170951-783229.png)
+![1571519067073](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/170951-783229.png)
 
 ### 1.2 精灵图（sprites）的使用
 
@@ -68,7 +68,7 @@ categories:
 
 #### 1.3.1 案例效果
 
-![1571519368229](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/170957-517389.png)
+![1571519368229](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/170957-517389.png)
 
 #### 1.3.2 代码参考
 
@@ -142,11 +142,11 @@ span {
 
 **总结：**
 
-1.如果遇到一些结构和样式比较简单的小图标，就用字体图标。![1571519724473](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/172124-182908.png)
+1.如果遇到一些结构和样式比较简单的小图标，就用字体图标。![1571519724473](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/172124-182908.png)
 
 2.如果遇到一些结构和样式复杂一点的小图片，就用精灵图。
 
-![1571519739775](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/171004-608838.png)
+![1571519739775](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/171004-608838.png)
 
 
 
@@ -178,7 +178,7 @@ IcoMoon 成立于 2011 年，推出了第一个自定义图标字体生成器，
 
 1. 把下载包里面的 **fonts** 文件夹放入页面根目录下
 
-![1571520092646](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/171011-858017.png)
+![1571520092646](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/171011-858017.png)
 
 
 
@@ -218,7 +218,7 @@ IcoMoon 成立于 2011 年，推出了第一个自定义图标字体生成器，
 
 3. html 标签内添加小图标。
 
-![1571520411345](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/171019-216438.png)
+![1571520411345](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/171019-216438.png)
 
 4. 给标签定义字体。
 
@@ -230,7 +230,7 @@ IcoMoon 成立于 2011 年，推出了第一个自定义图标字体生成器，
 
   注意：务必保证 这个字体和上面@font-face里面的字体保持一致 
 
-  ![1571520485350](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/171022-409510.png)
+  ![1571520485350](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/171022-409510.png)
 
 ### 2.5 字体图标的追加
 
@@ -238,11 +238,11 @@ IcoMoon 成立于 2011 年，推出了第一个自定义图标字体生成器，
 
 把压缩包里面的 **selection.json** 从新上传，然后选中自己想要新的图标，从新下载压缩包，并替换原来的文件即可。
 
-![1571520554317](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/171032-657788.png)
+![1571520554317](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/171032-657788.png)
 
 ### 2.6 字体图标加载的原理：
 
-![1571520617270](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/171035-813802.gif)
+![1571520617270](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/171035-813802.gif)
 
 ## 3. CSS 三角
 
@@ -252,7 +252,7 @@ IcoMoon 成立于 2011 年，推出了第一个自定义图标字体生成器，
 
 一张图， 你就知道 CSS 三角是怎么来的了, 做法如下：
 
-![1571520965966](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/171042-7339.png)
+![1571520965966](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/171042-7339.png)
 
 ```css
  div {
@@ -274,7 +274,7 @@ IcoMoon 成立于 2011 年，推出了第一个自定义图标字体生成器，
 
 #### 3.2.1效果图
 
-![1571521183026](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/171045-41878.png)
+![1571521183026](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/171045-41878.png)
 
 #### 3.2.2 代码参考
 
@@ -355,7 +355,7 @@ IcoMoon 成立于 2011 年，推出了第一个自定义图标字体生成器，
 
 设置或检索在对象上移动的鼠标指针采用何种系统预定义的光标形状。
 
-![1571521805183](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/171053-531666.png)
+![1571521805183](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/171053-531666.png)
 
 ### 4.2 轮廓线 outline
 
@@ -391,15 +391,15 @@ CSS 的 **vertical-align** 属性使用场景： 经常用于设置图片或者�
 vertical-align : baseline | top | middle | bottom 
 ```
 
-![1571522023413](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/171055-566373.png)
+![1571522023413](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/171055-566373.png)
 
-[1571522040645](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/172211-255983.png)
+[1571522040645](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/172211-255983.png)
 
 ### **5.1** **图片、表单和文字对齐**
 
 图片、表单都属于行内块元素，默认的 vertical-align 是基线对齐。
 
-![1571522093729](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/171058-801489.png)
+![1571522093729](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/171058-801489.png)
 
 此时可以给图片、表单这些行内块元素的 **vertical-align 属性设置为 middle** 就可以让文字和图片垂直居中对齐了。
 
@@ -413,7 +413,7 @@ bug：图片底侧会有一个空白缝隙，原因是行内块元素会和文�
 
 2.把图片转换为块级元素  **display: block**; 
 
-![1571522162225](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/171100-521669.png)
+![1571522162225](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/171100-521669.png)
 
 
 
@@ -421,7 +421,7 @@ bug：图片底侧会有一个空白缝隙，原因是行内块元素会和文�
 
 ### 6.1 单行文本溢出显示省略号
 
-![1571522317809](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/171109-585062.png)
+![1571522317809](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/171109-585062.png)
 
 单行文本溢出显示省略号--必须满足三个条件：
 
@@ -440,7 +440,7 @@ bug：图片底侧会有一个空白缝隙，原因是行内块元素会和文�
 
 ### 6.2 多行文本溢出显示省略号（了解）
 
-![1571522334591](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/171118-738713.png)
+![1571522334591](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/171118-738713.png)
 
 
 
@@ -485,9 +485,9 @@ display: -webkit-box;
 
 ### 7.1. margin负值运用
 
-![1571522666082](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/171122-267987.png)
+![1571522666082](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/171122-267987.png)
 
-![1571522683897](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/171124-141897.png)
+![1571522683897](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/171124-141897.png)
 
 1.让每个盒子margin 往左侧移动 -1px 正好压住相邻盒子边框
 
@@ -497,34 +497,34 @@ display: -webkit-box;
 
 **效果**
 
-![1571522777745](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/171126-171060.png)
+![1571522777745](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/171126-171060.png)
 
 **布局示意图**
 
-![1571522761996](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/171128-369157.png)
+![1571522761996](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/171128-369157.png)
 
 **巧妙运用浮动元素不会压住文字的特性**
 
 ### 7.3 行内块巧妙运用
 
-![1571522898744](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/171128-367298.png)
+![1571522898744](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/171128-367298.png)
 
 页码在页面中间显示:
 
 1. 把这些链接盒子转换为行内块， 之后给父级指定  text-align:center;
 2. 利用行内块元素中间有缝隙，并且给父级添加 text-align:center; 行内块元素会水平会居中
 
-![1571522910580](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/171129-604422.png)
+![1571522910580](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/171129-604422.png)
 
 ### 7.4. CSS 三角强化 案例
 
 #### **7.4.1 原理**
 
-![1571550959181](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/171131-454122.png)
+![1571550959181](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/171131-454122.png)
 
-![1571551000391](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/171131-254305.png)
+![1571551000391](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/171131-254305.png)
 
-![1571548058053](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/171134-825030.png)
+![1571548058053](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/171134-825030.png)
 
 
 
@@ -558,7 +558,7 @@ display: -webkit-box;
 
 #### 7.4.2 案例效果
 
-![1571548099631](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/171137-548113.png)
+![1571548099631](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/171137-548113.png)
 
 #### **7.4.3 代码参考**
 

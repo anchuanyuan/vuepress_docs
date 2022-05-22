@@ -25,7 +25,7 @@ categories:
 
 1.网页是构成网站的基本元素，它通常由图片、链接、文字、声音、视频等元素组成。通常我们看到的网页，常见以 .htm 或 .html 后缀结尾的文件，因此将其俗称为 HTML 文件。
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/193911-324639.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/193911-324639.png)
 
 ### 什么是 HTML：
 
@@ -52,7 +52,7 @@ categories:
 *   浏览器是网页显示、运行的平台。常用的浏览器有 IE、火狐（Firefox）、谷歌（Chrome）、Safari 和 Opera 等。平时称为五大浏览器。
 *   查看浏览器市场份额：http://tongji.baidu.com/data/browser
 
-    ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/194003-150780.png)
+    ![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/194003-150780.png)
 
 **浏览器内核（渲染引擎）**
 
@@ -66,7 +66,7 @@ categories:
 ### 为什么需要 Web 标准：
 
 -   浏览器不同，它们显示页面或者排版就有些许差异
-    ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/193954-867337.png)
+    ![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/193954-867337.png)
 
 -   遵循 Web 标准除了可以让不同的开发人员写出的页面更标准、更统一外，还有以下优点： 1.让 Web 的发展前景更广阔。 2.内容能被更广泛的设备访问。 3.更容易被搜寻引擎搜索。 4.降低网站流量费用。 5.使网站更易于维护。 6.提高页面浏览速度。
 
@@ -74,7 +74,7 @@ categories:
 
 主要包括`《结构Structure》 、《表现（Presentation）》和《行为（Behavior）》`三个方面。
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/193957-265189.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/193957-265189.png)
 
 Web 标准提出的最佳体验方案：**结构、样式、行为相分离**。  
 简单理解：**结构写到 HTML 文件中， 表现写到 CSS 文件中， 行为写到 JavaScript 文件中** 1.结构类似身体
@@ -106,7 +106,7 @@ Web 标准提出的最佳体验方案：**结构、样式、行为相分离**。
 </head>
 ```
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/194325-59088.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/194325-59088.png)
 
 并列关系：
 
@@ -119,12 +119,12 @@ Web 标准提出的最佳体验方案：**结构、样式、行为相分离**。
 
 每个网页都会有一个基本的结构标签（也称为骨架标签），页面内容也是在这些基本标签上书写
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/194319-654835.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/194319-654835.png)
 
 ### 开发工具：
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/194316-959160.png)
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/193919-667556.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/194316-959160.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/193919-667556.png)
 
 **VSCode 的使用：**
 
@@ -165,11 +165,11 @@ zh-CN 定义语言为中文
 根据标签的语义，在合适的地方给一个最为合理的标签，可以让页面结构更清晰。
     下图没有语义化标签：
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/194312-774327.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/194312-774327.png)
 
 ### 添加语义标签：
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/193920-746035.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/193920-746035.png)
 
 ### 常用的标签：
 
@@ -251,7 +251,7 @@ HTML 提供了 6 个等级的网页标题，即`<h1> - <h6>` 。
 所谓属性：简单理解就是属于这个图像标签的特性。
 图像标签的其他属性：
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/193922-911021.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/193922-911021.png)
 ​  
  图像标签注意点： 1.图像标签可以拥有多个属性，必须写在标签名的后面。 2.属性之间不分先后顺序，标签名与属性、属性与属性之间均以空格分开。 3.属性采取键值对的格式，即 key=“value" 的格式，属性 =“属性值”。
 
@@ -262,7 +262,7 @@ HTML 提供了 6 个等级的网页标题，即`<h1> - <h6>` 。
 相对路径：以引用文件所在位置为参考基础，而建立出的目录路径。
 这里简单来说，图片相对于 HTML 页面的位置
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/193923-535244.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/193923-535244.png)
 
 特点：
 
@@ -312,5 +312,5 @@ HTML 中的注释以`“<!--”开头，以“ -->”`结束。
 
 在 HTML 页面中，一些特殊的符号很难或者不方便直接使用，此时我们就可以使用下面的字符来替代。
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/193927-130664.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/193927-130664.png)
 重点记住：空格 、大于号、 小于号 这三个， 其余的使用很少，如果需要回头查阅即可。

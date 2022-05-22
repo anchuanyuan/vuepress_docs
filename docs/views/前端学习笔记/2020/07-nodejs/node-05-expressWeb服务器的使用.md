@@ -137,7 +137,7 @@ app.post('/add', (req, res) => {
 
 > 中间件就是一堆方法，可以接收客户端发来的请求、可以对请求做出响应，也可以将请求继续交给下一个中间件继续处理。
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202008/31/204404-919224.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202008/31/204404-919224.png)
 
 中间件主要由两部分构成，中间件方法以及请求处理函数。
 
@@ -288,7 +288,7 @@ try catch 可以捕获异步函数以及其他同步代码在执行过程中发�
 
 ```
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202008/31/204421-507012.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202008/31/204421-507012.png)
 
 ### GET参数的获取
 

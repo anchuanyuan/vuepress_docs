@@ -109,9 +109,9 @@ let const 箭头函数 解构语法 剩余参数 async await 新增的其他api
 
 1 在命令窗口 直接输入 node,就可以进入node执行环境
 
-![1638889993253](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202112/07/231314-902375.png)
+![1638889993253](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202112/07/231314-902375.png)
 
-![1638890111257](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202112/07/231511-498464.png)
+![1638890111257](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202112/07/231511-498464.png)
 
 2.执行下面的代码
 
@@ -125,15 +125,15 @@ try {
 }
 ```
 
-![1638890461713](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202112/07/232117-533045.png)
+![1638890461713](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202112/07/232117-533045.png)
 
 或者直接 node xxx.js 也可以直接运行改js脚本文件
 
-![1638890702567](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202112/07/232503-406178.png)
+![1638890702567](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202112/07/232503-406178.png)
 
 ## Nodejs带来了什么?
 
-![1638890968189](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202112/07/232929-348495.png)
+![1638890968189](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202112/07/232929-348495.png)
 
 ## 第三方包如何使用 npm是什么玩意?
 
@@ -149,7 +149,7 @@ npm init -y
 
 生成的package.json 文件就包含了整个node项目的各种信息,里面会记录依赖信息,可以设置脚本命令
 
-![1638891413028](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202112/07/233653-742548.png)
+![1638891413028](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202112/07/233653-742548.png)
 
 
 
@@ -160,23 +160,23 @@ npm i dayjs
 #i 是install的简写
 ```
 
-![1638892343502](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202112/07/235224-164744.png)
+![1638892343502](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202112/07/235224-164744.png)
 
 ### 怎么使用这个包
 
-![1638892502416](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202112/07/235503-185362.png)
+![1638892502416](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202112/07/235503-185362.png)
 
 ### 可以用import语法使用这个包吗?不是说nodejs对ES支持友好吗
 
 默认是不可以的
 
-![1638892771182](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202112/07/235932-172164.png)
+![1638892771182](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202112/07/235932-172164.png)
 
 但是只要你按照的说的改一下 package.json 里面的项目模块方式就行了
 
-![1638892837863](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202112/08/000110-582905.png)
+![1638892837863](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202112/08/000110-582905.png)
 
-![1638892873293](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202112/08/000114-198973.png)
+![1638892873293](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202112/08/000114-198973.png)
 
 # babel简介
 
@@ -184,7 +184,7 @@ npm i dayjs
 
 ## 简单使用
 
-![1638971708329](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202112/08/215509-820732.png)
+![1638971708329](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202112/08/215509-820732.png)
 
 - 首先我们创建一个npm 项目
 
@@ -488,7 +488,7 @@ webpack-dev-server  解决了这个问题
 
 ### 如何使用loader
 
-![1639236327712](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202112/11/232529-50493.png)
+![1639236327712](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202112/11/232529-50493.png)
 
 以用babel转换es6代码为例
 

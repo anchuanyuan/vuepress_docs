@@ -37,7 +37,7 @@ CSS3 中新增了盒子阴影，我们可以使用 box-shadow 属性为盒子添
  box-shadow: h-shadow v-shadow blur spread color inset; 
 ```
 
-![1571541874805](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/162925-387773.png)
+![1571541874805](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/162925-387773.png)
 
 ### 3、文字阴影
 
@@ -48,7 +48,7 @@ CSS3 中新增了盒子阴影，我们可以使用 box-shadow 属性为盒子添
  text-shadow: h-shadow v-shadow blur color;
 ```
 
-![1571541954222](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/162932-799639.png)
+![1571541954222](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/162932-799639.png)
 
 ## 二、浮动
 
@@ -93,7 +93,7 @@ CSS3 中新增了盒子阴影，我们可以使用 box-shadow 属性为盒子添
  选择器 { float: 属性值; }
 ```
 
-![1571543209934](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/162935-225002.png)
+![1571543209934](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/162935-225002.png)
 
 
 
@@ -103,11 +103,11 @@ CSS3 中新增了盒子阴影，我们可以使用 box-shadow 属性为盒子添
 
 1、浮动元素会脱离标准流(脱标：浮动的盒子不再保留原先的位置)
 
-![1571544664994](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/162939-547865.png)
+![1571544664994](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/162939-547865.png)
 
 2、浮动的元素会一行内显示并且元素顶部对齐
 
-![1571544725757](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/162941-587452.png)
+![1571544725757](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/162941-587452.png)
 
 注意： 
 
@@ -125,7 +125,7 @@ CSS3 中新增了盒子阴影，我们可以使用 box-shadow 属性为盒子添
 
 ​		先用标准流父元素排列上下位置, 之后内部子元素采取浮动排列左右位置.  符合网页布局第一准则
 
-![1571544991989](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/162948-137529.png)
+![1571544991989](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/162948-137529.png)
 
 ## 三、常见网页布局
 
@@ -147,7 +147,7 @@ CSS3 中新增了盒子阴影，我们可以使用 box-shadow 属性为盒子添
 
 ​		由于父级盒子很多情况下，不方便给高度，但是子盒子浮动又不占有位置，最后父级盒子高度为 0 时，就会影响下面的标准流盒子。
 
-![1571555883628](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/162951-101856.png)
+![1571555883628](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/162951-101856.png)
 
 ### 2、清除浮动本质
 
@@ -167,7 +167,7 @@ CSS3 中新增了盒子阴影，我们可以使用 box-shadow 属性为盒子添
  选择器{clear:属性值;} 
 ```
 
-![1571555980419](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/162953-308507.png)
+![1571555980419](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/162953-308507.png)
 
 我们实际工作中， 几乎只用 clear: both;
 
@@ -281,7 +281,7 @@ overflow:hidden | auto | scroll;
 2. 子盒子浮动了。
 3. 影响下面布局了，我们就应该清除浮动了。
 
-![1571556500074](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/163003-859669.png)
+![1571556500074](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/163003-859669.png)
 
 ## 五、PS 切图
 
@@ -313,4 +313,4 @@ overflow:hidden | auto | scroll;
 
 注意：Cutterman 插件要求你的 PS 必须是完整版，不能是绿色版，所以大家需要安装完整版本。
 
-![1571556821045](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/10/163006-908213.png)
+![1571556821045](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/10/163006-908213.png)

@@ -475,7 +475,7 @@ public class webInitializer implements webApplicationInitializer {
 
 通过Tomcat启动项目并访问
 
-![1633852237420](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202110/10/155038-914081.png)
+![1633852237420](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202110/10/155038-914081.png)
 
 此时地址访问成功。
 当项目访问成功后，那么问题来了，如果项目中存在静态资源文件，Handler放行处理该如何配置，定义的
@@ -735,7 +735,7 @@ spring-boot-starter-web坐标来简单分析SpringBoot自动化配置过程。
 
 Spring Boot的项目一般都会有*Application的入口类，入口类中提供main方法，这是一个标准的Java应
 用程序的入口方法。@SpringBootApplication注解是Spring Boot的核心注解，它其实是一个组合注解：
-![1630824158147](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202109/05/144238-759995.png)
+![1630824158147](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202109/05/144238-759995.png)
 可以看出该注解也是一个组合注解，组合了@Configuration注解，对于Spring Boot应用，
 @SpringBootConfiguration注解属于Boot项目的配置注解也是属于一个组合注解，Spring Boot项目中推荐使用
 @SpringBootConfiguration注解，因为其组合了@Configuration注解。
@@ -782,7 +782,7 @@ Spring Boot默认使用LogBack日志系统，如果不需要更改为其他日�
 </dependency>
 ```
 
-![1630825178717](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202109/05/145939-28219.png)
+![1630825178717](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202109/05/145939-28219.png)
 
 因为新建的Spring Boot项目一般都会引用spring-boot-starter或者spring-boot-starter-web,而
 这两个起步依赖中都已经包含了对于spring-boot-starter-logging的依赖，所以，无需额外添加依赖。
@@ -807,7 +807,7 @@ public class Starter {
 }
 ```
 
-![1630825343447](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202109/05/150223-149230.png)
+![1630825343447](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202109/05/150223-149230.png)
 
 6.5.2.日志输出格式配置
 修改application.yml文件添日志输出格式信息配置，可以修改application.yml文件来控制控制台日志输出
@@ -843,7 +843,7 @@ FreeMarkerAutoConfiguration,借助自动化配置可以很方便的集成Freemar
 Freemarker默认默认视图路径文resources/templates目录（由自动化配置类FreemarkerProperties决
 定）,该目录可以进行在application.yml中进行修改。
 
-![1630825713428](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202109/05/150833-995304.png)
+![1630825713428](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202109/05/150833-995304.png)
 
 修改application.yml添加freemarker基本配置如下：
 
@@ -872,7 +872,7 @@ public class Indexcontroller {
 ```
 
 
-![1630825857806](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202109/05/151058-625416.png)
+![1630825857806](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202109/05/151058-625416.png)
 
 代码编写 =>(p17)
 
@@ -941,7 +941,7 @@ public class Indexcontroller {
 
 从入门项目中可以看到：对于Spring Mvc请求拦截规则为'/,Spring Boot默认静态资源路径如下：
 
-![1633854424125](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202110/10/162704-644981.png)
+![1633854424125](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202110/10/162704-644981.png)
 
 即：我们可以在resources资源目录下存放web应用静态资源文件。
 
@@ -949,9 +949,9 @@ public class Indexcontroller {
 
 在resources目录下创建static或者public目录，存放images、js、css等静态资源文件
 
-![1633854540772](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202110/10/162901-271362.png)
+![1633854540772](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202110/10/162901-271362.png)
 
-![1633854714018](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202110/10/163155-488621.png)
+![1633854714018](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202110/10/163155-488621.png)
 
 ### 8.2.自定义静态资源路径
 
@@ -978,7 +978,7 @@ SpringBoot内嵌Tomcat容器，所有打包后的jar包默认可以自行运行�
 idea下配置clean compile package-Dmaven.test.skip=true执行打包命令，target目录得到待部署
 的项目文件。
 
-![1633854962597](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202110/10/163602-281225.png)
+![1633854962597](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202110/10/163602-281225.png)
 
 ![1633854989073](C:\Users\AN\AppData\Roaming\Typora\typora-user-images\1633854989073.png)
 
@@ -987,7 +987,7 @@ idea下配置clean compile package-Dmaven.test.skip=true执行打包命令，tar
 打开本地dos窗口，执行java-jar命令部署已打好的jar包文件。
 命令如下：java-jar jar包所在目录
 
-![1633855076348](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202110/10/163757-142620.png)
+![1633855076348](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202110/10/163757-142620.png)
 
 ### 9.2.war 包部署
 
@@ -999,7 +999,7 @@ War包形式部署Web项目在生产环境中是比较常见的部署方式，�
 - 应用类型修改
   由于入门项目构建的项目默认为jar应用，所以这里打war需要作如下修改
 
-![1633855375534](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202110/10/164255-607110.png)
+![1633855375534](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202110/10/164255-607110.png)
 
 - 忽略内嵌Tomcat
   构建SpringBoot应用时，引入的spring-boot-starter-web默认引入Tomcat容器，这里忽略掉内容Tomcat
@@ -1023,15 +1023,15 @@ War包形式部署Web项目在生产环境中是比较常见的部署方式，�
 
 #### 9.2.2  Starter修改
 
-![1633855918315](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202110/10/165158-52700.png)
+![1633855918315](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202110/10/165158-52700.png)
 
 #### 9.2.3  Starter修改
 
-![1633855945722](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202110/10/165226-462230.png)
+![1633855945722](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202110/10/165226-462230.png)
 
 #### 9.2.4  部署并访问
 
-![1633856052367](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202110/10/165413-347619.png)
+![1633856052367](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202110/10/165413-347619.png)
 
 ## 10.总结
 

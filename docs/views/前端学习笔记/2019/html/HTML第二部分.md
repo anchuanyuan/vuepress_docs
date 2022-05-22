@@ -17,7 +17,7 @@ categories:
 
 2.表格不是用来布局页面的,而是用来展示数据的。
 
-​ ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/214926-62909.png) 3.表格的具体用法：
+​ ![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/214926-62909.png) 3.表格的具体用法：
 
 ```HTML
 <table>
@@ -59,11 +59,11 @@ categories:
 
 1.表格标签这部分属性我们实际开发我们不常用，后面通过 CSS 来设置
 
-​ ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/214932-236973.png)
+​ ![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/214932-236973.png)
 
 完成下面综合案例：
 
-​ ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/214935-429112.png)
+​ ![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/214935-429112.png)
 
 ​ **思路：**
 
@@ -87,7 +87,7 @@ categories:
 因为表格可能很长,为了更好的表示表格的语义，可以将表格分割成 表格头部和表格主体两大部分.
 在表格标签中，分别用：`<thead>`标签 表格的头部区域、`<tbody>`标签 表格的主体区域. 这样可以更好的分清表格结构。
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/214937-722617.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/214937-722617.png)
 
 **总结:**
 
@@ -105,7 +105,7 @@ categories:
 
 如下图：
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/214939-573282.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/214939-573282.png)
 
 **合并单元格方式：**
 
@@ -149,7 +149,7 @@ categories:
 
 ### 无序：
 
-​ ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/214942-387104.png)
+​ ![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/214942-387104.png)
 
 `<ul>` 标签表示 HTML 页面中项目的无序列表，一般会以项目符号呈现列表项，而列表项使用 `<li>` 标签定义。无序列表的基本语法格式如下：
 
@@ -166,7 +166,7 @@ categories:
 
 ### 有序：
 
-​ ![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/214943-677708.png)
+​ ![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/214943-677708.png)
 
 有序列表即为有排列顺序的列表，其各个列表项会按照一定的顺序排列定义。在 HTML 标签中，`<ol>` 标签用于定义有序列表，列表排序以数字来显示，并且使用 `<li>` 标签来定义列表项。有序列表的基本语法格式如下：
 
@@ -185,7 +185,7 @@ categories:
 
 ### 自定义：
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/214946-131373.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/214946-131373.png)
 
 自定义列表的使用场景:自定义列表常用于对术语或名词进行解释和描述，定义列表的列表项前没有任何项目符号。在 HTML 标签中，`<dl>`标签用于定义描述列表（或定义列表），该标签会与 `<dt>`（定义项目/名字）和 `<dd>`（描述每一个项目/名字）一起使用。语法如下：
 
@@ -199,12 +199,12 @@ categories:
 
 ### 列表总结
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/220240-55231.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/220240-55231.png)
 
 ## 表单
 
 现实中的表单：
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/214948-840042.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/214948-840042.png)
 
 ### 为什么需要表单：
 
@@ -230,7 +230,7 @@ categories:
 
 ### 表单域的常用属性：
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/214951-396885.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/214951-396885.png)
 
 基础班来说,我们暂时不用表单域提交数据,只需要写上 `form` 标签即可. 就业班等学习服务器编程阶段会重新讲解.
 这里只需要记住两点: 1.在我们写表单元素之前,应该有个表单域把他们进行包含. 2.表单域是 `form` 标签.
@@ -250,11 +250,11 @@ categories:
 
 type 属性的属性值及其描述如下：
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/214953-411747.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/214953-411747.png)
 
 除 type 属性外，`<input>`标签还有其他很多属性，其常用属性如下：
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/214954-355200.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/214954-355200.png)
 
 ### `<label>`标签
 
@@ -273,7 +273,7 @@ type 属性的属性值及其描述如下：
 
 使用场景: 在页面中，如果有多个选项让用户选择，并且想要节约页面空间时，我们可以使用`<select>`标签控件定义下拉列表。
 
-![](https://gitee.com/chuanyuan_an/tuchuang/raw/master/image/202006/09/214956-902132.png)
+![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/214956-902132.png)
 
 语法：
 
