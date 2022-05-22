@@ -1,11 +1,11 @@
 ---
 title: vue3.2后台管理
-date: 2021-08-21
+date: 2022-5-21
 sidebarDepth: 4
 tags:
-  - 代码风格
+    - 代码风格
 categories:
-  - 规范
+    - 规范
 ---
 
 # vue3.2 后台管理

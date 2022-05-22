@@ -1,11 +1,11 @@
 ---
 title: LowCode
-date: 2022-05-3
+date: 2022-05-12
 sidebarDepth: 4
 tags:
-- LowCode
-  categories:
-- LowCode
+  - LowCode 
+categories:
+  - LowCode
 ---
 ## H5/小程序多端商城低代码平台
 

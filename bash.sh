@@ -15,7 +15,7 @@ git config --global user.email "1162734640@qq.com"
 git config --global user.name "An"
 git init
 git add .
-git commit -m 'deploy'
+git commit -m 'build: deploy'
 git remote add origin https://chuanyuan_an:acy123456@gitee.com/chuanyuan_an/vuepress_blog.git
 git push origin main -f
 

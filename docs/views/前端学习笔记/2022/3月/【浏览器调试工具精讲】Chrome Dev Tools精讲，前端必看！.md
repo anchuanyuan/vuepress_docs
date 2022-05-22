@@ -1,5 +1,7 @@
 ---
 title: 【浏览器调试工具精讲】Chrome Dev Tools精讲，前端必看！
+date: 2022-03-27
+sidebarDepth: 4
 tags:
   - 工具
 categories:

@@ -2,9 +2,9 @@
 title: 【chrome】你只会使用console.log吗？
 sidebarDepth: 4
 tags:
-  - 工具
+   - 工具
 categories:
-  - 工具
+   - 工具
 ---
 
 
