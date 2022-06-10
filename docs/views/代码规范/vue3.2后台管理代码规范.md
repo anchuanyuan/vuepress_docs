@@ -32,9 +32,11 @@ pnpm dev
 
 ## 2.代码格式化
 
+### 2.1 prettier
+
 ```bash
 
-pmpm i prettier
+pnpm i prettier -D
 
 ```
 
@@ -48,6 +50,39 @@ module.exports = {
   singleQuote: true // 用单引号
 }
 ```
+### 2.2 eslint
+```bash
+
+pnpm i eslint   -D
+
+```
+```js
+module.exports = {
+  root: true,
+  extends: ['prettier']
+}
+
+
+```
+tips : Failed to load config “prettier“ to extend from
+solve : 
+```bash
+pnpm add prettier-eslint eslint-config-prettier -D
+```
+
+tip :  Parsing error: The keyword ‘import‘ is reserved
+solve :
+```json
+{
+  "parserOptions": {
+    "ecmaVersion": 7,
+    "sourceType": "module"
+  }
+}
+
+```
+
+### 2.3  eslint-plugin-vue
 
 ## 3.commit 提交规范
 
