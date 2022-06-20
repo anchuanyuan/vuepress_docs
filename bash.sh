@@ -17,7 +17,7 @@ git init
 git add .
 git commit -m 'build: deploy'
 git remote add origin https://chuanyuan_an:acy123456@gitee.com/chuanyuan_an/vuepress_blog.git
-git remote add github git@github.com:anchuanyuan/anchuanyuan.github.io.git
+git remote add github https://github.com/anchuanyuan/anchuanyuan.github.io.git
 git push origin main -f
 git push github master -f
 
