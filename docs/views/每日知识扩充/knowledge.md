@@ -20,6 +20,11 @@ categories:
 [modulepreload](https://developer.chrome.com/blog/modulepreload/)
 
 [相关博客](https://blog.csdn.net/huangyangquan3/article/details/118642384)
+
 [相关介绍](https://guybedford.com/es-module-preloading-integrity#modulepreload-polyfill)
 
 ts 项目 
+
+# 2022年6月13日14:27:34 探究babel背后的工作原理
+(babel背后的工作原理)[https://juejin.cn/post/7108268258020556836#heading-15]
+(Babel 用户手册)[https://github.com/jamiebuilds/babel-handbook/blob/master/translations/zh-Hans/user-handbook.md]
