@@ -312,5 +312,30 @@ HTML 中的注释以`“<!--”开头，以“ -->”`结束。
 
 在 HTML 页面中，一些特殊的符号很难或者不方便直接使用，此时我们就可以使用下面的字符来替代。
 
-![](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/193927-130664.png)
+![特殊字符](https://raw.githubusercontent.com/anchuanyuan/TuChuangForITX/main/image/202006/09/193927-130664.png)
+```text
+     html源码     显示结果     描述
+
+            &lt;                  <             小于号
+
+            &gt;                 >               大于号
+
+			&amp;        		&    			   引号
+
+			&quot;      		 "       			引号
+
+			&reg;              					  已注册     
+
+			&copy;              					 版权
+
+			&trade;             					 商标
+
+			&ensp;               			半方大的空白
+
+			&emsp;           		    全方大的的空白
+
+
+			&nbsp;                		不断行的空
+
+```
 重点记住：空格 、大于号、 小于号 这三个， 其余的使用很少，如果需要回头查阅即可。
