@@ -107,6 +107,12 @@ yarn add sass-loader@^10 sass --dev
 
 ```
 
+关于  vue webpack项目 sass this.getOptions is not a function
+
+[node-sass包介绍](https://www.npmjs.com/package/node-sass)
+
+[网友的解释](https://blog.csdn.net/August_802/article/details/124985920?spm=1001.2101.3001.6650.4&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-4-124985920-blog-113749476.pc_relevant_multi_platform_whitelistv1&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-4-124985920-blog-113749476.pc_relevant_multi_platform_whitelistv1&utm_relevant_index=4)
+
 
 
 
