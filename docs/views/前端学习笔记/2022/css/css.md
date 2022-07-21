@@ -30,3 +30,57 @@ categories:
 }
 ```
 
+css 工具
+1、Neumorphism
+地址：https://neumorphism.io/
+2、带有渐变的图标
+地址：https://www.iconshock.com/svg-icons/
+3、Interactions
+地址：https://easings.co/
+4、pattern.css
+地址：https://bansal.io/pattern-css
+5、自定义形状分隔线
+地址：https://www.shapedivider.app/
+
+### unocss 在vuecli(webpack)中的配置 不起作用
+	参考一下配置
+
+根目录 unocss.config.js
+```js
+import presetAttributify from '@unocss/preset-attributify'
+import presetUno from '@unocss/preset-uno'
+module.exports =  {
+  presets: [
+    presetAttributify(),
+    presetUno()
+  ]
+
+}
+```
+vue.config.js
+
+```js
+module.exports = {
+  //...
+  configureWebpack : {
+    plugins: [
+      //...
+      UnoCSS({})
+    ]
+  },
+
+//...
+
+  chainWebpack(config) {
+    // ...
+    config.when(process.env.ENV !== 'development', (config) => {
+      config.module.rule('vue').uses.delete('cache-loader')
+      config.merge({
+        cache: false,
+      })
+    })
+		//  ...
+  }
+}
+
+```
