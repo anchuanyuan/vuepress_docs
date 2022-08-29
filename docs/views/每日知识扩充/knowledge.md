@@ -28,3 +28,17 @@ ts 项目
 # 2022年6月13日14:27:34 探究babel背后的工作原理
 [babel背后的工作原理](https://juejin.cn/post/7108268258020556836#heading-15)
 [Babel 用户手册](https://github.com/jamiebuilds/babel-handbook/blob/master/translations/zh-Hans/user-handbook.md)
+
+js项目 路径识别问题
+jsconfig.json
+```json
+{ 
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+        "@/*": ["src/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist"]
+}
+```

@@ -494,7 +494,7 @@ const fn = (something:number | boolean):boolean => {
 ```ts
 interface People {
   age: number,
-  height： number
+  height: number
 }
 interface Man{
   sex: string
