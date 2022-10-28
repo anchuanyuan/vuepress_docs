@@ -42,3 +42,10 @@ jsconfig.json
   "exclude": ["node_modules", "dist"]
 }
 ```
+## 2022年10月28日23:41:35
+### 设置阿里镜像
+npm config set registry=https://registry.npmmirror.com
+npm config set disturl=https://registry.npmmirror.com/-/binary/node
+ 
+### 设置electron仓库
+npm config set electron_mirror=https://registry.npmmirror.com/-/binary/electron/
