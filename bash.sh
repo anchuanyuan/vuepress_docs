@@ -2,7 +2,9 @@
 
 # 确保脚本抛出遇到的错误
 set -e
-
+# 输出当前目录
+pwd
+cd master
 # 生成静态文件
 npm run build
 
