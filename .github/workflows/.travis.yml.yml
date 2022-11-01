@@ -15,26 +15,20 @@ jobs: # 工作流
 
     steps:
       - name: Checkout # 步骤1
-        uses: actions/checkout@v3 # 使用的动作。格式：userName/repoName。作用：检出仓库，获取源码。 官方actions库：https://github.com/actions
+        uses: actions/checkout@master # 使用的动作。格式：userName/repoName。作用：检出仓库，获取源码。 官方actions库：https://github.com/actions
         with:
           path: master # 指定检出的仓库路径
       - name: Use Node.js ${{ matrix.node-version }} # 步骤2
         uses: actions/setup-node@v1 # 作用：安装nodejs
-        with:
-          node-version: ${{ matrix.node-version }} # 版本
-      - name: build_dist # 步骤3 （同时部署到github和coding）
-        env: # 设置环境变量
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }} # toKen私密变量
-#        run: cd /home/runner/work/vuepress_docs/vuepress_docs/master && npm install  && npm  run build # 执行的命令
-        run: cd /home/runner/work/vuepress_docs/vuepress_docs/master
-      - name: deploy
-        uses: jenkey2011/vuepress-deploy@master
-        env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          TARGET_REPO: anchuanyuan//anchuanyuan.github.io.git
-          TARGET_BRANCH: master
-          BUILD_SCRIPT: npm  run build
-          BUILD_DIR: docs/.vuepress/dist
+      - name: Build and Deploy
+          uses: jenkey2011/vuepress-deploy@v2.0.0
+          env:
+            ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+            TARGET_REPO: anchuanyuan//anchuanyuan.github.io.git
+            TARGET_BRANCH: master
+            BUILD_SCRIPT: npm run build
+            BUILD_DIR: blog/.vuepress/dist/
+            COMMIT_MESSAGE: Auto deploy by the Vuepress-deploy
 #      - name: Build Gitee Pages
 #        uses: yanglbme/gitee-pages-action@main
 #        with:
