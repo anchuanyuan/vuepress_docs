@@ -29,10 +29,12 @@ jobs: # 工作流
       - name: deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          deploy_key: ${{ secrets.DEPLOY_SECRET }}
+#          deploy_key: ${{ secrets.DEPLOY_SECRET }}
+          github_token: ${{ secrets.ACCESS_TOKEN }}
           external_repository: anchuanyuan/anchuanyuan.github.io.git
           publish_dir: docs/.vuepress/dist
           publish_branch: master
+          force_orphan: true
 #      - name: Build Gitee Pages
 #        uses: yanglbme/gitee-pages-action@main
 #        with:
