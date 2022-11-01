@@ -28,6 +28,8 @@ jobs: # 工作流
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
+          cd ${{ github.workspace }}/${{ github.repository }}/master
+          echo $current_path
       - name: show info
         run: |
           echo github.repository ${{ github.repository }} 
