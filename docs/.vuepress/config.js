@@ -147,7 +147,7 @@ module.exports = {
     //   }
     // ],
     // 音乐播放器
-    [
+    /*[
       'meting',
       {
         meting: {
@@ -180,6 +180,6 @@ module.exports = {
           cover: false
         }
       }
-    ]
+    ]*/
   ]
 }
