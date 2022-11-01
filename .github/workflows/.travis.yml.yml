@@ -27,7 +27,7 @@ jobs: # 工作流
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           TARGET_REPO: anchuanyuan//anchuanyuan.github.io.git
           TARGET_BRANCH: master
-          BUILD_SCRIPT: cd /home/runner/work/vuepress_docs/vuepress_docs/master && npm run build
+          BUILD_SCRIPT:  npm run build
           BUILD_DIR: blog/.vuepress/dist/
           COMMIT_MESSAGE: Auto deploy by the Vuepress-deploy
 #      - name: Build Gitee Pages
