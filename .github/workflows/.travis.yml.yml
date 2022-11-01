@@ -25,14 +25,16 @@ jobs: # 工作流
       - name: build_dist # 步骤3 （同时部署到github和coding）
         env: # 设置环境变量
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }} # toKen私密变量
-        run: cd /home/runner/work/vuepress_docs/vuepress_docs/master && npm install  && npm  run build # 执行的命令
+#        run: cd /home/runner/work/vuepress_docs/vuepress_docs/master && npm install  && npm  run build # 执行的命令
+        run: cd /home/runner/work/vuepress_docs/vuepress_docs/master
       - name: deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          deploy_key: ${{ secrets.DEPLOY_SECRET }}
-          external_repository: anchuanyuan/anchuanyuan.github.io.git
-          publish_dir: docs/.vuepress/dist
-          publish_branch: master
+        uses: jenkey2011/vuepress-deploy@master
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          TARGET_REPO: anchuanyuan//anchuanyuan.github.io.git
+          TARGET_BRANCH: master
+          BUILD_SCRIPT: npm  run build
+          BUILD_DIR: docs/.vuepress/dist
 #      - name: Build Gitee Pages
 #        uses: yanglbme/gitee-pages-action@main
 #        with:
