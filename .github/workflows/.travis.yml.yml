@@ -16,32 +16,11 @@ jobs: # 工作流
       contents: write
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@master
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
         with:
-          path: master # 指定检出的仓库路径
-      #- name: Use Node.js ${{ matrix.node-version }} # 步骤2
-      # uses: actions/setup-node@v1 # 作用：安装nodejs
-      
-      - name: Build and Deploy
-        uses: jenkey2011/vuepress-deploy@v2.0.0
-        env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          TARGET_REPO: anchuanyuan//anchuanyuan.github.io.git
-          TARGET_BRANCH: master
-          BUILD_SCRIPT:  npm run build
-          BUILD_DIR: blog/.vuepress/dist/
-          COMMIT_MESSAGE: Auto deploy by the Vuepress-deploy
-#      - name: Build Gitee Pages
-#        uses: yanglbme/gitee-pages-action@main
-#        with:
-#          # 注意替换为你的 Gitee 用户名
-#          gitee-username: chuanyuan_an
-#          # 注意在 Settings->Secrets 配置 GITEE_PASSWORD
-#          gitee-password: ${{ secrets.GITEE_PASSWORD }}
-#          # 注意替换为你的 Gitee 仓库，仓库名严格区分大小写，请准确填写，否则会出错
-#          gitee-repo: chuanyuan_an/vuepress_blog
-#          # 要部署的分支，默认是 master，若是其他分支，则需要指定（指定的分支必须存在）
-#          branch: main
+          node-version: ${{ matrix.node-version }}
+      - run: npm ci
+      - run: npm run build 
