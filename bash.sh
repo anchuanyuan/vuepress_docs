@@ -11,7 +11,8 @@ npm run build
 cd docs/.vuepress/dist
 
 # deploy to github
-git config --global init.defaultBranch main
+#git config --global init.defaultBranch main
+git config --global init.defaultBranch master
 git config --global user.email "1162734640@qq.com"
 git config --global user.name "An"
 git init
