@@ -28,7 +28,7 @@ jobs: # 工作流
         uses: jenkey2011/vuepress-deploy@v2.0.0
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          TARGET_REPO: anchuanyuan//anchuanyuan.github.io.git
+          TARGET_REPO: anchuanyuan/anchuanyuan.github.io.git
           TARGET_BRANCH: master
           BUILD_SCRIPT:  npm run build
           BUILD_DIR: docs/.vuepress/dist/
