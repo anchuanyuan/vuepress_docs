@@ -21,14 +21,14 @@ jobs: # 工作流
       - name: Use Node.js ${{ matrix.node-version }} # 步骤2
         uses: actions/setup-node@v1 # 作用：安装nodejs
       - name: Build and Deploy
-          uses: jenkey2011/vuepress-deploy@v2.0.0
-          env:
-            ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-            TARGET_REPO: anchuanyuan//anchuanyuan.github.io.git
-            TARGET_BRANCH: master
-            BUILD_SCRIPT: npm run build
-            BUILD_DIR: blog/.vuepress/dist/
-            COMMIT_MESSAGE: Auto deploy by the Vuepress-deploy
+        uses: jenkey2011/vuepress-deploy@v2.0.0
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          TARGET_REPO: anchuanyuan//anchuanyuan.github.io.git
+          TARGET_BRANCH: master
+          BUILD_SCRIPT: npm run build
+          BUILD_DIR: blog/.vuepress/dist/
+          COMMIT_MESSAGE: Auto deploy by the Vuepress-deploy
 #      - name: Build Gitee Pages
 #        uses: yanglbme/gitee-pages-action@main
 #        with:
