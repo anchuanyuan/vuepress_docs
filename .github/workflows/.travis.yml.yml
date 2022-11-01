@@ -12,6 +12,10 @@ jobs: # 工作流
     strategy:
       matrix:
         node-version: [16.6.1]
+    permissions:
+      contents: write
+      concurrency:
+        group: ${{ github.workflow }}-${{ github.ref }}
 
     steps:
       - name: Checkout # 步骤1
