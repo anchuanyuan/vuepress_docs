@@ -22,7 +22,7 @@ jobs: # 工作流
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      #- run: npm i
+      - run: npm i
       #- run: npm run build 
       - name: Build and Deploy
         uses: jenkey2011/vuepress-deploy@v2.0.0
