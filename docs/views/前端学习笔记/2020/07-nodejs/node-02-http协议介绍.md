@@ -5,7 +5,7 @@ sidebarDepth: 5
 tags:
     - Node
 categories:
-    - NodeJs
+    - NodeJS
 ---
 # 请求响应原理及HTTP协议
 
